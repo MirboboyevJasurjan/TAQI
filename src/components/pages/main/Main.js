@@ -211,21 +211,21 @@ const Main = () => {
             <h3 className="main_tash_h3"> HABARLAR </h3>
 
             <Container>
-              <Row>
-                <Col className="habarlarCardBig" sm={6} md={6} lg={6} xl={6} xxl={6}  >
-                  <div>
+              <Row className="habarlar_row">
+                <Col className="habarlarCardBig" sm={12} md={6} lg={6} xl={6} xxl={6}  >
+                  <div className="habarlarCard__child">
                     <img className="imghabar" src={habarlar1} alt="photo" />
                     <a className="tashcard2_txt"> "Korrupsiyadan xoli mamlakat" mavzusida seminar - trening bo‘lib o‘tdi</a>
                   </div>
                 </Col>
-                <Col className="habarlarCard" sm={3} md={3} lg={3} xl={3} xxl={3}  >
-                  <div>
+                <Col className="habarlarCard" sm={12} md={3} lg={3} xl={3} xxl={3}  >
+                  <div className="habarlarCard__child">
                     <img className="tashcard2_img" src={habarlar2} alt="photo" />
                     <a className="tashcard2_txt">15 may - Xalqaro oila kuni! Oilalarda milliy qadriyatlarni mustahkamlash” nomli ijodiy kecha o’tkazildi.</a>
                   </div>
                 </Col>
-                <Col className="habarlarCard" sm={3} md={3} lg={3} xl={3} xxl={3}  >
-                  <div>
+                <Col className="habarlarCard" sm={12} md={3} lg={3} xl={3} xxl={3}  >
+                  <div className="habarlarCard__child">
                     <div className="tashcard2_img">
                       <img src={habarlar3} alt="photo" />
                     </div>
@@ -234,27 +234,27 @@ const Main = () => {
                 </Col>
               </Row>
               <br />
-              <Row>
-                <Col className="habarlarCard" sm={3} md={3} lg={3} xl={3} xxl={3}  >
-                  <div>
+              <Row className="habarlar_row">
+                <Col className="habarlarCard" sm={12} md={3} lg={3} xl={3} xxl={3}  >
+                  <div className="habarlarCard__child">
                     <div className="tashcard2_img">
                       <img src={habarlar4} alt="photo" />
                     </div>
                     <a className="tashcard2_txt">TAQI tayanch doktorant Germaniya Federativ Respublikasida ilmiy stajirovka oʼtamoqda.</a>
                   </div>
                 </Col>
-                <Col className="habarlarCard" sm={3} md={3} lg={3} xl={3} xxl={3}  >
-                  <div>
+                <Col className="habarlarCard" sm={12} md={3} lg={3} xl={3} xxl={3}  >
+                  <div className="habarlarCard__child">
                     <div className="tashcard2_img">
                       <img src={habarlar5} alt="photo" />
                     </div>
                     <a className="tashcard2_txt">OGOHLIK-DAVR TALABI!</a>
                   </div>
                 </Col>
-                <Col className="habarlarCardBig" sm={6} md={6} lg={6} xl={6} xxl={6}  >
-                  <div>
+                <Col className="habarlarCardBig" sm={12} md={6} lg={6} xl={6} xxl={6}  >
+                  <div className="habarlarCard__child">
                     <img src={habarlar6} className="imghabar" alt="photo" />
-                    <a className="tashcard2_txt">Toshkent arxitektura-qurilish institutining Arxitektura fakultetida bitiruvchilar ishtirokida “Xalqchil davlat xizmatiga ochiq yoʼl hamda davlat xizmatchisi uchun zarur koʼnikmalar” mavzusidagi ilk o'quv-seminari o'tkazildi</a>
+                    <a className="tashcard2_txt">TAQIning Arxitektura fakultetida bitiruvchilar ishtirokida “Xalqchil davlat xizmatiga ochiq yoʼl hamda davlat xizmatchisi uchun zarur koʼnikmalar” mavzusidagi ilk o'quv-seminari o'tkazildi</a>
                   </div>
                 </Col>
                 <br />
@@ -443,6 +443,7 @@ const Main = () => {
           <div className="research_number">
             <div className="research_numb_container">
 
+
               <div className="research_num">
                 {/* <LocalLibraryIcon className="iconsss" /> */}
                 <img src={StudentLearning} className="researchIcon " alt="Online Learning" />
@@ -457,6 +458,7 @@ const Main = () => {
                 <p>Talabalar</p>
               </div>
 
+
               <div className="research_num">
                 {/* <AttachMoneyIcon className="iconsss" /> */}
                 <img src={Jigsaw} className="researchIcon " alt="Online Learning" />
@@ -470,8 +472,6 @@ const Main = () => {
                 <h2>573</h2>
                 <p>O'quv kurslar</p>
               </div>
-
-
             </div>
           </div>
 

@@ -202,6 +202,7 @@
   color: #ffffff;
   padding-top: 10px;
   mix-blend-mode: hard-light;
+  margin-top: -30px;
 }
 
 .footer2_informatsia p{
@@ -229,6 +230,8 @@
 }
 
 .brand_footer p{
+  /* position: absolute; */
+  /* bottom: 0; */
   text-align: center;
   color: white;
   padding-top: 5px;
