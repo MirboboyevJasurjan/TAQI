@@ -1,0 +1,147 @@
+.head_fak{
+margin: 50px;
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 42px;
+}
+.div_imgFak {
+  width: 100%;
+  height: 360px;
+  background: url("../../../assets/images/about/images/unsplash.png");
+  z-index: 110;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.haqida_father_fak {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  padding: 100px 80px 40px 80px !important;
+  margin-right: 0px;
+  margin-bottom: 150px;
+}
+.fakultet_row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: -200px;
+}
+.fakultet_card {
+  left: 200px;
+  width: 455px;
+  height: 259px;
+  background: #EBEBEB;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 50px;
+}
+.fakultet_row:nth-child(odd) .fakultet_card{
+  position: relative;
+  right:  -150px;
+}
+.fakultet_row:nth-child(even) .fakultet_card{
+  position: relative;
+  left: 500px;
+}
+.fak_text{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 20px;
+  width: 300px;
+  margin: 20px;
+  text-align: left;
+}
+.fakultet_row:nth-child(even) .fak_text{
+  left: 90px;
+}
+.fakultet__card__img{
+  position: absolute;
+  top: 29px;
+  width: 382px;
+  height: 201px;
+  background:   #C4C4C4;
+}
+.fakultet_row:nth-child(odd) .fakultet__card__img {
+  left: 358px;
+  object-fit: cover;
+}   
+.fakultet_row:nth-child(even) .fakultet__card__img {
+  right: 358px;
+  object-fit: cover;
+}
+.fak_card_name{
+  width: 192px;
+  height: 21px;
+  left: 365px;
+  top: 560px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+
+  font-size: 16px;
+}
+.fak_card_down{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -20px;
+  bottom: -20px;
+  height: 26px;
+  width: 122px;
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 300;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #A02D2D;
+}
+.fakultet_row:nth-child(odd) .fak_card_down{
+  left: 114px;
+}
+
+.fakultet_row:nth-child(even) .fak_card_down{
+  left: 90px;
+  bottom: -30px;
+}
+.fak__acc__card {
+  position: relative;
+  height: 315px;
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card__name__fak{
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  top: -10px;
+
+}
+.card__job__fak{
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root{
+  box-shadow: none;
+}
+.accordionCard{
+  border: none !important;
+  box-shadow: none !important;
+}
+.acc__pers_card{
+  margin: 20px 0 !important;
+}

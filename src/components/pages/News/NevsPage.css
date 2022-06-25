@@ -1,0 +1,117 @@
+
+.div_img1{
+    width: 100%;
+    height: 360px;
+   
+    background-image: url("../../assets/images/about/images/about-stanford-2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.haqida_father{
+    margin-top: 42px;
+    margin-left: 78px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.haqida_reight{
+    width: 75%;
+    padding: 40px 80px !important;
+    margin-right: 0px;
+    margin-bottom: 150px;
+    background: rgba(196, 196, 196, 0.3);
+    
+}
+
+.haqida_reight p{
+font-family: Raleway;
+font-style: Regular;
+font-size: 18px;
+margin: 0;
+padding: 5px;
+
+}
+.haqida_reight .medCenter{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* .haqida_left{
+    width: 300px ;
+    height: auto;
+    padding: 25px;
+    background-color:#EEEEEE;
+    height: 715px !important;
+    margin-bottom: 10px;
+}  */
+
+.haqida_left a{
+    text-decoration: none;
+    color: #333;
+    
+}
+.haqida_left  p{
+    display: flex;
+    font-size: 16px ;
+    align-items: center;
+    border-bottom: 1px solid #DFDEDE;
+    line-height: 16px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.newsP__row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.newsP__card{
+    left:   13%;
+    width: 205px !important ;
+    height: 295px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.newsP__card__img{
+    height: 272px;
+    width: 201px;
+    right: 300px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.newsP__card__body{
+    position: relative;
+    bottom: 0;
+    height: 10px;
+    width: 100% !important;
+    background-color: #A02D2D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsText{
+    font-family: 14px !important;
+    font-family: 'Poppins', sans-serif;
+    height: 62px;
+}
+.card__down{
+    position: relative;
+    width: 100% !important;
+    height: 20px !important;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+} 
+
+@media(min-width:1367px){
+    .NewsPage{
+        width: 1400px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,87 @@
+a{
+    text-decoration: none;
+}
+.row_rahbariy{
+    position: relative;
+    left: -20px;
+    width: 110%;
+
+}
+.rahbariy__card{
+    position: relative ;
+    height: 395px;
+    width: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rahbariy__card__img{
+    height: 233px;
+    width: 203px;
+    top: -22px;
+    position: relative;
+}
+.card__body{
+    position: relative;
+    bottom: 0;
+    height: 19px;
+    width: 100% !important;
+    background-color: #A02D2D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dr_name{
+    font-weight: 600;
+}
+.card__name{
+    text-align: center;
+    font-weight: 600;
+
+}
+.card__job{
+    position: relative;
+    top: -15px;
+    text-align: center;
+}
+.card__down{
+    position: relative;
+    width: 100% !important;
+    height: 19px !important;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+} 
+.dr__row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.dr__card{
+    left: 23%;
+    width: 455px !important ;
+    height: 333px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.dr__img{
+    position: relative;
+    height: 321px;
+    width: 269px;
+    top: -20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.dr__body{
+    position: relative;
+    bottom: 0;
+    height: 19px;
+    width: 100% !important;
+    background-color: #A02D2D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

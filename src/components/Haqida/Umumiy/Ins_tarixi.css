@@ -1,0 +1,62 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.div_img {
+  width: 100%;
+  height: 360px;
+  background-image: url("../../assets/images/about/images/rasm1.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.haqida_father {
+  margin-top: 42px;
+  margin-left: 78px;
+  display: flex;
+  justify-content: space-between;
+}
+.haqida_reight {
+  width: 75%;
+  padding: 20px;
+  margin-right: 0px;
+  margin-bottom: 150px;
+  font-family: "Poppins" !important;
+}
+.haqida_reight p {
+  font-family: Raleway;
+  font-style: Regular;
+  font-size: 18px;
+}
+.haqida_left a {
+  text-decoration: none;
+  color: #333;
+  z-index: 10;
+}
+.haqida_left p {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  border-bottom: 1px solid #dfdede;
+  line-height: 16px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.haqida_left {
+  width: 300px;
+  height: auto;
+  padding: 25px;
+  background-color: #eeeeee;
+  height: 100%;
+}
+.haqida__left a.active {
+  color: #a02d2d;
+}
+
+@media (min-width: 1367px) {
+  .Sarlavha {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}

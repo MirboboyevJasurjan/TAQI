@@ -1,0 +1,53 @@
+.card__img{
+    height: 93px;
+    width: 85px;
+}
+.card__body{
+    position: absolute;
+    bottom: 0;
+    height: 19px;
+    width: 100% !important;
+    background-color: #A02D2D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card__down{
+    position: relative;
+    width: 100% !important;
+    height: 19px !important;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.haqida_reightt{
+    background-color:  #F5F5F5;
+}
+.rahbariy__card{
+    height: 395px;
+    width: 205px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.rahbariy__card__img{
+    height: 233px;
+    width: 203px;
+    top: -20px;
+    position: relative;
+}
+.uslubiy__btnBack{
+    position: relative;
+    font-size: 24px;
+    text-decoration: none;
+    left: -45px;
+    color: #333;
+}
+.uslubiy__btnBack:hover{
+    color: #A02D2D;
+}

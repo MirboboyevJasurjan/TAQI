@@ -1,0 +1,64 @@
+.haqida_reight {
+  background-color: #fff;
+}
+.div_imggg {
+  width: 100%;
+  height: 360px;
+  background: url("../../Rasmlar/rahbariyat1.jpg");
+  z-index: 110;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.haqida_reightt {
+  background-color: #fff;
+  width: 75%;
+  padding: 10px 80px 40px 80px !important;
+  margin-right: 0px;
+  margin-bottom: 150px;
+}
+.roww:nth-child(odd) {
+  background-color: #e2f6ff !important;
+}
+.kaf_table{
+  background-color: #FFF !important;
+}
+.kaf_table:nth-child(12n+1) {
+  background-color: #E2F6FF !important;
+}
+.kaf_table:nth-child(12n+2) {
+  background-color: #E2F6FF !important;
+}
+.kaf_table:nth-child(12n+3) {
+  background-color: #E2F6FF !important;
+}
+
+.kaf_table:nth-child(12n+4) {
+  background-color: #E2F6FF !important;
+}
+.kaf_table:nth-child(12n+5) {
+  background-color: #E2F6FF !important;
+}
+.kaf_table:nth-child(12n+6) {
+  background-color: #E2F6FF !important;
+}
+.headerr {
+  background-color: #e2e2e2 !important;
+  color: #000 !important;
+  text-align: center !important;
+}
+td {
+  border-left: 1px solid #9e9696 !important;
+}
+.jobRow {
+  width: 250px;
+}
+.jobName {
+  width: 250px;
+}
+.jobEmail {
+  width: 150px;
+}
+.jobNumb{
+  width: 180px;
+}

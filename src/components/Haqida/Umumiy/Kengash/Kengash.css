@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+.igm_taqi8{
+    width: 100%;
+    height: 250px;
+    margin-top: 112px;
+}
+
+.haqida_father{
+    margin-top: 42px;
+    margin-left: 78px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.haqida_reight{
+    width: 65%;
+    padding: 20px;
+    margin-right: 50px;
+    margin-bottom: 150px;
+}
+
+.haqida_reight p{
+font-family: Raleway;
+font-style: Regular;
+font-size: 18px;
+
+}
+
+.haqida_left a{
+    text-decoration: none;
+    color: #333;
+}
+.haqida_left p{
+    display: flex;
+    font-size: 16px ;
+    align-items: center;
+    border-bottom: 1px solid #DFDEDE;
+    line-height: 16px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.haqida_left{
+    width: 300px ;
+    height: auto;
+    padding: 25px;
+    background-color:#EEEEEE;
+    height: 100%;
+} 
+
+.qarorlar__card{
+    height: 182px;
+    width: 187px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.card__img{
+    height: 93px;
+    width: 85px;
+}
+.card__body{
+    position: absolute;
+    bottom: 0;
+    height: 19px;
+    width: 100% !important;
+    background-color: #A02D2D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card__down{
+    position: relative;
+    width: 100% !important;
+    height: 16px !important;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+.card__index{
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    height: 38px;
+    width: 50px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
