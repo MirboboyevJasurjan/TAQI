@@ -48,7 +48,7 @@ const Nav = () => {
   const naviBGStyle = {
     display: 'flex',
     position: 'relative',
-    top: '-100px',
+    top: '-50px',
     opacity: 1,
     height: '100vh'
   };
@@ -117,7 +117,7 @@ const Nav = () => {
 
                   <button 
                     type="submit" 
-                    className={isAcctive ? 'buttonsearch navMenu': 'buttonsearch navMenu btn-Nav-Link'}
+                    className={isAcctive ? 'buttonMenu navMenu': 'buttonMenu navMenu btn-Nav-Link'}
                     onClick={onMenu} 
                   >
                     <span> 
@@ -184,7 +184,7 @@ const Nav = () => {
             </span>
           </div>
           <div className="searchButtons">
-            <input type="text" placeholder="   Qidiruv TAQI websayt " />
+            <input type="text" className="searchInput" placeholder="Qidiruv TAQI websayt " />
             <button> <SearchIcon /> Qidiruv  </button>
           </div>
           <div className="serarchFooter">
