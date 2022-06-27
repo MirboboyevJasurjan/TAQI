@@ -16,7 +16,7 @@ import { IoCloseSharp } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 const Nav = () => {
-  const {t, i18n} = useTranslation
+  const {t, i18n} = useTranslation()
   const changeLanguage = (lang)=>{
     i18n.changeLanguage(lang);
   }
