@@ -13,8 +13,13 @@ import { NavLink, Link } from 'react-router-dom';
 import { BiMenu } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 import { IoCloseSharp } from "react-icons/io";
-
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 const Nav = () => {
+  const {t, i18n} = useTranslation
+  const changeLanguage = (lang)=>{
+    i18n.changeLanguage(lang);
+  }
 
   const [state, setState] = useState(false);
   const [menu, setMenu] = useState(true)
@@ -109,9 +114,9 @@ const Nav = () => {
 
                   <li>
                     <select className="uz">
-                      <option className="uz" value="uz">Uz</option>
-                      <option className="uz" value="ru">Ru</option>
-                      <option className="uz" value="en">En</option>
+                      <option className="uz" value="uz" onClick={()=>changeLanguage("uz")}>Uz</option>
+                      <option className="uz" value="ru" onClick={()=>changeLanguage("ru")}>Ru</option>
+                      <option className="uz" value="en" onClick={()=>changeLanguage("en")}>En</option>
                     </select>
                   </li>
 

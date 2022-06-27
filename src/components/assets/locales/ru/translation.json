@@ -2,5 +2,10 @@
   "app_title": "Заглавие",
   "language": "Язык",
   "welcome_message": "Добро пожаловать !",
-  "days_since_release": "Ushbu video YouTube kanalimizga joylanishiga {{number_of_days}} kun qoldi"
+  "days_since_release": "Ushbu video YouTube kanalimizga joylanishiga {{number_of_days}} kun qoldi",
+  
+  "navbar":{
+    "Taqi":"Ташкентский Институт Архитектуры и строительства",
+    "habarlar":"Новости"
+  }
 }
