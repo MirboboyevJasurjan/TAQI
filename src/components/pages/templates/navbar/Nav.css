@@ -116,8 +116,10 @@ a {
 }
 
 .navigation-top {
-  width: 100vw;
-  margin: 0 auto;
+  /* width: 100vw; */
+  width: 95vw;
+  margin: 0 20px;
+  /* margin: 0 auto; */
   height: 56px;
   display: flex;
   align-items: center !important;
@@ -282,7 +284,13 @@ a {
   color: #fff;
   margin: 0px 8px;
 }
-
+.buttonMenu {
+  width: 90px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  margin: 0px 8px;
+}
 .buttonsearch:hover {
   background-color: rgb(211, 0, 0);
   transition: 0.2s;
@@ -415,7 +423,7 @@ a {
 @media (min-width: 1400px) {
   .navigation-top,
   .navigation-bottom {
-    width: 1435px;
+    width: 100vw;
     margin: 0 auto;
   }
 }
@@ -491,16 +499,21 @@ a {
   }
 }
 @media screen and (max-width: 768px) {
-  
-  .nav-topMob ul li:nth-child(5), .nav-topMob ul li:nth-child(6) {
+  .nav-topMob ul li:nth-child(5),
+  .nav-topMob ul li:nth-child(6) {
     display: flex;
     position: absolute;
     top: 55px;
+    align-items: center;
+    justify-content: space-between;
     z-index: 1000000000;
     margin-left: 150px;
-    /* display: none; */
+    left: 30%;
+    top: 80vh;
+    background-color: #797d81;
+    color: #000;
   }
-  .nav-topMob ul li:nth-child(6){
+  .nav-topMob ul li:nth-child(6) {
     margin-left: 0px;
   }
   .nav-top-link ul li {
@@ -550,9 +563,16 @@ a {
     right: 36px;
     transition: 0.3s all ease;
   }
-  .biMenu{
+  .biMenu {
     display: flex;
     height: 24px;
     width: 24px;
+  }
+  .divs1 h3 {
+    font-size: 18px;
+  }
+  .divs1 .searchInput {
+    width: 220px;
+    margin-right: 15px;
   }
 }

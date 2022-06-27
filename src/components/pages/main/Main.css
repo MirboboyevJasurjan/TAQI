@@ -664,7 +664,6 @@ habarlar_row {
   font-family: "Sansation Light" !important;
   text-align: center;
   font-size: 30px;
-  line-height: 15px;
   text-align: center;
   margin-top: 30px;
   font-weight: 500;
@@ -687,25 +686,22 @@ habarlar_row {
   font-family: 'Sansation', sans-serif !important;
 }
 
-.academicss_ul li a {
-
-  font-size: 20px;
-  margin: 10px;
-  color: #222;
-  text-decoration: none;
-  margin: 0px;
+.academicss_ul li {
+  margin: 0 15px;
 }
 
 .academicss_ul li a {
+
+  font-size: 20px;
+  margin: 0 10px;
+  width: 100px;
+  color: #222;
+  text-decoration: none;
+  margin: 0px;
   position: relative;
   transition: 0.3s;
   font-family: "Sansation Light" !important;
 }
-
-academicss_ul_li {
-  margin: 0 15px;
-}
-
 .academicss_ul li a:hover {
   color: #222;
 }
@@ -920,7 +916,7 @@ academicss_ul_li {
   display: none;
 }
 .research_number {
-  height: 1000px;
+  height: 400px;
 }
 
 
@@ -961,7 +957,7 @@ academicss_ul_li {
     display: block;
     height: 150px;
     width: 70%;
-    top: 190px;
+    top: 300px;
     left: 15%;
     display: flex;
     align-items: center;

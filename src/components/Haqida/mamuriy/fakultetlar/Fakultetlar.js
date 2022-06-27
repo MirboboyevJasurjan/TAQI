@@ -16,7 +16,6 @@ const Fakultetlar = (props) => {
 
     const [expanded, setExpanded] = React.useState(false);
 
-
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
     };
@@ -29,8 +28,6 @@ const Fakultetlar = (props) => {
     function tops() {
         window.scrollTo(0, 0)
     }
-
-
 
     const rows = [
         createData(' “Arxitektura”  fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, imagf),
@@ -118,31 +115,6 @@ const Fakultetlar = (props) => {
                             ))}
 
                         </Row>
-
-
-                        <div>
-                            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                                {/* Accordion  header section */}
-                                <AccordionSummary
-                                    expandIcon={<ExpandMoreIcon />}
-                                    aria-controls="panel1bh-content"
-                                    id="panel1bh-header"
-                                >
-                                    <Typography sx={{ width: '33%', flexShrink: 0 }}>
-                                        General settings
-                                    </Typography>
-                                    <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography>
-                                </AccordionSummary>
-                                {/* Text here */}
-                                <AccordionDetails>
-                                    <Typography>
-                                        Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                                        Aliquam eget maximus est, id dignissim quam.
-                                    </Typography>
-                                </AccordionDetails>
-                            </Accordion>
-                        </div>
-
 
                     </div>
                 </div>
