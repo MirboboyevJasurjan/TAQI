@@ -92,15 +92,6 @@ const Fakultetlar = (props) => {
         ],
     ];
 
-    console.log('====================================');
-    console.log(rowsAcc[1].map(e => { console.log(e.name); }));
-    console.log('====================================');
-
-    let container = document.querySelector('.fakultet_row')
-    container.addEventListener('change', function() {
-        let index = container.selectedIndex;
-      })
-
 
     return (
         <>

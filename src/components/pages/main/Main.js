@@ -401,27 +401,27 @@ const Main = () => {
             <ul className="academicss_ul">
 
               <li>
-                <a className="academicss_ul_li" href="#">Arxitektura</a>
+                <Link className="academicss_ul_li" to="/fakultetlar">Arxitektura</Link>
               </li>
               |
               <li>
-                <a className="academicss_ul_li" href="#">Bino va inshoatlar</a>
+                <Link className="academicss_ul_li" to="/fakultetlar">Bino va inshoatlar</Link>
               </li>
               |
               <li>
-                <a className="academicss_ul_li" href="#">Qurilishni boshqarish</a>
+                <Link className="academicss_ul_li" to="/fakultetlar">Qurilishni boshqarish</Link>
               </li>
               |
               <li>
-                <a className="academicss_ul_li" href="#">Muhandislik qurilish infrastrukturasi</a>
+                <Link className="academicss_ul_li" to="/fakultetlar">Muhandislik qurilish infrastrukturasi</Link>
               </li>
               |
               <li>
-                <a className="academicss_ul_li" href="#">Magistratura</a>
+                <Link className="academicss_ul_li" to="/fakultetlar">Magistratura</Link>
               </li>
               |
               <li>
-                <a className="academicss_ul_li" href="#">Sirtqi bo’lim</a>
+                <Link className="academicss_ul_li" to="/fakultetlar">Sirtqi bo’lim</Link>
               </li>
             </ul>
 
