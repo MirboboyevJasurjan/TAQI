@@ -96,3 +96,9 @@ font-size: 18px;
     justify-content: center;
     color: #000;
 }
+.pppp{
+    position: absolute;
+    background-color: #A02D2D;
+    color: aqua;
+    top: 10px;
+}
