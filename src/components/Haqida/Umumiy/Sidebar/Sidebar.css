@@ -1,11 +1,12 @@
-.haqida_left a{
+.haqida_left a {
     text-decoration: none;
     color: #333;
     z-index: 10;
 }
-.haqida_left p{
+
+.haqida_left p {
     display: flex;
-    font-size: 16px ; 
+    font-size: 16px;
     align-items: center;
     border-bottom: 1px solid #DFDEDE;
     line-height: 16px;
@@ -13,25 +14,33 @@
     padding-bottom: 10px;
     cursor: pointer;
 }
-.haqida_left{
-    width: 300px ;
+
+.haqida_left {
+    width: 300px;
     height: auto;
     padding: 25px;
-    background-color:#E2E2E2 ;
+    background-color: #E2E2E2;
     height: 100%;
-} 
-.haqida_leftMob{
+}
+.innerhaqidaMob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.haqida_leftMob {
     position: absolute;
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: max-content;
     padding: 25px;
-    background-color:#E2E2E2 ;
-    height: 100%;
-    z-index: 100;
+    background-color: #E2E2E2;
+    z-index: 10;
+    padding-left: 50px;
+    transition: all 0.5s ease;
 }
 .haqida_leftMob p {
     display: flex;
-    font-size: 16px ; 
+    font-size: 16px;
     align-items: center;
     border-bottom: 1px solid #DFDEDE;
     line-height: 16px;
@@ -39,30 +48,49 @@
     padding-bottom: 10px;
     cursor: pointer;
 }
-.haqida_leftMob a{
+
+.haqida_leftMob a {
     text-decoration: none;
     color: #333 !important;
     z-index: 10;
 }
-.menuGridTemp{
+
+.menuGridTemp {
+    font-size: 18px;
     position: absolute;
-    /* top: -40px; */
+    margin: 20px 10px;
+    /* top: 33%; */
+    padding: 3px 6px;
     display: flex;
     align-items: center;
+    background: rgba(77, 70, 70, 0.7);
+    text-shadow: 2px 1px #000;
     justify-content: center;
-  }
-  .MenuGrid{
-    outline: none;
-  }
+    color: #FFF;
+    z-index: 11;
+}
+.MenuGrid{
+    height: 30px;
+    width: 30px;
+    text-shadow: 2px 1px #000;
+}
 
-@media(min-width:1400px){
-    .Sarlavha{
+.MenuGrid {
+    outline: none;
+}
+@media(min-width:1400px) {
+    .Sarlavha {
         width: 1400px;
         margin: 0 auto;
     }
 }
-@media screen and (max-width: 768px ) {
-    .haqida_left{
+@media screen and (max-width: 768px) {
+    .haqida_left {
         display: none !important;
+    }
+}
+@media screen and (min-width: 768px) {
+    .menuGridTemp{
+        display: none;
     }
 }
