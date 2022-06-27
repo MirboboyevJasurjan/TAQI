@@ -275,7 +275,7 @@ const Main = () => {
             <p className="event_p">Talabalarni jamiyat murakkab dunyoda faol <br /> fuqarolar va rahbarlar sifatida mazmunli hissa qo'shishga tayyorlash</p>
 
             <Grid className="event_cards" container spacing={1}>
-              <Grid item md={2.8}>
+              <Grid className="eventsCards" item md={2.8}>
                 <div className="event_card1">
                   <div className="events_img_box">
                     <img
@@ -295,7 +295,7 @@ const Main = () => {
                 </div>
               </Grid>
 
-              <Grid item md={2.8}>
+              <Grid className="eventsCards" item md={2.8}>
                 <div className="event_card1">
                   <div className="events_img_box">
                     <img
@@ -313,7 +313,7 @@ const Main = () => {
                 </div>
               </Grid>
 
-              <Grid item md={2.8}>
+              <Grid className="eventsCards" item md={2.8}>
                 <div className="event_card1">
                   <div className="events_img_box">
                     <img
@@ -331,7 +331,7 @@ const Main = () => {
                 </div>
               </Grid>
 
-              <Grid item md={2.8}>
+              <Grid className="eventsCards" item md={2.8}>
                 <div className="event_card1">
                   <div className="events_img_box">
                     <img
@@ -443,6 +443,7 @@ const Main = () => {
           <div className="research_number">
             <div className="research_numb_container">
 
+              <div className="researchP1">
 
               <div className="research_num">
                 {/* <LocalLibraryIcon className="iconsss" /> */}
@@ -457,8 +458,10 @@ const Main = () => {
                 <h2>8229</h2>
                 <p>Talabalar</p>
               </div>
+              </div>
 
 
+              <div className="researchP2">
               <div className="research_num">
                 {/* <AttachMoneyIcon className="iconsss" /> */}
                 <img src={Jigsaw} className="researchIcon " alt="Online Learning" />
@@ -472,6 +475,8 @@ const Main = () => {
                 <h2>573</h2>
                 <p>O'quv kurslar</p>
               </div>
+              </div>
+
             </div>
           </div>
 

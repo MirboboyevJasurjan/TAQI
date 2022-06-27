@@ -6,6 +6,7 @@ import ImgExritec from "./imges/events4.png";
 import images from "./imges/ilmBino.png"
 import "./ilmiyPage.css"
 import Sidebar from '../../../Haqida/Umumiy/Sidebar/Sidebar';
+import { BiMenu } from "react-icons/bi";
 
 export default function IlmiyPage() {
     return <div >

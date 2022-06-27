@@ -62,7 +62,7 @@ a {
 .header__images {
   position: absolute;
   width: 80%;
-  top: 550px;
+  top: 450px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -88,7 +88,7 @@ a {
 
 .header__h1 {
   position: absolute;
-  top: 400px;
+  top: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,7 +455,7 @@ habarlar_row {
 
 .event_card_txt {
   position: absolute;
-  bottom: 30px;
+  bottom: 0px;
   height: 102px;
   width: 80%;
 }
@@ -506,13 +506,12 @@ habarlar_row {
 .event_card1 {
   background-color: #ffff;
   width: 272px;
-  height: 430px;
+  height: 410px;
   box-shadow: rgba(0, 0, 0, 0.219) 0px 5px 15px;
   transition: 0.5s;
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
   flex-direction: column;
+  margin: 25px 0;
 }
 
 .event_card1:hover {
@@ -579,7 +578,7 @@ habarlar_row {
   color: rgb(63, 63, 63);
   font-weight: 500;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 
@@ -798,7 +797,6 @@ habarlar_row {
   margin: 70px;
 
 }
-
 .research_num h2 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -933,6 +931,12 @@ habarlar_row {
   }
 }
 
+@media (max-width: 1400px)
+{
+  .header__iamges{
+    top: 500px;
+  }  
+}
 @media screen and (max-width: 1100px) {
   .header__images__child {
     height: 140px;
@@ -984,7 +988,7 @@ habarlar_row {
   }
 
   .research_number {
-    height: 1000px;
+    height: 500px;
   }
 
   .research_num h2 {
@@ -1050,5 +1054,14 @@ habarlar_row {
     margin: 20px 0;
     position: relative;
     display: block;
+  }
+  .research_numb_container{
+    display: flex;
+    flex-direction: row;
+  }
+  .research_num{
+    margin: 160px 50px 
+  
+    
   }
 }

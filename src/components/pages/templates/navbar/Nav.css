@@ -442,7 +442,7 @@ a {
     display: fixed;
   }
   .menuMob ul {
-    top: 50px;
+    top: 0px;
     padding: 0;
   }
   .navigation-bottom {
@@ -503,12 +503,12 @@ a {
   .nav-topMob ul li:nth-child(6) {
     display: flex;
     position: absolute;
-    top: 55px;
+    top: 75vh !important;
     align-items: center;
     justify-content: space-between;
     z-index: 1000000000;
     margin-left: 150px;
-    left: 30%;
+    left: 20%;
     top: 80vh;
     background-color: #797d81;
     color: #000;

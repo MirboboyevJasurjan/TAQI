@@ -16,11 +16,16 @@
   justify-content: space-between;
 }
 .haqida_reight {
+  position: relative;
   width: 75%;
   padding: 20px;
   margin-right: 0px;
   margin-bottom: 150px;
   font-family: "Poppins" !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .haqida_reight p {
   font-family: Raleway;
