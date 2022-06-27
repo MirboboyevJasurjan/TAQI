@@ -117,9 +117,9 @@ a {
 
 .navigation-top {
   /* width: 100vw; */
-  width: 95vw;
-  margin: 0 20px;
-  /* margin: 0 auto; */
+  width: 90vw;
+  /* margin: 0 20px; */
+  margin: 0 auto;
   height: 56px;
   display: flex;
   align-items: center !important;
@@ -423,7 +423,7 @@ a {
 @media (min-width: 1400px) {
   .navigation-top,
   .navigation-bottom {
-    width: 100vw;
+    /* width: 100vw; */
     margin: 0 auto;
   }
 }

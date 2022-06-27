@@ -78,11 +78,11 @@ const Nav = () => {
               <div className={isAcctive ? 'nav-top-link': 'nav-topMob'}>
                 <ul>
                   <li>
-                    <a href="#"> Talabalar </a>
+                    <a href="#">Talabalar</a>
                   </li>
 
                   <li>
-                    <a href="#"> Xodimlar </a>
+                    <a href="#">Xodimlar</a>
                   </li>
 
                   <li>

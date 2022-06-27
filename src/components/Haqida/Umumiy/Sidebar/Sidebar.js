@@ -10,14 +10,14 @@ function Sidebar() {
   const [isAcctive, setAcctive] = useState(true);
   function onMenu() {
     setAcctive(!isAcctive);
-}
+  }
   return (
     <>
       <div className="menuGridTemp" onClick={onMenu}>
         <CgMenuGridO className="MenuGrid" />
         <span>Sidebar</span>
       </div>
-      <div className={isAcctive ? 'haqida_left': 'haqida_leftMob'}>
+      <div className={isAcctive ? 'haqida_left' : 'haqida_leftMob'}>
         <div className="umumiy">
           <p className="umumiy__child">
             {" "}
@@ -25,59 +25,34 @@ function Sidebar() {
           </p>
           <p className="umumiy__child">
             {" "}
-            <Link
-              className="sidebar__link"
-              activeClassName="active"
-              onClick={tops}
-              to="/about"
-            >
+            <Link className="sidebar__link" activeClassName="active" onClick={tops} to="/about" >
               Institut tarixi
             </Link>{" "}
           </p>
           <p className="umumiy__child">
             {" "}
-            <Link
-              className="sidebar__link"
-              activeClassName="active"
-              onClick={tops}
-              to="/rahbariyat"
-            >
+            <Link className="sidebar__link" activeClassName="active" onClick={tops} to="/rahbariyat" >
               {" "}
               Institut rahbariyati{" "}
             </Link>{" "}
           </p>
           <p className="umumiy__child">
             {" "}
-            <Link
-              className="sidebar__link"
-              activeClassName="active"
-              onClick={tops}
-              to="/tashkilot"
-            >
+            <Link className="sidebar__link" activeClassName="active" onClick={tops} to="/tashkilot" >
               {" "}
               Tashkilot jadvali{" "}
             </Link>{" "}
           </p>
           <p className="umumiy__child">
             {" "}
-            <Link
-              className="sidebar__link"
-              activeClassName="active"
-              onClick={tops}
-              to="/kengash"
-            >
+            <Link className="sidebar__link" activeClassName="active" onClick={tops} to="/kengash" >
               {" "}
               Kengash qarorlari{" "}
             </Link>{" "}
           </p>
           <p className="umumiy__child">
             {" "}
-            <Link
-              className="sidebar__link"
-              activeClassName="active"
-              onClick={tops}
-              to="/umumiy"
-            >
+            <Link className="sidebar__link" activeClassName="active" onClick={tops} to="/umumiy" >
               {" "}
               Umumiy ma'lumotlar{" "}
             </Link>{" "}
@@ -90,40 +65,26 @@ function Sidebar() {
             <b>Ma'muriy birliklar</b>
           </p>
           <p className="umumiy__child">
-            <Link onClick={tops} to="/OTMnizom">
-              OTM nizomi
-            </Link>
+            <Link onClick={tops} to="/OTMnizom">OTM nizomi</Link>
           </p>
           <p className="umumiy__child">
-            <Link onClick={tops} to="/rahbariy">
-              Rahbariyat
-            </Link>
+            <Link onClick={tops} to="/rahbariy">Rahbariyat</Link>
           </p>
           <p className="umumiy__child">
             <Link onClick={tops} to="/markaz">
-              {" "}
-              Markaz va bo'limlar{" "}
-            </Link>
+              {" "}Markaz va bo'limlar{" "}</Link>
           </p>
           <p className="umumiy__child">
-            <Link onClick={tops} to="/fakultetlar">
-              Fakultetlar
-            </Link>
+            <Link onClick={tops} to="/fakultetlar">Fakultetlar</Link>
           </p>
           <p className="umumiy__child">
-            <Link onClick={tops} to="#">
-              Kafedralar
-            </Link>
+            <Link onClick={tops} to="#">Kafedralar</Link>
           </p>
           <p className="umumiy__child">
-            <Link onClick={tops} to="#">
-              Jamoat tashkilotlari
-            </Link>
+            <Link onClick={tops} to="#">Jamoat tashkilotlari</Link>
           </p>
           <p className="umumiy__child">
-            <Link onClick={tops} to="#">
-              Ta’lim sifati
-            </Link>
+            <Link onClick={tops} to="#">Ta’lim sifati</Link>
           </p>
           <p className="umumiy__child"> </p>
         </div>
@@ -153,7 +114,7 @@ function Sidebar() {
           </p>
           <p className="umumiy__child">
             <a onClick={tops} href="#">
-              TAQI bir qarashda(image)
+              TAQI bir qarashda
             </a>
           </p>
         </div>
