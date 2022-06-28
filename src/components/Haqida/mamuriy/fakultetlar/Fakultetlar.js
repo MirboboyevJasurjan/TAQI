@@ -10,6 +10,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import imagf from '../../../assets/images/about/images/unsplash.png'
+import Lsidebar from '../../Umumiy/Sidebar/Lsidebar';
 
 
 const Fakultetlar = (props) => {
@@ -74,47 +75,49 @@ const Fakultetlar = (props) => {
                         <Row xs={1} md={1} className="g-4 row_rahbariy">
                             {rows.map((row, id) => (
                                 <Col className='fakultet_row'>
-                                    <div>
-                                        <Accordion expanded={expanded === `panel${id}`} onChange={handleChange(`panel${id}`)} className='accordionCard'>
-                                            {/* Accordion  header section */}
-                                            <AccordionSummary
-                                                // expandIcon={<ExpandMoreIcon />}
-                                                aria-controls="panel1bh-content"
-                                                id="panel1bh-header"
-                                            >
-                                                <Card className='fakultet_card' >
-                                                    <Card.Img variant="top" src={row.image} className='fakultet__card__img' />
-                                                    <div className='fak_text'>
-                                                        <h4 className='fak_card__name'>{row.name}</h4><br />
-                                                        <h6 className='fak_card__text'>{row.text}</h6>
-                                                        <button className='fak_card_down' > Davom etish ... </button>
-                                                    </div>
-                                                </Card>
-                                            </AccordionSummary>
-                                            {/* Text here */}
-                                            <AccordionDetails>
-                                                <Row xs={1} md={4} className="g-4">
-                                                    {rowsAcc.map((row, id) => (
-                                                        <Col className='acc__pers_card'>
-                                                            <Card className='fak__acc__card'>
-                                                                <Card.Img variant="top" src={row.image} className='rahbariy__card__img' />
-                                                                <h6 className='card__name__fak'>{row.name}</h6><br />
-                                                                <h6 className='card__job__fak'>{row.job}</h6>
-                                                                <Card.Body className='card__body' >
-                                                                    <Link to="/fakultetlar" className='card__down' > CV </Link>
-                                                                </Card.Body>
-                                                            </Card>
-                                                        </Col>
-                                                    ))}
-                                                </Row>
-                                            </AccordionDetails>
-                                        </Accordion>
-                                    </div>
-
+                                    <Accordion expanded={expanded === `panel${id}`} onChange={handleChange(`panel${id}`)} className='accordionCard'>
+                                        {/* Accordion  header section */}
+                                        <AccordionSummary
+                                            // expandIcon={<ExpandMoreIcon />}
+                                            aria-controls="panel1bh-content"
+                                            id="panel1bh-header"
+                                            className='accordionSummary'
+                                        >
+                                            <Card className='fakultet_card' >
+                                                <Card.Img variant="top" src={row.image} className='fakultet__card__img' />
+                                                <div className='fak_text'>
+                                                    <h4 className='fak_card__name'>{row.name}</h4><br />
+                                                    <h6 className='fak_card__text'>{row.text}</h6>
+                                                    <button className='fak_card_down' > Davom etish ... </button>
+                                                </div>
+                                            </Card>
+                                        </AccordionSummary>
+                                        {/* Text here */}
+                                        <AccordionDetails className='minicards'>
+                                            <Row xs={1} md={4} className="g-4 minicards">
+                                                {rowsAcc.map((row, id) => (
+                                                    <Col className='acc__pers_card'>
+                                                        <Card className='fak__acc__card'>
+                                                            <Card.Img variant="top" src={row.image} className='rahbariy__card__img' />
+                                                            <h6 className='card__name__fak'>{row.name}</h6><br />
+                                                            <h6 className='card__job__fak'>{row.job}</h6>
+                                                            <Card.Body className='card__body' >
+                                                                <Link to="/fakultetlar" className='card__down' > CV </Link>
+                                                            </Card.Body>
+                                                        </Card>
+                                                    </Col>
+                                                ))}
+                                            </Row>
+                                        </AccordionDetails>
+                                    </Accordion>
                                 </Col>
                             ))}
 
                         </Row>
+
+{/* 
+<div class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-pwcg7p-MuiCollapse-root" ><div class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"><div class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"><div aria-labelledby="panel1bh-header" id="panel1bh-content" role="region" class="MuiAccordion-region"><div class="MuiAccordionDetails-root css-15v22id-MuiAccordionDetails-root"><div class="g-4 minicards row row-cols-md-4 row-cols-1"><div class="acc__pers_card col"><div class="fak__acc__card card"><img class="card-img-top rahbariy__card__img" src="/static/media/unsplash.858a3b44.png"><h6 class="card__name__fak">Sultanov Alisher Sabirjanovich</h6><br><h6 class="card__job__fak">Dotsent</h6><div class="card__body card-body"><a class="card__down" href="/fakultetlar"> CV </a></div></div></div><div class="acc__pers_card col"><div class="fak__acc__card card"><img class="card-img-top rahbariy__card__img" src="/static/media/unsplash.858a3b44.png"><h6 class="card__name__fak">Sultanov Alisher Sabirjanovich</h6><br><h6 class="card__job__fak">Dotsent</h6><div class="card__body card-body"><a class="card__down" href="/fakultetlar"> CV </a></div></div></div><div class="acc__pers_card col"><div class="fak__acc__card card"><img class="card-img-top rahbariy__card__img" src="/static/media/unsplash.858a3b44.png"><h6 class="card__name__fak">Sultanov Alisher Sabirjanovich</h6><br><h6 class="card__job__fak">Dotsent</h6><div class="card__body card-body"><a class="card__down" href="/fakultetlar"> CV </a></div></div></div><div class="acc__pers_card col"><div class="fak__acc__card card"><img class="card-img-top rahbariy__card__img" src="/static/media/unsplash.858a3b44.png"><h6 class="card__name__fak">Sultanov Alisher Sabirjanovich</h6><br><h6 class="card__job__fak">Dotsent</h6><div class="card__body card-body"><a class="card__down" href="/fakultetlar"> CV </a></div></div></div><div class="acc__pers_card col"><div class="fak__acc__card card"><img class="card-img-top rahbariy__card__img" src="/static/media/unsplash.858a3b44.png"><h6 class="card__name__fak">Sultanov Alisher Sabirjanovich</h6><br><h6 class="card__job__fak">Dotsent</h6><div class="card__body card-body"><a class="card__down" href="/fakultetlar"> CV </a></div></div></div><div class="acc__pers_card col"><div class="fak__acc__card card"><img class="card-img-top rahbariy__card__img" src="/static/media/unsplash.858a3b44.png"><h6 class="card__name__fak">Sultanov Alisher Sabirjanovich</h6><br><h6 class="card__job__fak">Dotsent</h6><div class="card__body card-body"><a class="card__down" href="/fakultetlar"> CV </a></div></div></div><div class="acc__pers_card col"><div class="fak__acc__card card"><img class="card-img-top rahbariy__card__img" src="/static/media/unsplash.858a3b44.png"><h6 class="card__name__fak">Sultanov Alisher Sabirjanovich</h6><br><h6 class="card__job__fak">Dotsent</h6><div class="card__body card-body"><a class="card__down" href="/fakultetlar"> CV </a></div></div></div><div class="acc__pers_card col"><div class="fak__acc__card card"><img class="card-img-top rahbariy__card__img" src="/static/media/unsplash.858a3b44.png"><h6 class="card__name__fak">Sultanov Alisher Sabirjanovich</h6><br><h6 class="card__job__fak">Dotsent</h6><div class="card__body card-body"><a class="card__down" href="/fakultetlar"> CV </a></div></div></div><div class="acc__pers_card col"><div class="fak__acc__card card"><img class="card-img-top rahbariy__card__img" src="/static/media/unsplash.858a3b44.png"><h6 class="card__name__fak">Sultanov Alisher Sabirjanovich</h6><br><h6 class="card__job__fak">Dotsent</h6><div class="card__body card-body"><a class="card__down" href="/fakultetlar"> CV </a></div></div></div><div class="acc__pers_card col"><div class="fak__acc__card card"><img class="card-img-top rahbariy__card__img" src="/static/media/unsplash.858a3b44.png"><h6 class="card__name__fak">Sultanov Alisher Sabirjanovich</h6><br><h6 class="card__job__fak">Dotsent</h6><div class="card__body card-body"><a class="card__down" href="/fakultetlar"> CV </a></div></div></div><div class="acc__pers_card col"><div class="fak__acc__card card"><img class="card-img-top rahbariy__card__img" src="/static/media/unsplash.858a3b44.png"><h6 class="card__name__fak">Sultanov Alisher Sabirjanovich</h6><br><h6 class="card__job__fak">Dotsent</h6><div class="card__body card-body
+ */}
 
                     </div>
                 </div>

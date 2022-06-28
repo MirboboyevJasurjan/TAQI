@@ -19,9 +19,8 @@ function Kengash(props) {
             <div>
                 <div className='Sarlavha'>
                     <div className='haqida_father'>
-                        <Lsidebar />
+                                <Lsidebar />
                         <div className='haqida_reight'>
-
                             <Row xs={1} md={4} className="g-4">
                                 {Array.from({ length: 8 }).map((_, idx) => (
                                     <Col>

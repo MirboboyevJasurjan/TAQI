@@ -19,6 +19,13 @@ function UmumiyMalumot(props) {
             <div className='Sarlavha'>
                 <div className='haqida_father'>
                     <Sidebar />
+                    <div className='.haqida_reight'>
+                        <h5>
+                            Lorem
+                            LoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem
+                            <hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/>
+                        </h5>
+                    </div>
                 </div>
             </div>
         </div>
