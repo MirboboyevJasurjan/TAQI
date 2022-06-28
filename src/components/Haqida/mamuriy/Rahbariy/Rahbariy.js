@@ -1,4 +1,4 @@
-import { React } from "react";
+import  React from "react";
 import { Link } from 'react-router-dom';
 import images from '../../Rasmlar/rasm_1.jpg'
 import Nav from '../../../pages/templates/navbar/Nav';
@@ -43,7 +43,6 @@ function Rahbariy() {
                     <div className='haqida_father'>
                         <Sidebar />
                         <div className='haqida_reight'>
-                          
                             <Row xs={1} md={1} className="g-4" >
                                 <Col >
                                     <Card className='dr__card'>

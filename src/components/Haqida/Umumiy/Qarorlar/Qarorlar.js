@@ -6,6 +6,7 @@ import Nav from '../../../pages/templates/navbar/Nav';
 import FooterNav from '../../../pages/templates/footer/FooterNav';
 import { FaAngleLeft } from 'react-icons/fa';
 import { Row, Col, Card } from 'react-bootstrap'
+import Lsidebar from '../Sidebar/Lsidebar';
 
 function Qarorlar() {
     return (
@@ -17,16 +18,7 @@ function Qarorlar() {
 
                 <div className='Sarlavha'>
                     <div className='haqida_father'>
-                        <div className='haqida_left'>
-                            <div className='umumiy'>
-                                <p><b><Link to="about">Umumiy</Link></b> </p>
-                                <p> <Link to="/kengash">Kengash qarorlari</Link></p>
-                                <p> <Link to="/qarorlar" > Institut qarorlari </Link>  </p>
-                                <br /><br /><br />
-                                <p className='umumiy__ortga'> <Link to="about" className='umumiy__ortga'> <FaAngleLeft /> Ortga </Link> </p>
-                            </div>
-                        </div>
-
+                        <Lsidebar />
                         <div className='haqida_reight'>
 
                             <Row xs={1} md={4} className="g-4">

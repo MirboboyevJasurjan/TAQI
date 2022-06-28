@@ -794,8 +794,7 @@ habarlar_row {
   justify-content: center;
   height: 50px;
   width: 50px;
-  margin: 70px;
-
+  margin: 150px 100px;
 }
 .research_num h2 {
   font-family: 'Poppins', sans-serif;
