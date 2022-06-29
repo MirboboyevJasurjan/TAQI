@@ -14,7 +14,7 @@
 
  .line_bg, .footer_nav{
     width: 1435px;
-    margin: 0 auto;
+    margin: 0 auto 50px 0 !important;
  }
 
  .news_container{
