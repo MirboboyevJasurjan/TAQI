@@ -1113,7 +1113,7 @@ habarlar_row {
   .habarlarCardBig {
     /* height: 200px; */
     width: 300px;
-    margin: 20px 0;
+    margin: 20px auto;
     position: relative;
     display: block;
   }
