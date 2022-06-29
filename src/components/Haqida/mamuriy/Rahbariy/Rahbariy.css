@@ -137,7 +137,7 @@ a {
     top: 0px;
   }
   .card__name {
-    margin: 2px 5%;
+    margin: 2px 6%;
   }
   .card__job {
     margin: 2px 1%;
@@ -197,13 +197,13 @@ a {
     margin: 20px 0;
   }
   .card__name {
-    font-size: 14px;
+    font-size: 15px;
+    margin: 0 10%;
   }
   .dr__card {
     width: 100%;
   }
   .card__job {
-    /* top: -20px; */
     font-size: 14px;
   }
   .rahbariy__card {
