@@ -9,6 +9,7 @@ import { ImTwitter } from "react-icons/im";
 import { ImYoutube } from "react-icons/im";
 import { AiFillInstagram } from "react-icons/ai";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import { Link } from 'react-router-dom'
 
 
 
@@ -41,28 +42,43 @@ export default function FooterNav() {
 
 
                             <div className="footer_informatsia">
-                                <h3>ИНФОРМАЦИЯ</h3>
-                                <p> В Ташкентском архитектурно-строительном институте есть 4 факультета: <span>Управление строительством, Строительство зданий и сооружений, Архитектура, Строительная инфраструктура</span> </p>
+                                <h3>MA'LUMOT</h3>
+                                <p> Toshkent arxitektura-qurilish instituti 4ta fakulteti mavjud :<span> <br/> Arxitektura fakulteti, <br/> Bino inshootlar qurilishi fakulteti, <br/> Qurilishni boshqarish fakulteti, <br/> Muxandislik qurilish infrastrukturasi fakulteti </span> </p>
                             </div>
 
+                            {/* <div className="footer_informatsia">
+                                <h3>MANZIL / ALOQA UCHUN</h3>
+                                <p className='footerINf'>Manzil: Toshkent shahar, Navoiy ko'chasi 13-uy</p>                                
+                                <p className='footerINf'>Email: Devon@taqi.uz </p>
+                                <p className='footerINf'>Telefon: +998 71 234-11-78</p>
+                                <p className='footerINf'>Ish vaqti: Du-Sha: 9.00 - 18.00</p>
+                                <p className='footerINf'>Telegram bot: @taqi_uz_bot</p>
+                                <p className='footerINf'>Telegram kanal: @taqi_uz</p>
+                            </div> */}
 
                             <div className="footer_informatsia">
-                                <h3>СТРАНИЦЫ</h3>
+                                <h3>SAHIFALAR</h3>
                                 <ul className="footer_ul" >
-                                    <li><a href="#"> О нас</a></li>
-                                    <li><a href="#"> Факультеты</a></li>
-                                    <li><a href="#">Кафедры</a></li>
-                                    <li><a href="#"> Интерактивные услуги</a></li>
-                                    <li><a href="#">  Для обращение</a></li>
+                                    <li><Link to="#"> Biz haqimizda</Link></li>
+                                    <li><Link to="#"> Fakultetlar</Link></li>
+                                    <li><Link to="#"> Kafedralar</Link></li>
+                                    <li><Link to="#"> Tadbirlar</Link></li>
+                                    {/* <li><Link to="#"> Ilmiy</Link></li>
+                                    <li><Link to="#"> Tadqiqot</Link></li>
+                                    <li><Link to="#"> Qabul</Link></li>
+                                    <li><Link to="#"> Campus life</Link></li> */}
                                 </ul>
                             </div>
 
                             <div className="footer_btn" >
-                                <button className="btn_footer_page">Applying</button>
-                                <button className="btn_footer_page">Visiting</button>
-                                <button className="btn_footer_page">Giving</button>
-                                <button className="btn_footer_page">Careers</button>
-                                <button className="btn_footer_page">Contact</button>
+                                {/* <button className="btn_footer_page"> <Link to="">Biz haqimizda</Link></button>
+                                <button className="btn_footer_page"> <Link to="">Fakultetlar</Link></button>
+                                <button className="btn_footer_page"> <Link to="">Kafedralar</Link></button>
+                                <button className="btn_footer_page"> <Link to="">Tadbirlar</Link></button> */}
+                                <button className="btn_footer_page"> <Link to="">Ilmiy</Link></button>
+                                <button className="btn_footer_page"> <Link to="">Tadqiqot</Link></button>
+                                <button className="btn_footer_page"> <Link to="">Qabul</Link></button>
+                                <button className="btn_footer_page"> <Link to="">Campus Life</Link></button>
                             </div>
 
                         </div>
@@ -73,15 +89,15 @@ export default function FooterNav() {
                         <div className="footer_contner container222">
 
                             <div className="footer2_informatsia">
-                                <h3>АДРЕС / ДЛЯ ОБРАЩЕНИЙ</h3>
-                                <p>Адрес: Г.Ташкент,  ул.Навои13,  Э-почта:<span>devon@taqi.uz</span>   Телефон: +99871234-11-78   Рабочая время: Пон-Суб: 9.00 - 18.00</p>
+                                <h3>MANZIL / ALOQA UCHUN</h3>
+                                <p>MANZIL: Toshkent shahar, Navoiy ko'chasi 13-uy,  Email:<span>Devon@taqi.uz</span> Telefon: +99871234-11-78   Ish vaqti: Du-Shan: 9.00 - 18.00</p>
                             </div>
 
                         </div>
                     </div>
 
                     <div className="brand_footer" >
-                        <p>All rights reserved. QWERTY AL-FAJR | Tashkent,Uzbekistan. </p>
+                        <p>All rights reserved. QWERTY AL-FAJR | Tashkent, Uzbekistan. </p>
                     </div>
 
                 </div>

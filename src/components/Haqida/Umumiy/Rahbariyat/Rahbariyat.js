@@ -41,7 +41,6 @@ const Rahbariyat = (props) => {
     }
 
     const rows = [
-
         createData('Rektor', 'Prof. Ercan Kahya', 'kahyae@itu.edu.tr', `+99890 123-45-67`),
         createData('O’quv ishlari bo’yicha prorektor', 'Mirisayev Abdullo Ulmasovich', 'abdullo@taqi.edu.uz', `+99890 123-45-67`),
         createData('Yoshlar bilan ishlash bo’yicha prorektor', 'Abduvaliyev Zafar Maxmudovich ', 'zafar@taqi.edu.uz', `+99890 123-45-67`),
@@ -57,7 +56,6 @@ const Rahbariyat = (props) => {
     ];
 
     const rows2 = [
-
         createData('O’quv-uslubiy boshqarma ', 'Sattorov Zafar Muradovich ', 'zafar@taqi.edu.uz ', `+99890 123-45-67`),
         createData('Ilmiy-tadqiqotlar, innovatsiyalar  va ilmiy-pedogogik kadrlar tayyorlash bo’limi ', 'Mirzahmedov Botir Xusnitdinovich ', 'botir@taqi.edu.uz ', `+99890 123-45-67`),
         createData('Yoshlar bilan ishlash, manaviyat va ma’rifat bo’limi ', ' Mirzayeva Feruza Tilayevna', ' feruza@taqi.edu.uz', `+99890 123-45-67`),
@@ -78,7 +76,6 @@ const Rahbariyat = (props) => {
         createData('Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi', ' Esanova Marjona Ilhomjon qizi', 'marjona@taqi.edu.uz', `+99890 123-45-67`),
     ];
     const rows3 = [
-
         createData('Arxitektura ', ' Reyimbayev Shuhrat Sagdullayevich', ' Shuhrat@taqi.edu.uz', `+99890 123-45-67`),
         createData('Muhandislik qurilish infrastrukturasi', `G'iyosov Ilhom Karimovich`, 'Ilhom@taqi.edu.uz', `+99890 123-45-67`),
         createData('Bino va inshootlar', ' Aliyev Islambek Tursinbaevich', 'Islam@taqi.edu.uz', `+99890 123-45-67`),
@@ -113,15 +110,6 @@ const Rahbariyat = (props) => {
         createData('Injenerlik kommunikatsiyalarini loyihalash kafedrasi', 'Maxmudova Dildora Ernazarovna ', 'Dildora@taqi.edu.uz', `+99890 123-45-67`),
         createData('Qurilish materiallari va kimyo kafedrasi', 'Majidov Samariddin Rashidovich ', 'Samariddin@taqi.edu.uz', `+99890 123-45-67`),
         createData('Matematika va tabiiy fanlar kafedrai', 'Zaitov Adilbek Atakhanovich ', 'Adilbek@taqi.edu.uz', `+99890 123-45-67`),
-
-
-
-
-
-
-
-
-
     ];
 
     function tops() {
@@ -145,7 +133,7 @@ const Rahbariyat = (props) => {
                         <div className=' haqida_reightt'>
                             {/* Rahbariyat */}
                             <TableContainer component={Paper}>
-                                <Table sx={{ minWidth: 700 }} aria-label="customized table">
+                                <Table  sx={{ minWidth: 300,  maxWidth: '100%' }}  aria-label="customized table">
                                     <TableHead>
                                         <TableRow>
                                             <StyledTableCell className='headerr'>{''}</StyledTableCell>
@@ -174,7 +162,7 @@ const Rahbariyat = (props) => {
                             <br /><br /><br />
 
                             <TableContainer component={Paper}>
-                                <Table sx={{ minWidth: 700 }} aria-label="customized table">
+                                <Table sx={{ minWidth: 300}} aria-label="customized table">
                                     <TableHead>
                                         <TableRow>
                                             <StyledTableCell className='headerr'>{''}</StyledTableCell>
@@ -203,7 +191,7 @@ const Rahbariyat = (props) => {
                             <br /><br /><br />
 
                             <TableContainer component={Paper}>
-                                <Table sx={{ minWidth: 700 }} aria-label="customized table">
+                                <Table sx={{ minWidth: 300 }} aria-label="customized table">
                                     <TableHead>
                                         <TableRow>
                                             <StyledTableCell className='headerr'>{''}</StyledTableCell>
@@ -233,7 +221,7 @@ const Rahbariyat = (props) => {
                             <br /><br /><br />
 
                             <TableContainer component={Paper}>
-                                <Table sx={{ minWidth: 700 }} aria-label="simple table">
+                                <Table sx={{ minWidth: 300 }} aria-label="simple table">
                                     <TableHead>
                                         <TableRow>
                                             <TableCell className='headerr' align="center">{''}</TableCell>
@@ -254,6 +242,8 @@ const Rahbariyat = (props) => {
                                     </TableBody>
                                 </Table>
                             </TableContainer>
+
+
 
                         </div>
                     </div>
