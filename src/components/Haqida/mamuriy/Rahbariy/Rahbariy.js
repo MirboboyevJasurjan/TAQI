@@ -43,7 +43,6 @@ function Rahbariy() {
                     <div className='haqida_father'>
                         <Sidebar />
                         <div className='haqida_reight'>
-                          
                             <Row xs={1} md={1} className="g-4" >
                                 <Col >
                                     <Card className='dr__card'>

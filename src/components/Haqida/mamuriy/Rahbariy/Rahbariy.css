@@ -1,5 +1,5 @@
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 .row_rahbariy{
     position: relative;
@@ -21,18 +21,18 @@ a{
 
     position: relative;
 }
-.card__body{
-    position: relative;
-    bottom: 0;
-    height: 19px;
-    width: 100% !important;
-    background-color: #A02D2D;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card__body {
+  position: relative;
+  bottom: 0;
+  height: 19px;
+  width: 100% !important;
+  background-color: #a02d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.dr_name{
-    font-weight: 600;
+.dr_name {
+  font-weight: 600;
 }
 .card__name{
     text-align: center;
@@ -40,23 +40,17 @@ a{
     font-size: 18px;
 
 }
-.card__job{
-    position: relative;
-    top: -15px;
-    text-align: center;
+.card__job {
+  position: relative;
+  top: -15px;
+  text-align: center;
 }
-.card__down{
-    position: relative;
-    width: 100% !important;
-    height: 19px !important;
-    color: #FFF;
-    font-family: 'Poppins', sans-serif;
-} 
-.dr__row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.card__down {
+  position: relative;
+  width: 100% !important;
+  height: 19px !important;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 .dr__card{
 
@@ -68,12 +62,38 @@ a{
     justify-content: center;
     position: relative;
 }
-.dr__img{
-    position: relative;
-    height: 321px;
-    width: 269px;
-    top: -20px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+.dr__card {
+  left: 23%;
+  width: 455px !important ;
+  height: 333px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.dr__img {
+  position: relative;
+  height: 321px;
+  width: 269px;
+  top: -20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.dr__body {
+  position: relative;
+  bottom: 0;
+  height: 19px;
+  width: 100% !important;
+  background-color: #a02d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 680px) {
+  .dr__card {
+    left: 0;
+    width: 278px !important;
+  }
 }
 .dr__body{
     position: relative;
