@@ -26,9 +26,9 @@ function Fakultetlar() {
     
     const rows = [
         createData('O’quv ishlari bo’yicha prorektor', 'Mirisayev Abdullo Ulmasovich', person1),
-        createData('O’quv ishlari bo’yicha prorektor', 'Mirisayev Abdullo Ulmasovich', person2),
-        createData('O’quv ishlari bo’yicha prorektor', 'Mirisayev Abdullo Ulmasovich', person3),
-        createData('O’quv ishlari bo’yicha prorektor', 'Mirisayev Abdullo Ulmasovich', person4)
+        createData('Yoshlar masalalari va ma’naviy-ma’rifiy ishlar bo’yicha birinchi prorektor', 'Abduvaliyev Zafar Maxmudovich', person2),
+        createData('Ilmiy ishlar va innovatsiyalar bo’yicha prorektor', 'Nurimbetov Ravshan Ibragimovich ', person3),
+        createData('Moliya - iqtisod ishlari bo’yicha prorektor', ' Irgashev Asatulla Abdujalilovich', person4)
     ];
     return (
         <>

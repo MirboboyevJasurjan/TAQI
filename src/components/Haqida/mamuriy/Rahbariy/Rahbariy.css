@@ -18,8 +18,9 @@ a {
 .rahbariy__card__img{
     height: 236px;
     width: 100%;
+    top: 0;
 
-    position: relative;
+    position: absolute;
 }
 .card__body {
   position: relative;
@@ -37,13 +38,16 @@ a {
 .card__name{
     text-align: center;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
+    position: absolute;
+    top: 250px;
 
 }
 .card__job {
-  position: relative;
-  top: -15px;
+  position: absolute;
+  top: 295px;
   text-align: center;
+  font-size: 14px;
 }
 .card__down {
   position: relative;
@@ -110,15 +114,16 @@ a {
 @media screen and (max-width:1150px){
 
    .row-cols-md-4 > * {
-    width: 40%;
+    width: 40% ;
     margin: 20px auto;
   }
   .card__name{
-    font-size: 16px;
-    margin: 0 5%;
+    font-size: 14px;
+    margin: 0 6%;
   }
   .card__job{
     top: 300px;
+    margin: 0 2%;
 
   }
 }
@@ -155,6 +160,7 @@ a {
     font-size: 14px;
     position: absolute;
     top: 270px;
+    margin: 0 10%;
   }
   /* .card__job{
         top: -20px;
@@ -164,11 +170,15 @@ a {
       font-size: 13px;
     }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 576px) {
+  .row-cols-md-4 >* {
+    width: 270px;
+    margin: 20px auto;
+  }
   .dr__card {
     left: 0;
     width: 278px !important;
-  }
+}
 }
 .dr__body{
     position: relative;
@@ -187,79 +197,4 @@ a {
     background-size: cover;
     background-position: center;
     
-}
-@media screen and (max-width: 1200px) {
-    .row-cols-md-4>* {
-        width: 25%;
-    }
-    .card__name{
-        text-align: center;
-        font-weight: 600;
-        font-size: 16px;
-    
-    }
-    .card__job {
-        font-size: 14px;
-    }
-    
-}
-@media screen and (max-width: 968px) {
-    .rahbariy__card{
-        width: 100%;
-    }
-    .row-cols-md-4>* {
-        width: 50%;
-        margin: 20px 0;
-    }
-    .rahbariy__card__img{
-        top: -32px;
-    }
-    .card__job{
-        font-size: 16px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .rahbariy__card__img{
-        width: 100%;
-        height: 260px;
-    }
-    .rahbariy__card{
-        width: 100%;
-    }
-    .card__name{
-        text-align: center;
-        font-weight: 600;
-        font-size: 20px;
-    
-    }
-    .card__job{
-        top: -20px;
-    }
-    
-}
-@media screen and (max-width: 576px) {
-    .row-cols-md-4>* {
-        width: 100%;
-        margin: 20px 0;
-
-    }
-    .card__name{
-        font-size: 1.25em;
-    }
-    .dr__card{
-        width: 100%;
-    }
-    .card__job{
-        top: -20px;
-        font-size: 1em;
-    }
-    .rahbariy__card {
-        width: 271px;
-        margin: 0 auto;
-    }
-}
-@media screen and (max-width: 400px) {
-    .rahbariy__card{
-        width: 100%;
-    }
 }
