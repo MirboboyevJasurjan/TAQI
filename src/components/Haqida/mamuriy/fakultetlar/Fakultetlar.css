@@ -8,11 +8,13 @@ line-height: 42px;
 .div_imgFak {
   width: 100%;
   height: 360px;
-  background: url("../../../assets/images/about/images/unsplash.png");
+  /* background: url("../../../assets/images/about/images/unsplash.png"); */
+  background-image: url("../../../assets/images/about/images/fakultet.jpg");
   z-index: 110;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: inherit;
+  background-position: center;
 }
 .haqida_father_fak {
   width: 100%;

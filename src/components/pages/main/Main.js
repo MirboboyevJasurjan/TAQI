@@ -443,39 +443,39 @@ const Main = () => {
           <div className="research_number">
             <div className="research_numb_container">
 
-              <div className="researchP1">
+              {/* <div className="researchP1"> */}
 
-              <div className="research_num">
-                {/* <LocalLibraryIcon className="iconsss" /> */}
-                <img src={StudentLearning} className="researchIcon " alt="Online Learning" />
-                <h2>720</h2>
-                <p>O'qituvchilar</p>
-              </div>
+                <div className="research_num">
+                  {/* <LocalLibraryIcon className="iconsss" /> */}
+                  <img src={StudentLearning} className="researchIcon " alt="Online Learning" />
+                  <h2>720</h2>
+                  <p>O'qituvchilar</p>
+                </div>
 
-              <div className="research_num">
-                {/* <researchIcon className="iconsss" /> */}
-                <img src={StudentCap} className="researchIcon " alt="Online Learning" />
-                <h2>8229</h2>
-                <p>Talabalar</p>
-              </div>
-              </div>
+                <div className="research_num">
+                  {/* <researchIcon className="iconsss" /> */}
+                  <img src={StudentCap} className="researchIcon " alt="Online Learning" />
+                  <h2>8229</h2>
+                  <p>Talabalar</p>
+                </div>
+              {/* </div> */}
 
 
-              <div className="researchP2">
-              <div className="research_num">
-                {/* <AttachMoneyIcon className="iconsss" /> */}
-                <img src={Jigsaw} className="researchIcon " alt="Online Learning" />
-                <h2>1431</h2>
-                <p>Ilmiy nashrlar</p>
-              </div>
+              {/* <div className="researchP2"> */}
+                <div className="research_num">
+                  {/* <AttachMoneyIcon className="iconsss" /> */}
+                  <img src={Jigsaw} className="researchIcon " alt="Online Learning" />
+                  <h2>1431</h2>
+                  <p>Ilmiy nashrlar</p>
+                </div>
 
-              <div className="research_num">
-                {/* <AttachMoneyIcon className="iconsss" /> */}
-                <img src={OnlineLearning} className="researchIcon " alt="Online Learning" />
-                <h2>573</h2>
-                <p>O'quv kurslar</p>
-              </div>
-              </div>
+                <div className="research_num">
+                  {/* <AttachMoneyIcon className="iconsss" /> */}
+                  <img src={OnlineLearning} className="researchIcon " alt="Online Learning" />
+                  <h2>573</h2>
+                  <p>O'quv kurslar</p>
+                </div>
+              {/* </div> */}
 
             </div>
           </div>

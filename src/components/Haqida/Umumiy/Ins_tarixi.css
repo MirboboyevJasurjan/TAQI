@@ -4,10 +4,12 @@
 .div_img {
   width: 100%;
   height: 360px;
-  background-image: url("../../assets/images/about/images/rasm1.jpg") !important;
+  /* background-image: url("../../assets/images/about/images/rasm1.jpg") !important; */
+  background-image: url("../../assets/images/about/images/haqimizda.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-position: center;
 }
 .haqida_father {
   margin-top: 42px;

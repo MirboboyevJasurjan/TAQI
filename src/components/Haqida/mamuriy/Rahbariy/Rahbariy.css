@@ -3,23 +3,22 @@ a{
 }
 .row_rahbariy{
     position: relative;
-    left: -20px;
-    width: 110%;
+    width: 100%;
 
 }
 .rahbariy__card{
     position: relative ;
     height: 395px;
-    width: 205px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .rahbariy__card__img{
-    height: 233px;
-    width: 203px;
-    top: -22px;
+    height: 236px;
+    width: 100%;
+
     position: relative;
 }
 .card__body{
@@ -38,6 +37,7 @@ a{
 .card__name{
     text-align: center;
     font-weight: 600;
+    font-size: 18px;
 
 }
 .card__job{
@@ -59,8 +59,8 @@ a{
     width: 100%;
 }
 .dr__card{
-    left: 23%;
-    width: 455px !important ;
+
+    width: 455px  ;
     height: 333px !important;
     display: flex;
     flex-direction: column;
@@ -84,4 +84,87 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.div_img21{
+    width: 100%;
+    height: 360px;
+    background-image: url("../../../assets/images/about/images/rahbariy.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+@media screen and (max-width: 1200px) {
+    .row-cols-md-4>* {
+        width: 25%;
+    }
+    .card__name{
+        text-align: center;
+        font-weight: 600;
+        font-size: 16px;
+    
+    }
+    .card__job {
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width: 968px) {
+    .rahbariy__card{
+        width: 100%;
+    }
+    .row-cols-md-4>* {
+        width: 50%;
+        margin: 20px 0;
+    }
+    .rahbariy__card__img{
+        top: -32px;
+    }
+    .card__job{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .rahbariy__card__img{
+        width: 100%;
+        height: 260px;
+    }
+    .rahbariy__card{
+        width: 100%;
+    }
+    .card__name{
+        text-align: center;
+        font-weight: 600;
+        font-size: 20px;
+    
+    }
+    .card__job{
+        top: -20px;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .row-cols-md-4>* {
+        width: 100%;
+        margin: 20px 0;
+
+    }
+    .card__name{
+        font-size: 1.25em;
+    }
+    .dr__card{
+        width: 100%;
+    }
+    .card__job{
+        top: -20px;
+        font-size: 1em;
+    }
+    .rahbariy__card {
+        width: 271px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 400px) {
+    .rahbariy__card{
+        width: 100%;
+    }
 }

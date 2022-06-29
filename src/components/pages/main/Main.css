@@ -94,7 +94,9 @@ a {
   justify-content: center;
   color: #FFF;
   z-index: 10;
-  font-size: 3.5em;
+  font-size: 2.8em;
+  text-align: center;
+  /* font-size: 3.5em; */
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 3px;
@@ -766,9 +768,10 @@ habarlar_row {
   height: 215px;
   /* background-image: url(../../assets/images/main/bg_service.jpeg); */
   /* background-image: url(../../assets/images/main/servisesImg/HowdenDigitalSolutions.jpg); */
-  background-image: url(../../assets/images/main/institut.png);
+  /* background-image: url(../../assets/images/main/institut.png); */
   /* background-image: url(../../assets/images/main/servisesImg/Korea-Customer-Insights-1.jpg); */
   /* background-image: url(../../assets/images/main/servisesImg/img-servise-3.jpg); */
+  background-image: url(../../assets//images/main/servisesImg/Korea-Customer-Insights-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -779,22 +782,32 @@ habarlar_row {
 }
 
 .research_numb_container {
-  width: 60% !important;
+  /* width: 60% !important ; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 
 
 }
-
+.researchP1{
+  display: flex;
+}
+.researchP2{
+  display: flex;
+}
+.research_number{
+  width: 100%;
+}
+.research_numb_container{
+  width: 100%;
+}
 .research_num {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 50px;
-  margin: 70px;
+  width: 25%;
 
 }
 .research_num h2 {
@@ -815,6 +828,7 @@ habarlar_row {
   text-align: center;
   color: #fefefe;
   margin: 0;
+  width: 108px;
 }
 
 .research_card_main {
@@ -914,7 +928,8 @@ habarlar_row {
   display: none;
 }
 .research_number {
-  height: 400px;
+  /* height: 400px; */
+  height: 215px;
 }
 
 
@@ -936,12 +951,44 @@ habarlar_row {
   .header__iamges{
     top: 500px;
   }  
+  .header__h1{
+    font-size: 2em;
+    top: 47%;
+  }
+  .header__images{
+    top: 65%;
+  }
+  .event_card1{
+    width: 100%;
+  }
+  .date_event{
+    margin-left: 80%;
+  }
+  .event_card_txt p{
+    font-size: 13px;
+  }
 }
+
 @media screen and (max-width: 1100px) {
   .header__images__child {
     height: 140px;
     width: 250px;
   }
+  .header__h1{
+    font-size: 2em;
+    
+  }
+  .header__images{
+    top: 70%;
+  }
+  .date_event{
+    position: block;
+    margin-left: 80%;
+  }
+  .event_card_txt p{
+    line-height: 16px !important;
+  }
+
 }
 
 @media screen and (max-width: 947px) {
@@ -954,6 +1001,9 @@ habarlar_row {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .research_numb_container{
+    width: 80% !important;
   }
 
   .carousel2cards {
@@ -984,11 +1034,19 @@ habarlar_row {
 
   .research_numb_container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .research_number {
-    height: 500px;
+    height: 215px;
+  }
+  .researchP1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .researchP2 {
+    display: flex;
+    flex-direction: column;
   }
 
   .research_num h2 {
@@ -998,6 +1056,7 @@ habarlar_row {
   .research_num p {
     font-size: 20px;
     font-weight: 400;
+    width: 150px;
   }
 
   .researchIcon {
@@ -1019,6 +1078,9 @@ habarlar_row {
     display: block;
     position: relative;
     margin: 50px 0;
+  }
+  .eventsCards{
+    margin: 0 auto !important;
   }
 }
 
@@ -1059,9 +1121,25 @@ habarlar_row {
     display: flex;
     flex-direction: row;
   }
+  .habarlar_row{
+    margin: 0 10%;
+  }
+  .research_numb_container{
+    width: 80% !important;
+    flex-wrap: wrap;
+  }
   .research_num{
-    margin: 160px 50px 
-  
-    
+    width: 50%;
+    height: auto;
+  }
+  .research_number{
+    flex-wrap: wrap;
+    height: 300px;
+  }
+  .research_num p {
+    font-size: 16px;
+  }
+  .research_num h2{
+    margin: 0;
   }
 }

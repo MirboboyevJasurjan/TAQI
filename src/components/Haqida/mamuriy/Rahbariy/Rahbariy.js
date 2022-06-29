@@ -1,4 +1,4 @@
-import { React } from "react";
+import  React  from "react";
 import { Link } from 'react-router-dom';
 import images from '../../Rasmlar/rasm_1.jpg'
 import Nav from '../../../pages/templates/navbar/Nav';
@@ -33,7 +33,7 @@ function Rahbariy() {
     return (
         <>
             <Nav />
-            <div className='div_img'>
+            <div className='div_img21'>
 
             </div>
 

@@ -15,7 +15,7 @@ function Sidebar() {
     <>
       <div className="menuGridTemp clear1" onClick={onMenu}>
         <CgMenuGridO className="MenuGrid" />
-        <span>Sidebar</span>
+        <span>Ma'lumotlar</span>
       </div>
       <div className={isAcctive ? 'haqida_left' : 'haqida_leftMob'}>
         <div className="innerhaqidaMob">
