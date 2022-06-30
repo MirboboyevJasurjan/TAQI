@@ -28,6 +28,7 @@ import Elonlar from '../pages/News/elonlar/Elon';
 import Yangiliklar from '../pages/News/yangiliklar/Yangiliklar';
 // import NewsPage from '../pages/News/NewsPage';
 import BannerNews from '../pages/News/newsBanner/BannerNews';
+import Kafedralar from '../Haqida/mamuriy/kafedaralar/Kafedralar';
 
 const Routs = (  ) => {
     return (
@@ -49,6 +50,7 @@ const Routs = (  ) => {
                     <Route path="/qarorlar" component={Qarorlar} />
                     <Route path="/umumiy" component={UmumiyMalumot} />
 
+                    <Route path="/kafedralar" component={Kafedralar} />
                     <Route path="/fakultetlar" component={Fakultetlar} />
                     <Route path="/uslubiy" component={Uslubiy} />
                     <Route path="/newsPage" component={BannerNews} />
