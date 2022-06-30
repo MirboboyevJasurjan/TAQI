@@ -3,7 +3,6 @@
     color: #333;
     z-index: 10;
 }
-
 .haqida_left p {
     display: flex;
     font-size: 16px;
@@ -14,7 +13,6 @@
     padding-bottom: 10px;
     cursor: pointer;
 }
-
 .haqida_left {
     width: 300px;
     height: auto;
@@ -48,13 +46,11 @@
     padding-bottom: 10px;
     cursor: pointer;
 }
-
 .haqida_leftMob a {
     text-decoration: none;
     color: #333 !important;
     z-index: 10;
 }
-
 .menuGridTemp {
     font-size: 18px;
     position: absolute;
@@ -74,7 +70,6 @@
     width: 30px;
     text-shadow: 2px 1px #000;
 }
-
 .MenuGrid {
     outline: none;
 }

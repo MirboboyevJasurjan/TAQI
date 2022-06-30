@@ -159,15 +159,15 @@ const Nav = () => {
                 </li>
 
                 <li onClick={tops}>
-                  <NavLink activeClassName="active" className={"link menuItem "} to="/tadqiqot1" > Tadqiqot </NavLink>
+                  <NavLink activeClassName="active" className={"link menuItem "} to="/tadqiqot" > Tadqiqot </NavLink>
                 </li>
 
                 <li onClick={tops}>
-                  <NavLink activeClassName="active" className={"link menuItem "} to="/qabul1" >Qabul</NavLink>
+                  <NavLink activeClassName="active" className={"link menuItem "} to="/qabul" >Qabul</NavLink>
                 </li>
 
                 <li onClick={tops}>
-                  <NavLink activeClassName="active" className={"link menuItem  "} to="/campus1" >Campus Life</NavLink>
+                  <NavLink activeClassName="active" className={"link menuItem  "} to="/campus" >Campus Life</NavLink>
                 </li>
               </ul>
             </nav>

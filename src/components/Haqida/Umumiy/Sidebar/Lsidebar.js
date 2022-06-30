@@ -17,7 +17,7 @@ function Lsidebar() {
         <>
             <div className="menuGridTemp clear1" onClick={onMenu}>
                 <CgMenuGridO className="MenuGrid" />
-                <span>Sidebar</span>
+                <span className={isAcctive ? 'hideiconSid' : { } } >Sidebar</span>
             </div>
             <div className={isAcctive ? 'haqida_left' : 'haqida_leftMob'}>
                 <div className="innerhaqidaMob">
@@ -34,5 +34,7 @@ function Lsidebar() {
         </>
     );
 }
-
 export default Lsidebar;
+
+// f1ff1f1f
+// #EBEBEB

@@ -5,6 +5,7 @@ import Nav from '../templates/navbar/Nav';
 import ImgExritec from "../pageRoutes/Scientific/imges/events4.png";
 import images from "../pageRoutes/Scientific/imges/ilmBino.png"
 import "./Acceptance.css"
+import QabulSid from './QabulSid/QabulSid';
 
 function Acceptance() {
     return (
@@ -18,18 +19,7 @@ function Acceptance() {
                 <div className='IlmiyPage'>
                     <div className='haqida_father'>
 
-                        <div className='haqida_left'>
-                            <div className='umumiy'>
-                                
-                                <p> <a href='#'>Bakalavr </a> </p>
-                                <p> <a href='#'>Magistratura </a>  </p>
-                                <p> <a href='#'>Tayanch doktarantura (PhD)</a> </p>
-                                <p> <a href='#'>Doktarantura (DsC)</a> </p>
-                                <p> <a href='#'>Sirtqi bo’lim</a> </p>
-                                <p> </p>
-                                
-                            </div>
-                        </div>
+                        <QabulSid/>
                         <div className='haqida_reight'>
 
 

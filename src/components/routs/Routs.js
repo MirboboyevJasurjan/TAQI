@@ -38,7 +38,6 @@ const Routs = (  ) => {
                 <Switch>
                     {/* /* <Route path="/about" component={About} />  */}
 
-
                     <Route path="/academics" component={Academics} />
                     <Route path="/admission" component={Admission} />
                     <Route path="/tadbir1" component={EventPage} />

@@ -22,7 +22,7 @@ function Ins_tarixi() {
               <p>
                 {" "}
                 Toshkent arxitektura-qurilish instituti tarixi <br /> <br />
-                MustaqilO‘zbekiston Respublikasi o‘zining shonli va sharafli
+                Mustaqil O‘zbekiston Respublikasi o‘zining shonli va sharafli
                 tarixi davrida jahonga namuna qilib ko‘rsata oladigan bir qancha
                 taraqqiyot bosqichlarini bosib o‘tdi. Shu jumladan, iqtisodiyot,
                 siyosat, fan, ta’lim, sport, sanoat, qishloq xo‘jaligi kabi bir

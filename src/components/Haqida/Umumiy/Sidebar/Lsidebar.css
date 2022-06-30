@@ -2,3 +2,6 @@
     top: 45%;
     /* left: 30%; */
 }
+.hideiconSid{
+    opacity: 0 !important;
+}

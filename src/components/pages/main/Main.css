@@ -20,25 +20,21 @@
 a {
   text-decoration: none;
 }
-
 .main-conatainer {
   width: 100%;
   height: auto;
 }
-
 .imgCarousel {
   width: 100%;
   height: 100vh;
   object-fit: cover;
 }
-
 .carousel1 {
   width: 100vw;
   height: 100vh;
   position: fixed;
   z-index: -2;
 }
-
 .header {
   width: 100%;
   height: 100vh;
@@ -48,7 +44,6 @@ a {
   background-size: cover;
   z-index: -2;
 }
-
 .header__title {
   position: fixed;
   display: flex;
@@ -58,7 +53,6 @@ a {
   height: 100vh;
   width: 100vw;
 }
-
 .header__images {
   position: absolute;
   width: 80%;
@@ -67,7 +61,6 @@ a {
   align-items: center;
   justify-content: space-evenly;
 }
-
 .header__images__child {
   position: relative;
   height: 229px;
@@ -76,7 +69,6 @@ a {
   align-items: center;
   justify-content: space-evenly;
 }
-
 .header__card__btn {
   position: absolute;
   bottom: 25px;
@@ -85,7 +77,6 @@ a {
   background-color: #A02D2D;
   color: #FFF;
 }
-
 .header__h1 {
   position: absolute;
   top: 350px;
@@ -126,17 +117,14 @@ a {
   text-decoration: none;
   color: #fff;
 }
-
 .blank1:hover {
   color: #fff;
 }
-
 .imgiconuch {
   width: 10px;
   margin: 0 10px;
   color: #fff;
 }
-
 .buttondiv {
   position: fixed;
   z-index: 1;
@@ -144,7 +132,6 @@ a {
   background-color: red;
   bottom: 0 !important;
 }
-
 .btnzindex {
   width: 100vw;
   background-color: #A02D2D;
@@ -154,7 +141,6 @@ a {
   color: #fff;
   text-align: center;
 }
-
 .arrow {
   margin-top: -4px;
 }
@@ -184,7 +170,6 @@ a {
   width: 95%;
   margin: 0 auto;
 }
-
 .main_tash_h3 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -199,7 +184,6 @@ a {
 habarlar_row {
   display: block;
 }
-
 .habarlarCard>div,
 .habarlarCardBig>div {
   position: relative;
@@ -210,12 +194,10 @@ habarlar_row {
   flex-direction: column;
   align-items: center;
 }
-
 .habarlarCardBig div img {
   height: 100%;
   width: 100%;
 }
-
 .habarlarCardBig div a {
   position: absolute;
   bottom: 0;
@@ -226,18 +208,15 @@ habarlar_row {
   backdrop-filter: blur(2px);
 
 }
-
 .habarlarCard__child a {
   text-decoration: none;
   color: #000000;
   font-family: 12px;
   padding: 15px;
 }
-
 .habarlarCard a {
   color: #111;
 }
-
 .tashCard_1 {
   position: relative;
   width: 631px !important;
@@ -252,32 +231,26 @@ habarlar_row {
 
 
 }
-
 .tashCard_1:hover img {
   transform: scale(1.04) !important;
 }
-
 .tashCard_1 img {
   width: 100%;
   height: 100%;
   transition: 0.5s;
 }
-
 .imgdivCard {
   width: 100%;
   background-color: red;
 }
-
 .imghabar {
   width: 100%;
   transition: 0.4s all ease-in;
   object-fit: cover;
 }
-
 .imghabar:hover {
   transform: scale(1.04) !important;
 }
-
 .tashtech_cont {
   height: 0px !important;
   padding: 32px;
@@ -302,7 +275,6 @@ habarlar_row {
   text-align: center;
   color: #ffffff;
 }
-
 .tashCard_2 {
   background-color: #ffff;
   padding: 0px !important;
@@ -313,7 +285,6 @@ habarlar_row {
   align-items: flex-start;
   justify-content: flex-start !important;
 }
-
 .tashCard_2 a {
   display: flex;
   align-items: center;
@@ -343,18 +314,15 @@ habarlar_row {
   height: 236px;
   overflow: hidden;
 }
-
 .tashcard2_img img {
   /* transform: scale(1); */
   width: 100%;
   height: 100%;
   transition: 0.4s all ease-in;
 }
-
 .tashcard2_img:hover img {
   transform: scale(1.04) !important;
 }
-
 .tashcard2_img img:hover img {
   transform: scale(1.04) !important;
 }
@@ -388,14 +356,12 @@ habarlar_row {
   margin: 0px;
   margin-top: 20px;
 }
-
 .buttonDavomi {
   border: none;
   background-color: #A02D2D;
   padding: 6px 21px;
   color: #fff;
 }
-
 .divButton {
   display: flex;
   align-items: center;
@@ -411,28 +377,24 @@ habarlar_row {
   position: relative;
   z-index: 22 !important;
 }
-
 .divotabe {
   padding: 40px 0 0;
   background-color: #fff;
   z-index: 22 !important;
   position: relative;
 }
-
 .yellowLIne {
   background-color: #EEBB3C;
   padding: 10px;
   z-index: 22 !important;
   position: relative;
 }
-
 .brownLIne {
   background-color: #515A61;
   padding: 10px;
   z-index: 22 !important;
   position: relative;
 }
-
 .events_page {
   width: 100%;
   height: auto;
@@ -441,27 +403,22 @@ habarlar_row {
   position: relative;
   /* align-items: center; */
 }
-
 .eventsota {
   width: 95%;
   margin: 0 auto;
 }
-
 .event_card1 {
   position: relative;
 }
-
 .event_card1_img:hover {
   transform: scale(1.04);
 }
-
 .event_card_txt {
   position: absolute;
   bottom: 0px;
   height: 102px;
   width: 80%;
 }
-
 .h4Text {
   position: absolute;
   font-size: 17px;
@@ -471,7 +428,6 @@ habarlar_row {
   /* padding: 12px 10px; */
   line-height: 22px !important;
 }
-
 .event_h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -483,7 +439,6 @@ habarlar_row {
   padding-top: 41px;
   color: #ffffff;
 }
-
 .event_p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -504,7 +459,6 @@ habarlar_row {
   justify-content: center;
   padding-bottom: 30px;
 }
-
 .event_card1 {
   background-color: #ffff;
   width: 272px;
@@ -515,23 +469,19 @@ habarlar_row {
   flex-direction: column;
   margin: 25px 0;
 }
-
 .event_card1:hover {
   box-shadow: rgba(0, 0, 0, 0.575) 0px 5px 15px;
 }
-
 .events_img_box {
   width: 100%;
   height: 283px !important;
   overflow: hidden;
 }
-
 .event_card1_img {
   width: 100%;
   height: 285px !important;
   transition: 0.5s;
 }
-
 .event_card1_img:hover {
   transform: scale(1.04);
 }
@@ -553,7 +503,6 @@ habarlar_row {
   flex-direction: column;
 
 }
-
 .date_event h4 {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -562,19 +511,16 @@ habarlar_row {
   color: rgb(187, 1, 1) !important;
   margin: 0px !important;
 }
-
 .event_card_txt h4 {
   font-family: 'Poppins', sans-serif;
   color: #000;
   font-size: 15px;
 }
-
 .event_card_txt h4:hover {
   color: rgb(2, 0, 150);
   transition: 0.5s;
   text-shadow: 2px 2px 10px rgba(0, 0, 180, 0.13);
 }
-
 .event_card_txt p {
   font-family: 'Poppins', sans-serif;
   color: rgb(63, 63, 63);
@@ -594,7 +540,6 @@ habarlar_row {
   height: auto;
   padding-bottom: 30px;
 }
-
 .academicss_h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -606,7 +551,6 @@ habarlar_row {
   padding-top: 41px;
   color: #393e52;
 }
-
 .academicss_p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -616,7 +560,6 @@ habarlar_row {
   margin-top: 32px;
   color: #393e52;
 }
-
 .academicss_card_bg {
   width: 100%;
   height: auto;
@@ -631,22 +574,18 @@ habarlar_row {
   justify-content: space-between;
   margin-top: 80px !important;
 }
-
 .academicss_container {
   width: 95% !important;
   margin: 0 auto !important;
 }
-
 .academicss_card {
   padding: 0px !important;
 }
-
 .academicss_card img {
   width: 100%;
   background-size: cover;
   margin-bottom: 20px;
 }
-
 .academicss_txt {
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -655,12 +594,10 @@ habarlar_row {
   text-decoration: none;
   align-items: center;
 }
-
 .academics_navbg {
   width: 100vw;
   margin: 20px auto;
 }
-
 .academicss_h3 {
   font-family: "Sansation Light" !important;
   text-align: center;
@@ -670,7 +607,6 @@ habarlar_row {
   font-weight: 500;
   color: #000000;
 }
-
 .hr {
   position: relative;
   z-index: 22;
@@ -678,7 +614,6 @@ habarlar_row {
   margin: 0;
   background-color: #EEBB3C;
 }
-
 .academicss_ul {
   margin-top: 30px;
   display: flex;
@@ -686,11 +621,10 @@ habarlar_row {
   justify-content: space-between;
   font-family: 'Sansation', sans-serif !important;
 }
-
 .academicss_ul li {
   margin: 0 15px;
+  text-align: center;
 }
-
 .academicss_ul li a {
 
   font-size: 20px;
@@ -706,7 +640,6 @@ habarlar_row {
 .academicss_ul li a:hover {
   color: #222;
 }
-
 .academicss_ul li a:after {
   position: absolute;
   top: 40px;
@@ -720,7 +653,6 @@ habarlar_row {
   background: #aaa;
   height: 3px;
 }
-
 .academicss_ul li a:hover:after {
   width: 100%;
   transition: all 0.5s;
@@ -735,7 +667,6 @@ habarlar_row {
   background-color: #ffff;
   position: relative;
 }
-
 .research_h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -747,7 +678,6 @@ habarlar_row {
   padding-top: 41px;
   color: #393e52;
 }
-
 .research_p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -757,12 +687,10 @@ habarlar_row {
   margin-top: 32px;
   color: #393e52;
 }
-
 .qabul11 {
   padding-top: 70px !important;
   text-transform: uppercase;
 }
-
 .research_number {
   width: 100%;
   height: 215px;
@@ -780,7 +708,6 @@ habarlar_row {
   align-items: center;
   justify-content: center;
 }
-
 .research_numb_container {
   /* width: 60% !important ; */
   display: flex;
@@ -819,7 +746,6 @@ habarlar_row {
   text-align: center;
   color: #fefefe;
 }
-
 .research_num p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -830,13 +756,11 @@ habarlar_row {
   margin: 0;
   width: 108px;
 }
-
 .research_card_main {
   width: 100%;
   margin-top: 50px;
   padding-top: 30px;
 }
-
 .research_btn_main {
   width: 100%;
   margin: 0 auto;
@@ -845,7 +769,6 @@ habarlar_row {
   justify-content: center;
   margin-top: 30px;
 }
-
 .btn-research {
   background: #a02d2d !important;
   border-radius: 0px !important;
@@ -859,7 +782,6 @@ habarlar_row {
   background: #FFF8ED;
   position: relative;
 }
-
 .qabul_page h1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -870,7 +792,6 @@ habarlar_row {
   padding-top: 47px;
   color: #484848;
 }
-
 .qabul_page p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -881,35 +802,29 @@ habarlar_row {
   margin-top: 27px;
   color: #7b7979;
 }
-
 .imgQabul {
   display: flex;
   justify-content: center;
 }
-
 .qabul_img {
   width: 70%;
   text-align: center;
   margin-top: 67px;
 }
-
 .qabul_main_cont {
   width: 100%;
   margin-top: 106px !important;
   padding-bottom: 50px;
 }
-
 .qabul_container {
   width: 95%;
   margin: 0 auto;
 }
-
 .qabul_cont {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .qabul_container h4 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -919,11 +834,9 @@ habarlar_row {
 
   color: #505050;
 }
-
 .qabul_container h4 span {
   color: rgb(0, 0, 0);
 }
-
 .carousel2cards {
   display: none;
 }

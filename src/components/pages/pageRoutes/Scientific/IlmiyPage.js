@@ -5,10 +5,9 @@ import Nav from '../../templates/navbar/Nav';
 import ImgExritec from "./imges/events4.png";
 import images from "./imges/ilmBino.png"
 import "./ilmiyPage.css"
-import Sidebar from '../../../Haqida/Umumiy/Sidebar/Sidebar';
-import { BiMenu } from "react-icons/bi";
+import IlmiySid from './IlmiySidebar/IlmiySid';
 
-export default function IlmiyPage() {
+const IlmiyPage = () => {
     return <div >
         <Nav />
         <div className='div_img3'>
@@ -19,71 +18,23 @@ export default function IlmiyPage() {
 
             <div className='IlmiyPage'>
                 <div className='haqida_father'>
-                    <Sidebar />
+                    <IlmiySid />
                     <div className='haqida_reight'>
 
                         <div className='row'>
-                            <div className='col-md-4'>
-                                <div className='card'>
-                                    <img className="imgNews" src={ImgExritec} alt="my-img" />
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                </div>
-                            </div>
-                            <div className='col-md-4'>
-                                <div className='card'>
-                                    <img className="imgNews" src={ImgExritec} alt="my-img" />
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                </div>
-                            </div>
-                            <div className='col-md-4'>
-                                <div className='card'>
-                                    <img className="imgNews" src={ImgExritec} alt="my-img" />
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                </div>
-                            </div>
-
+                            <div className='col-md-4'><div className='card'><img className="imgNews" src={ImgExritec} alt="my-img" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div></div>
+                            <div className='col-md-4'><div className='card'><img className="imgNews" src={ImgExritec} alt="my-img" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div></div>
+                            <div className='col-md-4'><div className='card'><img className="imgNews" src={ImgExritec} alt="my-img" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div></div>
                         </div>
                         <div className='row medCenter'>
-                            <div className='col-md-4'>
-                                <div className='card'>
-                                    <img className="imgNews" src={ImgExritec} alt="my-img" />
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                </div>
-                            </div>
-                            <div className='col-md-4'>
-                                <div className='card'>
-                                    <img className="imgNews" src={ImgExritec} alt="my-img" />
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                </div>
-                            </div>
-                            <div className='col-md-4'>
-                                <div className='card'>
-                                    <img className="imgNews" src={ImgExritec} alt="my-img" />
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                </div>
-                            </div>
-
+                            <div className='col-md-4'><div className='card'><img className="imgNews" src={ImgExritec} alt="my-img" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div></div>
+                            <div className='col-md-4'><div className='card'><img className="imgNews" src={ImgExritec} alt="my-img" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div></div>
+                            <div className='col-md-4'><div className='card'><img className="imgNews" src={ImgExritec} alt="my-img" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div></div>
                         </div>
                         <div className='row '>
-                            <div className='col-md-4'>
-                                <div className='card'>
-                                    <img className="imgNews" src={ImgExritec} alt="my-img" />
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                </div>
-                            </div>
-                            <div className='col-md-4'>
-                                <div className='card'>
-                                    <img className="imgNews" src={ImgExritec} alt="my-img" />
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                </div>
-                            </div>
-                            <div className='col-md-4'>
-                                <div className='card'>
-                                    <img className="imgNews" src={ImgExritec} alt="my-img" />
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                </div>
-                            </div>
-
+                            <div className='col-md-4'><div className='card'><img className="imgNews" src={ImgExritec} alt="my-img" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div></div>
+                            <div className='col-md-4'><div className='card'><img className="imgNews" src={ImgExritec} alt="my-img" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div></div>
+                            <div className='col-md-4'><div className='card'><img className="imgNews" src={ImgExritec} alt="my-img" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p></div></div>
                         </div>
 
                     </div>
@@ -93,3 +44,4 @@ export default function IlmiyPage() {
         <FooterNav />
     </div>;
 }
+export default IlmiyPage
