@@ -5,10 +5,10 @@
   font-size: 36px;
   line-height: 42px;
 }
+
 .div_imgFak {
   width: 100%;
   height: 360px;
-  /* background: url("../../../assets/images/about/images/unsplash.png"); */
   background-image: url("../../../assets/images/about/images/fakultet.jpg");
   z-index: 110;
   background-size: cover;
@@ -16,6 +16,7 @@
   background-attachment: inherit;
   background-position: center;
 }
+
 .haqida_father_fak {
   width: 100%;
   display: flex;
@@ -27,6 +28,7 @@
   margin-right: 0px;
   margin-bottom: 150px;
 }
+
 .fakultet_row {
   display: flex;
   flex-direction: column;
@@ -34,6 +36,7 @@
   justify-content: center;
   left: -200px;
 }
+
 .fakultet_card {
   left: 200px;
   width: 455px;
@@ -42,14 +45,17 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 50px;
 }
+
 .fakultet_row:nth-child(odd) .fakultet_card {
   position: relative;
   right: -150px;
 }
+
 .fakultet_row:nth-child(even) .fakultet_card {
   position: relative;
   left: 500px;
 }
+
 .fak_text {
   position: absolute;
   display: flex;
@@ -61,9 +67,11 @@
   margin: 20px;
   text-align: left;
 }
+
 .fakultet_row:nth-child(even) .fak_text {
   left: 90px;
 }
+
 .fakultet__card__img {
   position: absolute;
   top: 29px;
@@ -71,14 +79,17 @@
   height: 201px;
   background: #c4c4c4;
 }
+
 .fakultet_row:nth-child(odd) .fakultet__card__img {
   left: 358px;
   object-fit: cover;
 }
+
 .fakultet_row:nth-child(even) .fakultet__card__img {
   right: 358px;
   object-fit: cover;
 }
+
 .fak_card_name {
   width: 192px;
   height: 21px;
@@ -92,6 +103,7 @@
 
   font-size: 16px;
 }
+
 .fak_card_down {
   position: absolute;
   display: flex;
@@ -108,6 +120,7 @@
   color: #ffffff;
   background-color: #a02d2d;
 }
+
 .fakultet_row:nth-child(odd) .fak_card_down {
   left: 114px;
 }
@@ -116,6 +129,7 @@
   left: 90px;
   bottom: -30px;
 }
+
 .fak__acc__card {
   position: relative;
   height: 315px;
@@ -125,32 +139,39 @@
   align-items: center;
   justify-content: center;
 }
+
 .card__name__fak {
   position: relative;
   text-align: center;
   font-weight: 600;
   top: -10px;
 }
+
 .card__job__fak {
   position: relative;
   top: -30px;
   text-align: center;
 }
+
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
   box-shadow: none;
 }
+
 .accordionCard {
   border: none !important;
   box-shadow: none !important;
 }
+
 .acc__pers_card {
   margin: 20px 0 !important;
 }
+
 @media screen and (max-width: 768px) {
   .fakultet_card {
     width: 250px;
     left: 150px;
   }
+
   .fakultet__card__img {
     position: absolute;
     top: 6px;
@@ -158,12 +179,15 @@
     height: 201px;
     background: #c4c4c4;
   }
+
   .fak_card__name {
     font-size: 14px;
   }
+
   .fak_card__text {
     font-size: 12px;
   }
+
   .haqida_father_fak {
     position: relative;
     width: 100vw;
@@ -176,16 +200,20 @@
     margin-right: 0px;
     margin-bottom: 150px;
   }
+
   .row_rahbariy {
     position: absolute;
     left: 0;
   }
+
   .fakultet_row:nth-child(odd) .fakultet_card {
     left: 0;
   }
+
   .fakultet_row:nth-child(even) .fakultet_card {
     left: 0;
   }
+
   .fakultet_card {
     display: flex;
     flex-direction: column;
@@ -193,6 +221,7 @@
     justify-content: center;
     height: 400px;
   }
+
   .fakultet_row:nth-child(odd) .fakultet__card__img {
     left: 0px;
     top: 0px;
@@ -204,29 +233,31 @@
     object-fit: cover;
   }
 
-.fak_text{
-  position: absolute;
-  top: 200px;
-  left: 0 !important;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.fakultet_card_down{
-  position: absolute;
-  left: 0;
-}
+  .fak_text {
+    position: absolute;
+    top: 200px;
+    left: 0 !important;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
- .fakultet_card .fak_card_down {
-  position: absolute;
-  left: 0 !important;
-}
-.minicards{
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
+  .fakultet_card_down {
+    position: absolute;
+    left: 0;
+  }
+
+  .fakultet_card .fak_card_down {
+    position: absolute;
+    left: 0 !important;
+  }
+
+  .minicards {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
 }

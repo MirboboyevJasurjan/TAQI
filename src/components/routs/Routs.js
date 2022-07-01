@@ -41,14 +41,14 @@ const Routs = (  ) => {
                     <Route path="/academics" component={Academics} />
                     <Route path="/admission" component={Admission} />
                     <Route path="/tadbir1" component={EventPage} />
-                    <Route path="/campus" component={Campus} />
+                    {/* <Route path="/campus" component={Campus} /> */}
                     <Route path="/news" component={News} />
                     <Route path="/about" component={Ins_tarixi} />
                     <Route path="/rahbariyat" component={Rahbariyat} />
                     <Route path="/tashkilot" component={Tashkilot} />
                     <Route path="/qarorlar" component={Qarorlar} />
                     <Route path="/umumiy" component={UmumiyMalumot} />
-
+ 
                     <Route path="/fakultetlar" component={Fakultetlar} />
                     <Route path="/uslubiy" component={Uslubiy} />
                     <Route path="/newsPage" component={BannerNews} />

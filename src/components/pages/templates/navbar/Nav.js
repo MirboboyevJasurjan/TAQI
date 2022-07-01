@@ -6,17 +6,16 @@ import SearchIcon from '@mui/icons-material/Search';
 import logo from '../../../assets/images/about/images/logoTaqi.png';
 import logo1 from '../../../assets/images/main/logo2.png'
 import ClearIcon from '@mui/icons-material/Clear';
-import MenuIcon from '@mui/icons-material/Menu';
 import haqda from '../../About/About.js'
 import { BiSearch } from "react-icons/bi";
 import { NavLink, Link } from 'react-router-dom';
 import { BiMenu } from "react-icons/bi";
-import { MdClose } from "react-icons/md";
-import { IoCloseSharp } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
+
 const Nav = () => {
   const {t, i18n} = useTranslation()
+
   const changeLanguage = (lang)=>{
     i18n.changeLanguage(lang);
   }
@@ -141,34 +140,13 @@ const Nav = () => {
           <div onclick={onMenu} className={'bgbtoon'}  activeClassName="active">
             <nav  className={isAcctive ? 'navigation-bottom': 'menuMob'}>
               <ul className="nav-bottom-link" >
-
-                <li onClick={tops}>
-                  <NavLink activeClassName="active" className={"link menuItem  "} to="/about"  >Haqida</NavLink>
-                </li>
-
-                <li onClick={tops}>
-                  <NavLink activeClassName="active" className={"link menuItem "} to="/news"   >Habarlar</NavLink>
-                </li>
-
-                <li onClick={tops}>
-                  <NavLink activeClassName="active" className={"link menuItem "} to="/tadbir1"  >Tadbirlar</NavLink>
-                </li>
-
-                <li onClick={tops}>
-                  <NavLink activeClassName="active" className={"link menuItem "} to="/ilmiy1"  >Ilmiy</NavLink>
-                </li>
-
-                <li onClick={tops}>
-                  <NavLink activeClassName="active" className={"link menuItem "} to="/tadqiqot" > Tadqiqot </NavLink>
-                </li>
-
-                <li onClick={tops}>
-                  <NavLink activeClassName="active" className={"link menuItem "} to="/qabul" >Qabul</NavLink>
-                </li>
-
-                <li onClick={tops}>
-                  <NavLink activeClassName="active" className={"link menuItem  "} to="/campus" >Campus Life</NavLink>
-                </li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem  "} to="/about"  >Haqida</NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/news"   >Habarlar</NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/tadbir1"  >Tadbirlar</NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/ilmiy1"  >Ilmiy</NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/tadqiqot" > Tadqiqot </NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/qabul" >Qabul</NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem  "} to="/campus" >Campus Life</NavLink></li>
               </ul>
             </nav>
           </div>
