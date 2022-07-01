@@ -36,7 +36,7 @@ function Sidebar() {
             <p className="umumiy__child"><Link onClick={tops} to="/rahbariy">Rahbariyat</Link></p>
             <p className="umumiy__child"><Link onClick={tops} to="/markaz">{" "}Markaz va bo'limlar{" "}</Link></p>
             <p className="umumiy__child"><Link onClick={tops} to="/fakultetlar">Fakultetlar</Link></p>
-            <p className="umumiy__child"><Link onClick={tops} to="#">Kafedralar</Link></p>
+            <p className="umumiy__child"><Link onClick={tops} to="/kafedralar">Kafedralar</Link></p>
             <p className="umumiy__child"><Link onClick={tops} to="#">Jamoat tashkilotlari</Link></p>
             <p className="umumiy__child"><Link onClick={tops} to="#">Ta’lim sifati</Link></p>
             <p className="umumiy__child"> </p>
