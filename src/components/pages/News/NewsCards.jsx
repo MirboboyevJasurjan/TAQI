@@ -8,7 +8,7 @@ import Modal from '@mui/material/Modal';
 import NewsPage from "./NewsPage";
 // import BannerNews from "./newsBanner/BannerNews";
 
-const NewsCards = (props) => {
+const NewsCards = (...props) => {
 
       
   const [open, setOpen] = React.useState(false);
@@ -33,8 +33,8 @@ const NewsCards = (props) => {
   function Save() {
     const indexSaved = props.idx; 
     console.log(indexSaved);
+    console.log(props);
   }
-  
 
   return (
     <>
@@ -44,28 +44,12 @@ const NewsCards = (props) => {
           src={props.imagee}
           className="newsP__card__img"
         />
-        <p className="newsText">{props.title}</p>
-        <span className="newsText">{props.text}</span>
+        <p className="newsText">{props[0].title}</p>
+        <span className="newsText">{props[0].text}</span>
         <Card.Body className="newsP__card__body">
-          {/* <p><Link to="/newsPage"  className="card__down" onClick={Save}> {props.idx} Davomi  </Link></p> */}
-          <Button onClick={handleOpen} className="card__down" >Davomi . . . </Button>
+          <p><Link to="/newsPage"  className="card__down" onClick={Save}> {props[0].idx} Davomi  </Link></p>
+          {/* <Button onClick={Save} className="card__down" >Davomi . . . </Button> */}
           
-          <Modal
-           className="cardModal"
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
-          >
-            <Box sx={style} >
-              <Typography id="modal-modal-title" variant="h6" component="h2">
-                Text in a modal
-              </Typography>
-              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-              </Typography>
-            </Box>
-          </Modal>
             
         </Card.Body>
       </Card>
@@ -73,3 +57,46 @@ const NewsCards = (props) => {
   );
 };
 export default NewsCards;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <Modal
+ className="cardModal"
+  open={open}
+  onClose={handleClose}
+  aria-labelledby="modal-modal-title"
+  aria-describedby="modal-modal-description"
+>
+  <Box sx={style} >
+    <Typography id="modal-modal-title" variant="h6" component="h2">
+      Text in a modal
+    </Typography>
+    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+      Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+    </Typography>
+  </Box>
+</Modal> */}

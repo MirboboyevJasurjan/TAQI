@@ -14,11 +14,8 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
         cache: ['cookie']
     },
     backend:{
-        loadPath:{
-            loadPath: '/components/assets/locales/{{lng}}/translation.json'
-        }
+        loadPath: '/components/assets/locales/{{lng}}/translation.json'
     },
-    
     interpolation: {
         escapeValue: false,
     }

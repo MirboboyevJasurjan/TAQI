@@ -39,7 +39,6 @@ function NewsPage() {
                              {rows.map((row, id) => ( 
                                 <Col>            
                                     <NewsCards idx = {id} title={row.title}  text={row.news}  imagee={row.img} />
-                                    
                                 </Col>
                              ))}
                         </Row>
