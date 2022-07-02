@@ -30,6 +30,9 @@ import Fotima from '../../../assets/images/ustozlar/ArxTarixi/Y.Z.Fotima.png'
 import Oybek from '../../../assets/images/ustozlar/ArxTarixi/M.A.Oybek.png'
 import Abdurazak from '../../../assets/images/ustozlar/ArxTarixi/T.A.Abdurazak.png'
 
+import anonym from '../../../assets/images/ustozlar/anonym.png'
+
+
 
 // import images end
 
@@ -53,65 +56,65 @@ const Kafedralar = (props) => {
     }
 
     const rowsArxit = [
-        createDataAcc('Kafedrasi mudiri,dotsent', 'Xasanov Azamat Ozodovich', imagf),
+        createDataAcc('Kafedrasi mudiri,dotsent', 'Xasanov Azamat Ozodovich', anonym),
         createDataAcc('Dotsent', 'Abdujabborova Maktuba Tuxtasinovna', Maktuba),
         createDataAcc('Professor', 'Xidoyatov Timur Abrorovich', Timur),
         createDataAcc('Dotsent', 'Inagamov Bahtiyor Ismailovich', Bahtiyor),
-        createDataAcc('Professor', 'Kadirova Surayyo Adilovna', imagf),
+        createDataAcc('Professor', 'Kadirova Surayyo Adilovna', anonym),
         createDataAcc('Katta o’qituvchi', 'Alimdjanov Ravshanjon Ikromovich', Ravshanjon),
         createDataAcc('Dotsent', 'Nazarenko Tatyana Vasilevna', Tatyana),
         createDataAcc('Katta o’qituvchi', 'Ibragimov Murod Ismaildjanovich', Murod),
-        createDataAcc('Katta o’qituvchi', 'Begmatova Dildor Akramovna', imagf),
+        createDataAcc('Katta o’qituvchi', 'Begmatova Dildor Akramovna', anonym),
         createDataAcc('Katta o’qituvchi', 'Allayarov Kamal Orazbayevich', Kamal),
         createDataAcc('Dotsent', 'Shnekeyev Jumabay Kalimbetovich', Jumabay),
         createDataAcc('Assistent', 'Rahimov Lazizbek Shahnazarovich', Lazizbek),
 
-        createDataAcc('dotsent', 'Yunusov Shukrulla Hayrullayevich', imagf),
+        createDataAcc('dotsent', 'Yunusov Shukrulla Hayrullayevich', anonym),
         createDataAcc('Assistent', 'To’xtayeva Maftunaxon Saidolim qizi', Maftunaxon),
-        createDataAcc('Assistent', 'Sadikov Mirasrol Mirkamol o’g’li', imagf),
-        createDataAcc('Dotsent', 'Masharipova Sayyora Abdurahimovna', imagf),
-        createDataAcc('Assistent', 'Shamahmudova Muhayyo Xammatovna', imagf),
+        createDataAcc('Assistent', 'Sadikov Mirasrol Mirkamol o’g’li', anonym),
+        createDataAcc('Dotsent', 'Masharipova Sayyora Abdurahimovna', anonym),
+        createDataAcc('Assistent', 'Shamahmudova Muhayyo Xammatovna', anonym),
     ];
 
 
     const rowsShahar = [
-        createDataAcc('Kafedrasi mudiri, dotsent', 'Yahyayev Abdulla Abdujabborovich', imagf),
-        createDataAcc('Professor', 'Isamuhamedova Dilaram Uchkunovna', imagf),
-        createDataAcc('Dotsent', 'Sattarova Kamila Djumayevna', imagf),
-        createDataAcc('Professor', 'Talipov Mahirdjon Agzamovich', imagf),
-        createDataAcc('Dotsent', 'Kamilova Xalida Xabibullayevna', imagf),
-        createDataAcc('Katta o’qituvchi', 'Sereyeva Guljazira Adilbayevna', imagf),
-        createDataAcc('Katta o’qituvchi', 'Umarova Maloxat Muxidjonovna', imagf),
-        createDataAcc('Assistent', 'Siddikova Gavxar Xalilovna', imagf),
-        createDataAcc('Katta o’qituvchi', 'Raxmatova Nodira Baxriyevna', imagf),
-        createDataAcc('Katta o’qituvchi', 'Kasimov Tairdjan Xodjievich', imagf),
-        createDataAcc('Assistent', 'Oripova Sarvinoz Abduqaxor qizi', imagf),
-        createDataAcc('Katta o’qituvchi', 'Raxmonov Abdulatif Toxir o‘g‘li', imagf),
-        createDataAcc('Katta o’qituvchi', 'Abduraxmonov Boburjon Toxir o‘g‘li', imagf),
-        createDataAcc('Katta o’qituvchi', 'Umarov Otabek Zulfikarovich', imagf),
-        createDataAcc('Katta o’qituvchi', 'Muminova Kamola Raxmatullaevna', imagf),
-        createDataAcc('Dotsent', 'Usmanov Muradxan Saidmaxmudovich', imagf)
+        createDataAcc('Kafedrasi mudiri, dotsent', 'Yahyayev Abdulla Abdujabborovich', anonym),
+        createDataAcc('Professor', 'Isamuhamedova Dilaram Uchkunovna', anonym),
+        createDataAcc('Dotsent', 'Sattarova Kamila Djumayevna', anonym),
+        createDataAcc('Professor', 'Talipov Mahirdjon Agzamovich', anonym),
+        createDataAcc('Dotsent', 'Kamilova Xalida Xabibullayevna', anonym),
+        createDataAcc('Katta o’qituvchi', 'Sereyeva Guljazira Adilbayevna', anonym),
+        createDataAcc('Katta o’qituvchi', 'Umarova Maloxat Muxidjonovna', anonym),
+        createDataAcc('Assistent', 'Siddikova Gavxar Xalilovna', anonym),
+        createDataAcc('Katta o’qituvchi', 'Raxmatova Nodira Baxriyevna', anonym),
+        createDataAcc('Katta o’qituvchi', 'Kasimov Tairdjan Xodjievich', anonym),
+        createDataAcc('Assistent', 'Oripova Sarvinoz Abduqaxor qizi', anonym),
+        createDataAcc('Katta o’qituvchi', 'Raxmonov Abdulatif Toxir o‘g‘li', anonym),
+        createDataAcc('Katta o’qituvchi', 'Abduraxmonov Boburjon Toxir o‘g‘li', anonym),
+        createDataAcc('Katta o’qituvchi', 'Umarov Otabek Zulfikarovich', anonym),
+        createDataAcc('Katta o’qituvchi', 'Muminova Kamola Raxmatullaevna', anonym),
+        createDataAcc('Dotsent', 'Usmanov Muradxan Saidmaxmudovich', anonym)
     ];
 
 
     const rowsTarixi = [
         createDataAcc('Kafedrasi mudiri,dotsent', 'Shoisoev Izatullo Kenjaevich', Izatullo),
-        createDataAcc('Professor', 'Salimov Arifdjan Muslimovich', imagf),
-        createDataAcc('Professor', 'Nazilov Dodo', imagf),
-        createDataAcc('Dotsent', 'Pulatov Xayrulla Shamubarakovich', imagf),
+        createDataAcc('Professor', 'Salimov Arifdjan Muslimovich', anonym),
+        createDataAcc('Professor', 'Nazilov Dodo', anonym),
+        createDataAcc('Dotsent', 'Pulatov Xayrulla Shamubarakovich', anonym),
         createDataAcc('Professor', 'Nurmuxamedova Shoira Zaxidovna', Shoira),
         createDataAcc('Katta o’qituvchi', 'Yusupova Fotima Zokirovna', Fotima),
         createDataAcc('Dotsent', 'Masharipov Oybek Abduraximovich', Oybek),
         createDataAcc('Katta o’qituvchi', 'Turdiev Abdurazak Abduraximovich', Abdurazak),
-        createDataAcc('Katta o’qituvchi', 'Begmatova Dildor Akramovna', imagf),
-        createDataAcc('Katta o’qituvchi', 'Allayarov Kamal Orazbayevich', imagf),
-        createDataAcc('Dotsent', 'Shnekeyev Jumabay Kalimbetovich', imagf),
-        createDataAcc('Assistent', 'Rahimov Lazizbek Shahnazarovich', imagf),
-        createDataAcc('Dotsent', 'Yunusov Shukrulla Hayrullayevich', imagf),
-        createDataAcc('Assistent', 'To’xtayeva Maftunaxon Saidolim qizi', imagf),
-        createDataAcc('Assistent', 'Sadikov Mirasrol Mirkamol o’g’li', imagf),
-        createDataAcc('Dotsent', 'Masharipova Sayyora Abdurahimovna', imagf),
-        createDataAcc('Assistent', 'Shamahmudova Muhayyo Xammatovna', imagf),  
+        createDataAcc('Katta o’qituvchi', 'Begmatova Dildor Akramovna', anonym),
+        createDataAcc('Katta o’qituvchi', 'Allayarov Kamal Orazbayevich', anonym),
+        createDataAcc('Dotsent', 'Shnekeyev Jumabay Kalimbetovich', anonym),
+        createDataAcc('Assistent', 'Rahimov Lazizbek Shahnazarovich', anonym),
+        createDataAcc('Dotsent', 'Yunusov Shukrulla Hayrullayevich', anonym),
+        createDataAcc('Assistent', 'To’xtayeva Maftunaxon Saidolim qizi', anonym),
+        createDataAcc('Assistent', 'Sadikov Mirasrol Mirkamol o’g’li', anonym),
+        createDataAcc('Dotsent', 'Masharipova Sayyora Abdurahimovna', anonym),
+        createDataAcc('Assistent', 'Shamahmudova Muhayyo Xammatovna', anonym),  
     ];
 
 
@@ -125,6 +128,7 @@ const Kafedralar = (props) => {
                 <div className='Sarlavha'>
                     <div className='haqida_father_fak'>
                         <h3 className='head_fak'>Kafedralar</h3>
+
                         <Row xs={1} md={1} className="g-4 row_rahbariy">
                          
                                 <Col className='fakultet_row'>
@@ -135,8 +139,8 @@ const Kafedralar = (props) => {
                                             className='accordionSummary'
                                         >
                                             <Card className='fakultet_card' >
-                                                <Card.Img variant="top" src={imagf} className='fakultet__card__img' />
-                                                <div className='fak_text'>
+                                                    <Card.Img variant="top" src={imagf} className='fakultet__card__img' />
+                                                <div className='fak_text'  id="secondCardKaf">
                                                     <h4 className='fak_card__name'>“ARXITEKTURAVIY LOYIHALASH” kafedrasi</h4><br />
                                                     <h6 className='fak_card__text'>Lorem ipsum dolor</h6>
                                                     <button className='fak_card_down' > Davom etish ... </button>
@@ -149,11 +153,15 @@ const Kafedralar = (props) => {
                                                 {rowsArxit.map((row, id) => (
                                                     <Col className='acc__pers_card' id="OneCardJob">
                                                         <Card className='fak__acc__card'>
-                                                            <Card.Img variant="top" src={row.image} id="CardKafImg" className='rahbariy__card__img' />
+                                                            <div className='CardImages'>
+                                                                <div className='relativeImages'>
+                                                                    <Card.Img variant="top" src={row.image} id="CardKafImg" className='rahbariy__card__img' />
+                                                                </div>
+                                                            </div>
                                                             <h6 className='cardNameFak'>{row.name}</h6><br />
                                                             <h6 className='cardJobFak'>{row.job}</h6>
                                                             <Card.Body className='card__body' >
-                                                                <Link to="/fakultetlar" className='card__down' > CV </Link>
+                                                                <Link to="/kafedralar" className='card__down' > CV </Link>
                                                             </Card.Body>
                                                         </Card>
                                                     </Col>
@@ -165,6 +173,7 @@ const Kafedralar = (props) => {
 
 
                         </Row>
+
                         <Row xs={1} md={1} className="g-4 row_rahbariy">
                          
                                 <Col className='fakultet_row'>
@@ -174,9 +183,9 @@ const Kafedralar = (props) => {
                                             id="panel1bh-header"
                                             className='accordionSummary'
                                         >
-                                            <Card className='fakultet_card' >
+                                            <Card className='fakultet_card' id="secondCardMain" >
                                                 <Card.Img variant="top" src={imagf} className='fakultet__card__img' />
-                                                <div className='fak_text'>
+                                                <div className='fak_text' id="secondCardKaf">
                                                     <h4 className='fak_card__name'>“SHAHARSOZLIK VA LANDSHAFT ARXITEKTURASI”  kafedrasi</h4><br />
                                                     <h6 className='fak_card__text'>Lorem ipsum dolor</h6>
                                                     <button className='fak_card_down' > Davom etish ... </button>
@@ -189,11 +198,15 @@ const Kafedralar = (props) => {
                                                 {rowsShahar.map((row, id) => (
                                                     <Col className='acc__pers_card'>
                                                         <Card className='fak__acc__card'>
-                                                            <Card.Img variant="top" src={row.image} id="CardKafImg" className='rahbariy__card__img' />
+                                                            <div className='CardImages'>
+                                                                <div className='relativeImages'>
+                                                                    <Card.Img variant="top" src={row.image} id="CardKafImg" className='rahbariy__card__img' />
+                                                                </div>
+                                                            </div>
                                                             <h6 className='cardNameFak'>{row.name}</h6><br />
                                                             <h6 className='cardJobFak'>{row.job}</h6>
                                                             <Card.Body className='card__body' >
-                                                                <Link to="/fakultetlar" className='card__down' > CV </Link>
+                                                                <Link to="/kafedralar" className='card__down' > CV </Link>
                                                             </Card.Body>
                                                         </Card>
                                                     </Col>
@@ -216,7 +229,7 @@ const Kafedralar = (props) => {
                                         >
                                             <Card className='fakultet_card' >
                                                 <Card.Img variant="top" src={imagf} className='fakultet__card__img' />
-                                                <div className='fak_text'>
+                                                <div className='fak_text'  id="secondCardKaf">
                                                     <h4 className='fak_card__name'>“ARXITEKTURA TARIXI VA NAZARIYASI” kafedrasi</h4><br />
                                                     <h6 className='fak_card__text'>Lorem ipsum dolor</h6>
                                                     <button className='fak_card_down' > Davom etish ... </button>
@@ -229,11 +242,15 @@ const Kafedralar = (props) => {
                                                 {rowsTarixi.map((row, id) => (
                                                     <Col className='acc__pers_card'>
                                                         <Card className='fak__acc__card'>
-                                                            <Card.Img variant="top" src={row.image} id="CardKafImg" className='rahbariy__card__img' />
+                                                            <div className='CardImages'>
+                                                                <div className='relativeImages'>
+                                                                    <Card.Img variant="top" src={row.image} id="CardKafImg" className='rahbariy__card__img' />
+                                                                </div>
+                                                            </div>
                                                             <h6 className='cardNameFak'>{row.name}</h6><br />
                                                             <h6 className='cardJobFak'>{row.job}</h6>
                                                             <Card.Body className='card__body' >
-                                                                <Link to="/fakultetlar" className='card__down' > CV </Link>
+                                                                <Link to="/kafedralar" className='card__down' > CV </Link>
                                                             </Card.Body>
                                                         </Card>
                                                     </Col>

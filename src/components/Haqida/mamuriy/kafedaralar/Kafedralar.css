@@ -1,6 +1,43 @@
-#CardKafImg {
-  height: 70%;
+
+
+/* bg color #D9D9D9 */
+
+.CardImages{
+  background-color: #D9D9D9;
+  height: 210px;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
+#CardKafImg{
+  width: auto;
+  height: 210px;
+  position: absolute;
+  object-fit: cover;
+
+ 
+}
+.relativeImages{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+/*  */
+#secondCardMain .fakultet__card__img {
+  left: -290px;
+}
+#secondCardMain{
+  left: 480px;
+}
+#secondCardMain #secondCardKaf{
+  left: 100px;
+}
+
 
 .head_fak {
   margin: 50px;
@@ -153,6 +190,9 @@
 .acc__pers_card {
   margin: 20px 0 !important;
 }
+.fak_card__name{
+  font-size: 18x;
+}
 
 /* @media screen and (max-width: 1150px) {
     .row-cols-md-4 > *{
@@ -160,6 +200,22 @@
     }
     
   } */
+@media screen and (max-width: 1200px) {
+  /* .accordionSummary{
+    width: 80pc;
+  } */
+  /* .fakultet_row:nth-child(odd) .fakultet_card{
+    width: 470px;
+    height: 250px;
+  }
+  .fakultet_row:nth-child(odd) .fakultet__card__img{
+    width: 80%;
+  } */
+  .fakultet_row:nth-child(odd) .fakultet_card {
+    width: 100%;
+  }
+  
+}
 @media screen and (max-width: 768px) {
   .fakultet_card {
     width: 250px;
@@ -255,6 +311,12 @@
     top: 130px;
     
   }
+  #secondCardMain{
+    left: 0px;
+  }
+  #secondCardMain .fakultet__card__img{
+    left: 0px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -266,4 +328,38 @@
   .fakultet_row:nth-child(odd) .fak_card_down {
     top: 140px;
   }
+  #secondCardMain .fakultet__card__img {
+    left: 0px;
+  }
+  #secondCardMain{
+    left: 0;
+  }
+  #secondCardMain #secondCardKaf{
+    left: 0px;
+  }
+  .fak__acc__card {
+    position: relative;
+    height: 350px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardNameFak {
+    top: 112px;
+  }
+  .cardJobFak {
+    top: 102px
+  }
+  .CardImages {
+    height: 235px;
+  }
+  #CardKafImg{
+    height: 235px;
+    width: auto;
+    /* height: ; */
+    object-fit: cover;
+  }
+  
 }
