@@ -56,5 +56,22 @@
 }
 .tash {
   width: 85%;
-  margin: 150px 50px;
+  margin: 50px 50px 120px 50px;
+}
+@media screen and (max-width: 992px) {
+  .tash{
+    width: 85%;
+    margin: 10% 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .haqida_right {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .tash{
+    width: 90%;
+    margin: 5%;
+  }
+  
 }

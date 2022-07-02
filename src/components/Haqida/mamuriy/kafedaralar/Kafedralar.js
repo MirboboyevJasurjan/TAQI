@@ -32,7 +32,9 @@ import Abdurazak from '../../../assets/images/ustozlar/ArxTarixi/T.A.Abdurazak.p
 
 import anonym from '../../../assets/images/ustozlar/anonym.png'
 
-
+import kafedra1 from '../../../assets/images/kafedra/kafedra1.png'
+import kafedra2 from '../../../assets/images/kafedra/kafedra2.png'
+import kafedra3 from '../../../assets/images/kafedra/kafedra3.png'
 
 // import images end
 
@@ -139,7 +141,7 @@ const Kafedralar = (props) => {
                                             className='accordionSummary'
                                         >
                                             <Card className='fakultet_card' >
-                                                    <Card.Img variant="top" src={imagf} className='fakultet__card__img' />
+                                                    <Card.Img variant="top" src={kafedra1} className='fakultet__card__img' />
                                                 <div className='fak_text'  id="secondCardKaf">
                                                     <h4 className='fak_card__name'>“ARXITEKTURAVIY LOYIHALASH” kafedrasi</h4><br />
                                                     <h6 className='fak_card__text'>Lorem ipsum dolor</h6>
@@ -184,7 +186,7 @@ const Kafedralar = (props) => {
                                             className='accordionSummary'
                                         >
                                             <Card className='fakultet_card' id="secondCardMain" >
-                                                <Card.Img variant="top" src={imagf} className='fakultet__card__img' />
+                                                <Card.Img variant="top" src={kafedra2} className='fakultet__card__img' />
                                                 <div className='fak_text' id="secondCardKaf">
                                                     <h4 className='fak_card__name'>“SHAHARSOZLIK VA LANDSHAFT ARXITEKTURASI”  kafedrasi</h4><br />
                                                     <h6 className='fak_card__text'>Lorem ipsum dolor</h6>
@@ -196,7 +198,7 @@ const Kafedralar = (props) => {
                                         <AccordionDetails className='minicards'>
                                             <Row xs={1} md={4} className="g-4 minicards">
                                                 {rowsShahar.map((row, id) => (
-                                                    <Col className='acc__pers_card'>
+                                                    <Col className='acc__pers_card' id="OneCardJob">
                                                         <Card className='fak__acc__card'>
                                                             <div className='CardImages'>
                                                                 <div className='relativeImages'>
@@ -228,7 +230,7 @@ const Kafedralar = (props) => {
                                             className='accordionSummary'
                                         >
                                             <Card className='fakultet_card' >
-                                                <Card.Img variant="top" src={imagf} className='fakultet__card__img' />
+                                                <Card.Img variant="top" src={kafedra3} className='fakultet__card__img' />
                                                 <div className='fak_text'  id="secondCardKaf">
                                                     <h4 className='fak_card__name'>“ARXITEKTURA TARIXI VA NAZARIYASI” kafedrasi</h4><br />
                                                     <h6 className='fak_card__text'>Lorem ipsum dolor</h6>
@@ -240,7 +242,7 @@ const Kafedralar = (props) => {
                                         <AccordionDetails className='minicards'>
                                             <Row xs={1} md={4} className="g-4 minicards">
                                                 {rowsTarixi.map((row, id) => (
-                                                    <Col className='acc__pers_card'>
+                                                    <Col className='acc__pers_card' id="OneCardJob">
                                                         <Card className='fak__acc__card'>
                                                             <div className='CardImages'>
                                                                 <div className='relativeImages'>

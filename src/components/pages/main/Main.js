@@ -396,7 +396,7 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="academics_navbg">
+          <div className="academics_navbg container">
             <h5 className="academicss_h3">Sizning istaklaringiz va qobilyatlaringizni shakillantirishga yordam beradigan oltilik</h5>
             <ul className="academicss_ul">
 
@@ -519,7 +519,7 @@ const Main = () => {
           <h1 className="qabul11">Qabul</h1>
           <p>Biror narsani kashf qilishdan oldin, o'zingizni kashf eting ...</p>
 
-          <div className="imgQabul">
+          <div className="imgQabul container">
             <img src={institut} alt="photo" className="qabul_img" />
           </div>
 

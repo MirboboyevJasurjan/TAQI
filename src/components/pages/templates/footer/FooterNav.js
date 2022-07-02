@@ -22,7 +22,7 @@ export default function FooterNav() {
             <div className="bg_footer">
 
                 <div className="linebggg">
-                    <div className="line_black">
+                    <div className="line_black container">
 
                         <button className='buttoncall'>   <LocalPhoneIcon />ALOQA UCHUN</button>
                         <button className='buttoncall'>MUROJAAT CHUN</button>
