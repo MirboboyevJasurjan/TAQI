@@ -247,6 +247,12 @@
   padding-top: 5px;
 }
 
+@media (min-width: 1400px) {
+  .line_black{
+    max-width: 1400px;
+  }
+  
+}
 @media(min-width:1367px){
   .footer_contner{
       width: 1400px;

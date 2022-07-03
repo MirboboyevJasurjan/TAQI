@@ -908,6 +908,11 @@ habarlar_row {
   
 
 }
+@media (min-width: 1400px){
+  .academics_navbg {
+    max-width: 1400px;
+  }
+}
 
 @media screen and (max-width: 947px) {
   .header__h1 {
@@ -1008,12 +1013,18 @@ habarlar_row {
   .tashcard2_img{
     height: 600px;
   }
+  .habarlarCard__child{
+    margin-bottom: 5%;
+  }
 }
 
 @media screen and (max-width: 680px) {
   .header__h1 {
     top: 200px;
     text-align: center;
+  }
+  .habarlarCard__child{
+    margin-bottom: 3%;
   }
 
   .carousel2cards {

@@ -396,7 +396,7 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="academics_navbg container">
+          <div className="academics_navbg">
             <h5 className="academicss_h3">Sizning istaklaringiz va qobilyatlaringizni shakillantirishga yordam beradigan oltilik</h5>
             <ul className="academicss_ul">
 

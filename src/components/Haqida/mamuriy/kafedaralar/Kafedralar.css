@@ -256,7 +256,8 @@
     background: #c4c4c4;
   }
   .fak_card__name {
-    font-size: 14px;
+    font-size: 1em;
+    text-align: center;
   }
   .fak_card__text {
     font-size: 12px;
@@ -292,12 +293,15 @@
   .fakultet_row:nth-child(odd) .fakultet__card__img {
     left: 0px;
     top: 0px;
+    object-fit: cover;
+    height: 50%;
   }
 
   .fakultet_row:nth-child(even) .fakultet__card__img {
     left: 0px;
     top: 0;
     object-fit: cover;
+    height: 50%;
   }
 
   .fak_text {
@@ -363,9 +367,7 @@
     align-items: center;
     justify-content: space-around;
   }
-  .fakultet_row:nth-child(odd) .fak_card_down {
-    top: 140px;
-  }
+
   #secondCardMain .fakultet__card__img {
     left: 0px;
   }
@@ -398,5 +400,7 @@
     width: auto;
     object-fit: cover;
   }
-  
+  .fakultet__card__img{
+    height: 50% !important;
+  }
 }
