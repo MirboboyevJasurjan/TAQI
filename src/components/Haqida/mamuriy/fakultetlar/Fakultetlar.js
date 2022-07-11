@@ -83,8 +83,8 @@ const Fakultetlar = (props) => {
                                             className='accordionSummary'
                                         >
                                             <Card className='fakultet_card' >
-                                                <Card.Img variant="top" src={row.image} className='fakultet__card__img' />
-                                                <div className='fak_text'>
+                                                <Card.Img variant="top" src={row.image} className='fakultet__card__img' id="fakultet__card__img" />
+                                                <div className='fak_text' id='fak_text'>
                                                     <h4 className='fak_card__name'>{row.name}</h4><br />
                                                     <h6 className='fak_card__text'>{row.text}</h6>
                                                     <button className='fak_card_down' > Davom etish ... </button>

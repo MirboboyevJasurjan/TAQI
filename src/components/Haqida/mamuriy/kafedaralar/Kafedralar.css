@@ -74,7 +74,7 @@
   justify-content: center;
   left: -200px;
 }
-.fakultet_card {
+.kafedra_card {
   left: 200px;
   width: 455px;
   height: 259px;
@@ -82,11 +82,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 50px;
 }
-.fakultet_row:nth-child(odd) .fakultet_card {
+.fakultet_row:nth-child(odd) .kafedra_card {
   position: relative;
   right: -150px;
 }
-.fakultet_row:nth-child(even) .fakultet_card {
+.fakultet_row:nth-child(even) .kafedra_card {
   position: relative;
   left: 500px;
 }
@@ -114,10 +114,13 @@
 .fakultet_row:nth-child(odd) .fakultet__card__img {
   left: 358px;
   object-fit: cover;
+  width: 382px;
+  height: 201px;
 }
 .fakultet_row:nth-child(even) .fakultet__card__img {
   right: 358px;
   object-fit: cover;
+  
 }
 .fak_card_name {
   width: 192px;
@@ -202,7 +205,7 @@
     
   } */
 @media screen and (max-width: 1200px) {
-  .fakultet_card {
+  .kafedra_card {
     position: absolute;
     left: 0px;
   }
@@ -220,7 +223,7 @@
     display: flex ;
     justify-content: space-around;
   }
-  .fakultet_card{
+  .kafedra_card{
     width: 60%;
 
   }
@@ -244,7 +247,7 @@
   
 }
 @media screen and (max-width: 768px) {
-  .fakultet_card {
+  .kafedra_card {
     width: 250px;
     left: 150px;
   }
@@ -277,13 +280,13 @@
   .row_rahbariy {
     left: 0;
   }
-  .fakultet_row:nth-child(odd) .fakultet_card {
+  .fakultet_row:nth-child(odd) .kafedra_card {
     left: 0;
   }
-  .fakultet_row:nth-child(even) .fakultet_card {
+  .fakultet_row:nth-child(even) .kafedra_card {
     left: 0;
   }
-  .fakultet_card {
+  .kafedra_card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -319,7 +322,7 @@
     left: 0;
   }
 
-  .fakultet_card .fak_card_down {
+  .kafedra_card .fak_card_down {
     position: absolute;
     left: 0 !important;
   }

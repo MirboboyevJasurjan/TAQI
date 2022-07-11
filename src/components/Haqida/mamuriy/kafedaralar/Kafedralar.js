@@ -140,7 +140,7 @@ const Kafedralar = (props) => {
                                             id="panel1bh-header"
                                             className='accordionSummary'
                                         >
-                                            <Card className='fakultet_card' >
+                                            <Card className='kafedra_card' >
                                                     <Card.Img variant="top" src={kafedra1} className='fakultet__card__img' />
                                                 <div className='fak_text'  id="secondCardKaf">
                                                     <h4 className='fak_card__name'>“ARXITEKTURAVIY LOYIHALASH” kafedrasi</h4><br />
@@ -185,7 +185,7 @@ const Kafedralar = (props) => {
                                             id="panel1bh-header"
                                             className='accordionSummary'
                                         >
-                                            <Card className='fakultet_card' id="secondCardMain" >
+                                            <Card className='kafedra_card' id="secondCardMain" >
                                                 <Card.Img variant="top" src={kafedra2} className='fakultet__card__img' />
                                                 <div className='fak_text' id="secondCardKaf">
                                                     <h4 className='fak_card__name'>“SHAHARSOZLIK VA LANDSHAFT ARXITEKTURASI”  kafedrasi</h4><br />
@@ -229,7 +229,7 @@ const Kafedralar = (props) => {
                                             id="panel1bh-header"
                                             className='accordionSummary'
                                         >
-                                            <Card className='fakultet_card' >
+                                            <Card className='kafedra_card' >
                                                 <Card.Img variant="top" src={kafedra3} className='fakultet__card__img' />
                                                 <div className='fak_text'  id="secondCardKaf">
                                                     <h4 className='fak_card__name'>“ARXITEKTURA TARIXI VA NAZARIYASI” kafedrasi</h4><br />

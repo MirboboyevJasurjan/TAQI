@@ -6,6 +6,7 @@
   line-height: 42px;
 }
 
+
 .div_imgFak {
   width: 100%;
   height: 360px;
@@ -39,7 +40,7 @@
 
 .fakultet_card {
   left: 200px;
-  width: 455px;
+  width: 784px;
   height: 259px;
   background: #ebebeb;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -49,28 +50,31 @@
 .fakultet_row:nth-child(odd) .fakultet_card {
   position: relative;
   right: -150px;
+  left: 0px;
 }
 
 .fakultet_row:nth-child(even) .fakultet_card {
   position: relative;
-  left: 500px;
+  left: 265px;
 }
 
-.fak_text {
+#fak_text {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   left: 20px;
-  width: 300px;
+  width: 75%;
   margin: 20px;
   text-align: left;
 }
-
-.fakultet_row:nth-child(even) .fak_text {
-  left: 90px;
+.fakultet_row:nth-child(even) #fak_text{
+  left: 15%;
 }
+/* .fakultet_row:nth-child(even) .fak_text {
+  left: 90px;
+} */
 
 .fakultet__card__img {
   position: absolute;
@@ -80,13 +84,13 @@
   background: #c4c4c4;
 }
 
-.fakultet_row:nth-child(odd) .fakultet__card__img {
-  left: 358px;
+.fakultet_row:nth-child(odd) #fakultet__card__img {
+  left: 85% !important;
   object-fit: cover;
 }
 
-.fakultet_row:nth-child(even) .fakultet__card__img {
-  right: 358px;
+.fakultet_row:nth-child(even) #fakultet__card__img {
+  right: 85% !important;
   object-fit: cover;
 }
 
@@ -165,7 +169,44 @@
 .acc__pers_card {
   margin: 20px 0 !important;
 }
+.fakultet_row:nth-child(even) .fak_card_down {
+  top: 180px;
+}
 
+@media screen and (max-width: 1200px) {
+
+  .fakultet_row:nth-child(even) .fakultet_card{
+    left: 30%;
+  }
+  .fakultet_row:nth-child(odd) .fakultet_card{
+    left: 0%;
+  }
+
+  .fakultet_card{
+    width: 60%;
+  }
+  .fakultet_row:nth-child(odd) #fakultet__card__img{
+    width: 65%;
+  }
+  .fakultet_row:nth-child(even) #fakultet__card__img{
+    width: 65%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .fakultet_row:nth-child(odd) #fakultet__card__img{
+    width: 65%;
+    left: 80%;
+    height: 65%;
+  }
+  .fakultet_row:nth-child(even) .fakultet__card__img{
+    width: 80%;
+    height: 65%;
+  }
+  .fakultet_card{
+    width: 60%;
+  }
+  
+}
 @media screen and (max-width: 768px) {
   .fakultet_card {
     width: 250px;
@@ -222,15 +263,20 @@
     height: 400px;
   }
 
-  .fakultet_row:nth-child(odd) .fakultet__card__img {
-    left: 0px;
+  .fakultet_row:nth-child(odd) #fakultet__card__img {
+    left: 0px !important;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
     top: 0px;
+
   }
 
-  .fakultet_row:nth-child(even) .fakultet__card__img {
+  .fakultet_row:nth-child(even) #fakultet__card__img {
     left: 0px;
     top: 0;
     object-fit: cover;
+    width: 100%;
   }
 
   .fak_text {
@@ -260,4 +306,59 @@
     align-items: center !important;
     justify-content: center !important;
   }
+  .fak_card_down{
+    width: 100% !important;
+  }
+  .fakultet_row:nth-child(even) .fak_card_down{
+    top: 135px;
+  }
 }
+@media screen and (max-width: 576px) {
+  .acc__pers_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #secondCardMain .fakultet__card__img {
+    left: 0px;
+  }
+  #secondCardMain{
+    left: 0;
+  }
+  #secondCardMain #secondCardKaf{
+    left: 0px;
+  }
+  .fak__acc__card {
+    position: relative;
+    height: 350px;
+    width: 230.41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card_Name_Fak {
+    top: 112px;
+  }
+  .card_Job_Fak {
+    top: 102px
+  }
+  .CardImages {
+    height: 235px;
+  }
+  #CardKafImg{
+    height: 235px;
+    width: auto;
+    object-fit: cover;
+  }
+  .fakultet_row .fakultet__card__img{
+    height: 50% !important;
+    width: 100% !important;
+  }
+}
+
+/* .fakultet_card{
+  width: 784px;
+  height: 259px;
+} */
