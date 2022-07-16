@@ -27,6 +27,7 @@ import Ommaviy from '../pages/News/ommaviy/Ommaviy';
 import Elonlar from '../pages/News/elonlar/Elon';
 import Yangiliklar from '../pages/News/yangiliklar/Yangiliklar';
 // import NewsPage from '../pages/News/NewsPage';
+import NewsApi from './NewsApi/NewsApi';
 import BannerNews from '../pages/News/newsBanner/BannerNews';
 import Kafedralar from '../Haqida/mamuriy/kafedaralar/Kafedralar';
 
@@ -47,6 +48,7 @@ const Routs = (  ) => {
                     <Route path="/about" component={Ins_tarixi} />
                     <Route path="/rahbariyat" component={Rahbariyat} />
                     
+                    <Route path='/yangiliktest' component={NewsApi}  />
                     <Route path="/tashkilot" component={Tashkilot} />
                     <Route path="/qarorlar" component={Qarorlar} />
                     <Route path="/umumiy" component={UmumiyMalumot} />
