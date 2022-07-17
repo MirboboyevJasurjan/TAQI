@@ -16,9 +16,18 @@ import i18next from "i18next";
 const Nav = () => {
   const {t, i18n} = useTranslation()
 
-  const changeLanguage = (lang)=>{
-    i18n.changeLanguage(lang);
+  const changeLanguage = (e)=>{
+    i18n.changeLanguage(e.target.value);
   }
+
+  useEffect(()=>{
+    for (let index = 0; index < document.getElementsByClassName('lang').length; index++) {
+      const element = document.getElementsByClassName('lang')[index];
+      if(element.value === i18n.language){
+        element.setAttribute("selected", "true")
+      }
+    }
+  })
 
   const [state, setState] = useState(false);
   const [menu, setMenu] = useState(true)
@@ -112,12 +121,11 @@ const Nav = () => {
                   </li>
 
                   <li>
-                    <select className="uz">
-                      <option className="uz" value="uz" onClick={()=>changeLanguage("uz")}>Uz</option>
-                      <option className="uz" value="ru" onClick={()=>changeLanguage("ru")}>Ru</option>
-                      <option className="uz" value="en" onClick={()=>changeLanguage("en")}>En</option>
-                    </select>
-                  </li>
+                    <select className="uz" aria-label="Default select example" onChange={changeLanguage}>
+                      <option className="uz lang" value="uz">Uz</option>
+                      <option className="uz lang" value="ru">RU</option>
+                      <option className="uz lang" value="en">En</option>
+                    </select>                  </li>
 
                   <button 
                     type="submit" 

@@ -87,27 +87,27 @@ import SchoolIcon from "@mui/icons-material/School";
 // });
 
 
-i18next.init({
-  debug: true,
-  resources: {
-    uz: {
-      translation: {
-        "home_title": "TOSHKENT ARXITEKTURA - QURILISH INSTITIUTI"
-      }
-    },
-    ru: {
-      translation: {
-        "home_title": "ТАШКЕНТСКИЙ АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ ИНСТИТУТ"
+// i18next.init({
+//   debug: true,
+//   resources: {
+//     uz: {
+//       translation: {
+//         "home_title": "TOSHKENT ARXITEKTURA - QURILISH INSTITIUTI"
+//       }
+//     },
+//     ru: {
+//       translation: {
+//         "home_title": "ТАШКЕНТСКИЙ АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ ИНСТИТУТ"
 
-      }
-    },
-    en: {
-      translation: {
-        "home_title": "TASHKENT ARCHITECTURE - CONSTRUCTION INSTITUTE"
-      }
-    }
-  }
-});
+//       }
+//     },
+//     en: {
+//       translation: {
+//         "home_title": "TASHKENT ARCHITECTURE - CONSTRUCTION INSTITUTE"
+//       }
+//     }
+//   }
+// });
 // initialized and ready to go!
 // i18next is already initialized, because the translation resources where passed via init function
 // document.getElementById('header__h1').innerHTML = i18next.t('key');
@@ -138,7 +138,7 @@ const Main = () => {
         <div className="header">
           <Nav />
           <div className="header__title">
-            <h1 className="header__h1">TOSHKENT ARXITEKTURA  QURILISH INSTITIUTI</h1>
+            <h1 className="header__h1">{t("navbar.Taqi")}</h1>
             {/* <h1 className="header__h1" id="header__h1"> 555 </h1> */}
 
 

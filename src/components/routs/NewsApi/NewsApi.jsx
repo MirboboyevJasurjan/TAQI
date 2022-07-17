@@ -14,7 +14,7 @@ const NewsApi = () => {
  
   useEffect(() => {
     const getArticles = async () => {
-      const response = await axios.get(`http://192.168.0.113:8000`)
+      const response = await axios.get(`https://62373d82f5f6e28a154abef5.mockapi.io/news`)
       
       setArticles(response)
       console.log(response)

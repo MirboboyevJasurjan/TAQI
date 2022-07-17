@@ -3,19 +3,24 @@ import Backend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
+// const resources = {
+//     en:{
+//       translation:{
+//         "TAQI":"TOSHKENT ARXITEKTURA QURILISH INSTITIUTI"
+//       }
+//     },
+//     ru:{
+//       translation:{
+//         "TAQI":"ТАКb"
+//       }
+//     }
+//   }
+  
 
 i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
 
-    supportedLngs: ['en', 'uz', 'ru'],
-    fallbackLng: 'en',
+    fallbackLng: 'uz',
     debug:true,
-    detection: {
-        order: ['queryString', 'cookie'],
-        cache: ['cookie']
-    },
-    backend:{
-        loadPath: '/components/assets/locales/{{lng}}/translation.json'
-    },
     interpolation: {
         escapeValue: false,
     }
