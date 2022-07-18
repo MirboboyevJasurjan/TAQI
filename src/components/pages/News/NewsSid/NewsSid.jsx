@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import "./Sidebar.css";
-import { CgMenuGridO } from "react-icons/cg";
 import './NewsSid.css'
-import '../../../Haqida/Umumiy/Sidebar/Lsidebar.css';
+import { CgMenuGridO } from "react-icons/cg";
 import '../../../Haqida/Umumiy/Sidebar/Sidebar.css';
+import '../../../Haqida/Umumiy/Sidebar/Lsidebar.css';
 
 function NewsSid() {
     function tops() {
