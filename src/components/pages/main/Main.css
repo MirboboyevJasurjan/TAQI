@@ -56,7 +56,7 @@ a {
 .header__images {
   position: absolute;
   width: 80%;
-  top: 450px;
+  top: 61%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -870,7 +870,7 @@ habarlar_row {
     top: 47%;
   }
   .header__images{
-    top: 65%;
+    top: 60%;
   }
   .event_card1{
     width: 100%;

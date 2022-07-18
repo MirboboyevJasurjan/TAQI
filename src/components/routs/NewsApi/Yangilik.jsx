@@ -1,5 +1,6 @@
 import React from 'react'
 
+export const Context = React.createContext
 const Yangilik = ({ title, description, image }) => {
   return (
           <div className="news-app">

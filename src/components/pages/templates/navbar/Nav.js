@@ -79,26 +79,26 @@ const Nav = () => {
             <nav className="navigation-top">
               <h2 className="logo">
                 <Link className="link-logo" to="/#" >
-                  <span className="link-logo-child">TOSHKENT ARXITEKTURA QURILISH INSTITUTI</span>
+                  <span className="link-logo-child">{t("navbar.Taqi")}</span>
                   <img className="navbarLogo" src={logo} alt="TAQI Logo" />
                 </Link>
               </h2>
               <div className={isAcctive ? 'nav-top-link': 'nav-topMob'}>
                 <ul>
                   <li>
-                    <a href="#">Talabalar</a>
+                    <a href="#">{t("navbar.talabalar")}</a>
                   </li>
 
                   <li>
-                    <a href="#">Xodimlar</a>
+                    <a href="#">{t("navbar.xodimlar")}</a>
                   </li>
 
                   <li>
-                    <a href="#"> Biturichilar </a>
+                    <a href="#"> {t("navbar.bitiruvchilar")} </a>
                   </li>
 
                   <li>
-                    <a href="#"> Tadqiqotchilar </a>
+                    <a href="#"> {t("navbar.tadqiqotchilar")}</a>
                   </li>
                    
                   <li>
@@ -122,7 +122,7 @@ const Nav = () => {
 
                   <li>
                     <select className="uz" aria-label="Default select example" onChange={changeLanguage}>
-                      <option className="uz lang" value="uz">Uz</option>
+                      <option className="uz lang" value="uz" selected="true">Uz</option>
                       <option className="uz lang" value="ru">RU</option>
                       <option className="uz lang" value="en">En</option>
                     </select>                  </li>

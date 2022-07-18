@@ -32,8 +32,8 @@ const NewsCards = (...props) => {
   
   function Save() {
     const indexSaved = props.idx; 
-    console.log(indexSaved);
-    console.log(props);
+    // console.log(indexSaved);
+    // console.log(props);
   }
 
   return (
@@ -41,11 +41,11 @@ const NewsCards = (...props) => {
       <Card className="newsP__card">
         <Card.Img
           variant="top"
-          src={props.imagee}
+          src={props[0].image}
           className="newsP__card__img"
         />
         <p className="newsText">{props[0].title}</p>
-        <span className="newsText">{props[0].text}</span>
+        <span className="newsText">{props[0].description}</span>
         <Card.Body className="newsP__card__body">
           <p><Link to="/newsPage"  className="card__down" onClick={Save}> {props[0].idx} Davomi  </Link></p>
           {/* <Button onClick={Save} className="card__down" >Davomi . . . </Button> */}

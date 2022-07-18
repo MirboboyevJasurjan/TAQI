@@ -25,7 +25,7 @@ function BannerNews(props) {
     ];
 
     let inde = props.idx
-    console.log(inde);
+    // console.log(inde);
 
     return (
         <div>
