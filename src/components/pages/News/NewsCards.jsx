@@ -45,7 +45,7 @@ const NewsCards = (...props) => {
           className="newsP__card__img"
         />
         <p className="newsText">{props[0].title}</p>
-        <span className="newsText">{props[0].description}</span>
+        {/* <span className="newsText">{props[0].description}</span> */}
         <Card.Body className="newsP__card__body">
           <p><Link to="/newsPage"  className="card__down" onClick={Save}> {props[0].idx} Davomi  </Link></p>
           {/* <Button onClick={Save} className="card__down" >Davomi . . . </Button> */}

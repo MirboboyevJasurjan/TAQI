@@ -148,13 +148,13 @@ const Nav = () => {
           <div onclick={onMenu} className={'bgbtoon'}  activeClassName="active">
             <nav  className={isAcctive ? 'navigation-bottom': 'menuMob'}>
               <ul className="nav-bottom-link" >
-                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem  "} to="/about"  >Haqida</NavLink></li>
-                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/news"   >Habarlar</NavLink></li>
-                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/tadbir1"  >Tadbirlar</NavLink></li>
-                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/ilmiy1"  >Ilmiy</NavLink></li>
-                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/tadqiqot" > Tadqiqot </NavLink></li>
-                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/qabul" >Qabul</NavLink></li>
-                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem  "} to="/campus" >Campus Life</NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem  "} to="/about"  >{t("navbar.haqida")}</NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/news"   >{t("navbar.habarlar")}</NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/tadbir1"  >{t("navbar.tadbirlar")}</NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/ilmiy1"  >{t("navbar.ilmiy")}</NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/tadqiqot" > {t("navbar.tadqiqot")} </NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem "} to="/qabul" >{t("navbar.qabul")}</NavLink></li>
+                <li onClick={tops}><NavLink activeClassName="active" className={"link menuItem  "} to="/campus" >{t("navbar.campus")}</NavLink></li>
               </ul>
             </nav>
           </div>

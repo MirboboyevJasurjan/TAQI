@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import i18next from 'i18next';
+import i18next from "i18next";
 import { useTranslation, initReactI18Next } from "react-i18next";
-import cookie from 'js-cookie'
+import cookie from "js-cookie";
 import BiMenu from "react-icons/bi";
-import { Container, Col, Row } from "react-bootstrap"
+import { Container, Col, Row } from "react-bootstrap";
 
 import "./Main.css";
 import "./media.css";
@@ -15,10 +15,10 @@ import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
-import StudentCap from '../../assets/icons/studentCap.svg'
-import OnlineLearning from '../../assets/icons/onlineLearning.svg'
-import Jigsaw from '../../assets/icons/jigsaw.svg'
-import StudentLearning from '../../assets/icons/studentLearning.svg'
+import StudentCap from "../../assets/icons/studentCap.svg";
+import OnlineLearning from "../../assets/icons/onlineLearning.svg";
+import Jigsaw from "../../assets/icons/jigsaw.svg";
+import StudentLearning from "../../assets/icons/studentLearning.svg";
 
 import Grid from "@mui/material/Grid";
 
@@ -50,7 +50,7 @@ import academics1 from "../../assets/images/main/academics1.jpeg";
 import academics2 from "../../assets/images/main/academics2.jpeg";
 import academics3 from "../../assets/images/main/academics3.jpeg";
 
-import tadqiqot from "../../assets/images/main/tadqiqot.jpeg"
+import tadqiqot from "../../assets/images/main/tadqiqot.jpeg";
 
 import research_bg from "../../assets/images/main/research_bg.png";
 import FooterNav from "../templates/footer/FooterNav";
@@ -59,63 +59,26 @@ import events21 from "../../assets/images/main/bg/A2.jpg";
 import events31 from "../../assets/images/main/bg/A5.jpg";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import SchoolIcon from "@mui/icons-material/School";
-
-// i18next
-// .use(initReactI18Next)
-// .init({
-//   resources: {
-//     uz: {
-//       translation: {
-//         "home_title": "TOSHKENT ARXITEKTURA - QURILISH INSTITIUTI"
-//       }
-//     },
-//     ru: {
-//       translation: {
-//        "home_title": "ТАШКЕНТСКИЙ АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ ИНСТИТУТ"
-
-//       }
-//     },
-//     en: {
-//       translation: {
-//         "home_title": "TASHKENT ARCHITECTURE - CONSTRUCTION INSTITUTE"
-//       }
-//     }
-//   },
-//   fallbackLng: 'en'
-
-
-// });
-
-
-// i18next.init({
-//   debug: true,
-//   resources: {
-//     uz: {
-//       translation: {
-//         "home_title": "TOSHKENT ARXITEKTURA - QURILISH INSTITIUTI"
-//       }
-//     },
-//     ru: {
-//       translation: {
-//         "home_title": "ТАШКЕНТСКИЙ АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ ИНСТИТУТ"
-
-//       }
-//     },
-//     en: {
-//       translation: {
-//         "home_title": "TASHKENT ARCHITECTURE - CONSTRUCTION INSTITUTE"
-//       }
-//     }
-//   }
-// });
-// initialized and ready to go!
-// i18next is already initialized, because the translation resources where passed via init function
-// document.getElementById('header__h1').innerHTML = i18next.t('key');
-
+import axios from "axios";
 
 const Main = () => {
+  const [rows, setRows] = useState([]);
 
-  const { t } = useTranslation()
+  useEffect(() => {
+    const getRows = async () => {
+      const response = await axios.get(
+        `https://62373d82f5f6e28a154abef5.mockapi.io/news`
+      );
+
+      setRows(response.data);
+      console.log(response.data);
+      console.log("response");
+    };
+
+    getRows();
+  }, []);
+
+  const { t } = useTranslation();
 
   const [scrollY, setScrollY] = useState(0);
   function logit() {
@@ -141,13 +104,29 @@ const Main = () => {
             <h1 className="header__h1">{t("navbar.Taqi")}</h1>
             {/* <h1 className="header__h1" id="header__h1"> 555 </h1> */}
 
-
             <div className="header__images">
-              <div className="header__images__child"><img className="header__images__child" src={header1} alt="TAQI" />
+              <div className="header__images__child">
+                <img
+                  className="header__images__child"
+                  src={header1}
+                  alt="TAQI"
+                />
                 <button className="header__card__btn">Sahifaga o'tish</button>
               </div>
-              <div className="header__images__child"><img className="header__images__child" src={header2} alt="TAQI" /></div>
-              <div className="header__images__child"><img className="header__images__child" src={header3} alt="TAQI" /></div>
+              <div className="header__images__child">
+                <img
+                  className="header__images__child"
+                  src={header2}
+                  alt="TAQI"
+                />
+              </div>
+              <div className="header__images__child">
+                <img
+                  className="header__images__child"
+                  src={header3}
+                  alt="TAQI"
+                />
+              </div>
             </div>
           </div>
 
@@ -169,8 +148,6 @@ const Main = () => {
               </Carousel.Item>
             </Carousel>
           </div>
-
-
 
           <div className="carousel1">
             <Carousel fade interval="5000">
@@ -212,7 +189,16 @@ const Main = () => {
 
             <Container>
               <Row className="habarlar_row">
-                <Col className="habarlarCardBig" sm={12} md={6} lg={6} xl={6} xxl={6}  >
+                {rows.map((row, id) => (
+                  <Col xs={1} md={4} className="g-4">
+                    <div className="habarlarCard__child">
+                      <img className="imghabar" src={row.image} alt="photo" />
+                      <a className="tashcard2_txt">{row.description}</a>
+                    </div>
+                  </Col>
+                ))}
+
+                {/* <Col className="habarlarCardBig" sm={12} md={6} lg={6} xl={6} xxl={6}  >
                   <div className="habarlarCard__child">
                     <img className="imghabar" src={habarlar1} alt="photo" />
                     <a className="tashcard2_txt"> "Korrupsiyadan xoli mamlakat" mavzusida seminar - trening bo‘lib o‘tdi</a>
@@ -231,19 +217,90 @@ const Main = () => {
                     </div>
                     <a className="tashcard2_txt">MUROJAAT VA TAKLIF!</a>
                   </div>
+                </Col> */}
+              </Row>
+              <Row className="habarlar_row">
+                <Col
+                  className="habarlarCardBig"
+                  sm={12}
+                  md={6}
+                  lg={6}
+                  xl={6}
+                  xxl={6}
+                >
+                  <div className="habarlarCard__child">
+                    <img className="imghabar" src={habarlar1} alt="photo" />
+                    <a className="tashcard2_txt">
+                      {" "}
+                      "Korrupsiyadan xoli mamlakat" mavzusida seminar - trening
+                      bo‘lib o‘tdi
+                    </a>
+                  </div>
+                </Col>
+                <Col
+                  className="habarlarCard"
+                  sm={12}
+                  md={3}
+                  lg={3}
+                  xl={3}
+                  xxl={3}
+                >
+                  <div className="habarlarCard__child">
+                    <img
+                      className="tashcard2_img"
+                      src={habarlar2}
+                      alt="photo"
+                    />
+                    <a className="tashcard2_txt">
+                      15 may - Xalqaro oila kuni! Oilalarda milliy qadriyatlarni
+                      mustahkamlash” nomli ijodiy kecha o’tkazildi.
+                    </a>
+                  </div>
+                </Col>
+                <Col
+                  className="habarlarCard"
+                  sm={12}
+                  md={3}
+                  lg={3}
+                  xl={3}
+                  xxl={3}
+                >
+                  <div className="habarlarCard__child">
+                    <div className="tashcard2_img">
+                      <img src={habarlar3} alt="photo" />
+                    </div>
+                    <a className="tashcard2_txt">MUROJAAT VA TAKLIF!</a>
+                  </div>
                 </Col>
               </Row>
               <br />
               <Row className="habarlar_row">
-                <Col className="habarlarCard" sm={12} md={3} lg={3} xl={3} xxl={3}  >
+                <Col
+                  className="habarlarCard"
+                  sm={12}
+                  md={3}
+                  lg={3}
+                  xl={3}
+                  xxl={3}
+                >
                   <div className="habarlarCard__child">
                     <div className="tashcard2_img">
                       <img src={habarlar4} alt="photo" />
                     </div>
-                    <a className="tashcard2_txt">TAQI tayanch doktorant Germaniya Federativ Respublikasida ilmiy stajirovka oʼtamoqda.</a>
+                    <a className="tashcard2_txt">
+                      TAQI tayanch doktorant Germaniya Federativ Respublikasida
+                      ilmiy stajirovka oʼtamoqda.
+                    </a>
                   </div>
                 </Col>
-                <Col className="habarlarCard" sm={12} md={3} lg={3} xl={3} xxl={3}  >
+                <Col
+                  className="habarlarCard"
+                  sm={12}
+                  md={3}
+                  lg={3}
+                  xl={3}
+                  xxl={3}
+                >
                   <div className="habarlarCard__child">
                     <div className="tashcard2_img">
                       <img src={habarlar5} alt="photo" />
@@ -251,10 +308,22 @@ const Main = () => {
                     <a className="tashcard2_txt">OGOHLIK-DAVR TALABI!</a>
                   </div>
                 </Col>
-                <Col className="habarlarCardBig" sm={12} md={6} lg={6} xl={6} xxl={6}  >
+                <Col
+                  className="habarlarCardBig"
+                  sm={12}
+                  md={6}
+                  lg={6}
+                  xl={6}
+                  xxl={6}
+                >
                   <div className="habarlarCard__child">
                     <img src={habarlar6} className="imghabar" alt="photo" />
-                    <a className="tashcard2_txt">TAQIning Arxitektura fakultetida bitiruvchilar ishtirokida “Xalqchil davlat xizmatiga ochiq yoʼl hamda davlat xizmatchisi uchun zarur koʼnikmalar” mavzusidagi ilk o'quv-seminari o'tkazildi</a>
+                    <a className="tashcard2_txt">
+                      TAQIning Arxitektura fakultetida bitiruvchilar ishtirokida
+                      “Xalqchil davlat xizmatiga ochiq yoʼl hamda davlat
+                      xizmatchisi uchun zarur koʼnikmalar” mavzusidagi ilk
+                      o'quv-seminari o'tkazildi
+                    </a>
                   </div>
                 </Col>
                 <br />
@@ -272,7 +341,10 @@ const Main = () => {
         <div className="events_page">
           <div className="eventsota">
             <h1 className="event_h1">Tadbirlar</h1>
-            <p className="event_p">Talabalarni jamiyat murakkab dunyoda faol <br /> fuqarolar va rahbarlar sifatida mazmunli hissa qo'shishga tayyorlash</p>
+            <p className="event_p">
+              Talabalarni jamiyat murakkab dunyoda faol <br /> fuqarolar va
+              rahbarlar sifatida mazmunli hissa qo'shishga tayyorlash
+            </p>
 
             <Grid className="event_cards" container spacing={1}>
               <Grid className="eventsCards" item md={2.8}>
@@ -288,9 +360,7 @@ const Main = () => {
                     <div className="date_event">
                       <h4>16/04</h4>
                     </div>
-                    <p className="h4Text">
-                      MILLIY LIBOSLAR NAMOYISHI
-                    </p>
+                    <p className="h4Text">MILLIY LIBOSLAR NAMOYISHI</p>
                   </div>
                 </div>
               </Grid>
@@ -308,7 +378,10 @@ const Main = () => {
                     <div className="date_event">
                       <h4>16/04</h4>
                     </div>
-                    <p className="h4Text">18 NOYABR - O‘ZBEKISTON DAVLAT BAYROG‘I QABUL QILINGAN KUN!</p>
+                    <p className="h4Text">
+                      18 NOYABR - O‘ZBEKISTON DAVLAT BAYROG‘I QABUL QILINGAN
+                      KUN!
+                    </p>
                   </div>
                 </div>
               </Grid>
@@ -326,7 +399,11 @@ const Main = () => {
                     <div className="date_event">
                       <h4>16/04</h4>
                     </div>
-                    <p className="h4Text"> JAMIYATDA MAFKURAVIY IMMUNITETNI MUSTAHKAMLASH VA JAHOLATGA QARSHI MA'RIFAT</p>
+                    <p className="h4Text">
+                      {" "}
+                      JAMIYATDA MAFKURAVIY IMMUNITETNI MUSTAHKAMLASH VA
+                      JAHOLATGA QARSHI MA'RIFAT
+                    </p>
                   </div>
                 </div>
               </Grid>
@@ -344,7 +421,10 @@ const Main = () => {
                     <div className="date_event">
                       <h4>16/04</h4>
                     </div>
-                    <p className="h4Text"> MAMLAKATIMIZNING YANGI ARXITEKTURAVIY QIYOFASINI YARATING </p>
+                    <p className="h4Text">
+                      {" "}
+                      MAMLAKATIMIZNING YANGI ARXITEKTURAVIY QIYOFASINI YARATING{" "}
+                    </p>
                   </div>
                 </div>
               </Grid>
@@ -360,7 +440,10 @@ const Main = () => {
 
         <div className="academicss_page">
           <h1 className="academicss_h1">Akademiklar</h1>
-          <p className="academicss_p">Talabalarni jamiyat murakkab dunyoda faol <br /> fuqarolar va rahbarlar sifatida mazmunli hissa qo'shishga tayyorlash</p>
+          <p className="academicss_p">
+            Talabalarni jamiyat murakkab dunyoda faol <br /> fuqarolar va
+            rahbarlar sifatida mazmunli hissa qo'shishga tayyorlash
+          </p>
 
           <div className="academicss_card_bg">
             <div className="academicss_card_main">
@@ -373,7 +456,8 @@ const Main = () => {
                   <img src={academics1} alt="photo" />
 
                   <p>
-                    “Zulfiya – bahor va muhabbat kuychisi” deb nomlangan ma`naviy tadbir bo’lib o’tdi.
+                    “Zulfiya – bahor va muhabbat kuychisi” deb nomlangan
+                    ma`naviy tadbir bo’lib o’tdi.
                   </p>
                 </Grid>
 
@@ -381,7 +465,9 @@ const Main = () => {
                   <img src={academics2} alt="photo" />
 
                   <p>
-                    Mir Alisher Navoiy hazratlarining 580 yilligi munosabati bilan “Alisher Navoiy – so‘z mulkining sultoni” mavzusida ma’naviy-ma’rifiy tadbir o‘tkazildi.
+                    Mir Alisher Navoiy hazratlarining 580 yilligi munosabati
+                    bilan “Alisher Navoiy – so‘z mulkining sultoni” mavzusida
+                    ma’naviy-ma’rifiy tadbir o‘tkazildi.
                   </p>
                 </Grid>
 
@@ -389,7 +475,8 @@ const Main = () => {
                   <img src={academics3} alt="photo" />
 
                   <p>
-                    “Zulfiyaxonim - 105 yoshda” mavzusida adabiy-badiiy kecha o‘tkazildi
+                    “Zulfiyaxonim - 105 yoshda” mavzusida adabiy-badiiy kecha
+                    o‘tkazildi
                   </p>
                 </Grid>
               </Grid>
@@ -397,31 +484,45 @@ const Main = () => {
           </div>
 
           <div className="academics_navbg">
-            <h5 className="academicss_h3">Sizning istaklaringiz va qobilyatlaringizni shakillantirishga yordam beradigan oltilik</h5>
+            <h5 className="academicss_h3">
+              Sizning istaklaringiz va qobilyatlaringizni shakillantirishga
+              yordam beradigan oltilik
+            </h5>
             <ul className="academicss_ul">
-
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">Arxitektura</Link>
+                <Link className="academicss_ul_li" to="/fakultetlar">
+                  Arxitektura
+                </Link>
               </li>
               |
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">Bino va inshoatlar</Link>
+                <Link className="academicss_ul_li" to="/fakultetlar">
+                  Bino va inshoatlar
+                </Link>
               </li>
               |
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">Qurilishni boshqarish</Link>
+                <Link className="academicss_ul_li" to="/fakultetlar">
+                  Qurilishni boshqarish
+                </Link>
               </li>
               |
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">Muhandislik qurilish infrastrukturasi</Link>
+                <Link className="academicss_ul_li" to="/fakultetlar">
+                  Muhandislik qurilish infrastrukturasi
+                </Link>
               </li>
               |
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">Magistratura</Link>
+                <Link className="academicss_ul_li" to="/fakultetlar">
+                  Magistratura
+                </Link>
               </li>
               |
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">Sirtqi bo’lim</Link>
+                <Link className="academicss_ul_li" to="/fakultetlar">
+                  Sirtqi bo’lim
+                </Link>
               </li>
             </ul>
 
@@ -437,46 +538,60 @@ const Main = () => {
         <div className="research_page">
           <h1 className="research_h1">Tadqiqot</h1>
           <p className="research_p">
-            Talabalarni murakkab dunyoda faol fuqarolar va liderlar <br />{" "} sifatida jamiyatga mazmunli hissa qo'shishga tayyorlash
+            Talabalarni murakkab dunyoda faol fuqarolar va liderlar <br />{" "}
+            sifatida jamiyatga mazmunli hissa qo'shishga tayyorlash
           </p>
 
           <div className="research_number">
             <div className="research_numb_container">
-
               {/* <div className="researchP1"> */}
 
-                <div className="research_num">
-                  {/* <LocalLibraryIcon className="iconsss" /> */}
-                  <img src={StudentLearning} className="researchIcon " alt="Online Learning" />
-                  <h2>720</h2>
-                  <p>O'qituvchilar</p>
-                </div>
+              <div className="research_num">
+                {/* <LocalLibraryIcon className="iconsss" /> */}
+                <img
+                  src={StudentLearning}
+                  className="researchIcon "
+                  alt="Online Learning"
+                />
+                <h2>720</h2>
+                <p>O'qituvchilar</p>
+              </div>
 
-                <div className="research_num">
-                  {/* <researchIcon className="iconsss" /> */}
-                  <img src={StudentCap} className="researchIcon " alt="Online Learning" />
-                  <h2>8229</h2>
-                  <p>Talabalar</p>
-                </div>
+              <div className="research_num">
+                {/* <researchIcon className="iconsss" /> */}
+                <img
+                  src={StudentCap}
+                  className="researchIcon "
+                  alt="Online Learning"
+                />
+                <h2>8229</h2>
+                <p>Talabalar</p>
+              </div>
               {/* </div> */}
-
 
               {/* <div className="researchP2"> */}
-                <div className="research_num">
-                  {/* <AttachMoneyIcon className="iconsss" /> */}
-                  <img src={Jigsaw} className="researchIcon " alt="Online Learning" />
-                  <h2>1431</h2>
-                  <p>Ilmiy nashrlar</p>
-                </div>
+              <div className="research_num">
+                {/* <AttachMoneyIcon className="iconsss" /> */}
+                <img
+                  src={Jigsaw}
+                  className="researchIcon "
+                  alt="Online Learning"
+                />
+                <h2>1431</h2>
+                <p>Ilmiy nashrlar</p>
+              </div>
 
-                <div className="research_num">
-                  {/* <AttachMoneyIcon className="iconsss" /> */}
-                  <img src={OnlineLearning} className="researchIcon " alt="Online Learning" />
-                  <h2>573</h2>
-                  <p>O'quv kurslar</p>
-                </div>
+              <div className="research_num">
+                {/* <AttachMoneyIcon className="iconsss" /> */}
+                <img
+                  src={OnlineLearning}
+                  className="researchIcon "
+                  alt="Online Learning"
+                />
+                <h2>573</h2>
+                <p>O'quv kurslar</p>
+              </div>
               {/* </div> */}
-
             </div>
           </div>
 
@@ -489,17 +604,26 @@ const Main = () => {
               <Grid className="academicss_card" item md={3.7}>
                 <img src={tadqiqot} alt="photo" />
 
-                <p>Z.B.Fazillayevning 2022 yil 16 iyun kuni soat 10:00 da doktorlik (PhD) dissertatsiyasi muhokamasibo’lib o’tadi. </p>
+                <p>
+                  Z.B.Fazillayevning 2022 yil 16 iyun kuni soat 10:00 da
+                  doktorlik (PhD) dissertatsiyasi muhokamasibo’lib o’tadi.{" "}
+                </p>
               </Grid>
               <Grid className="academicss_card" item md={3.7}>
                 <img src={tadqiqot} alt="photo" />
 
-                <p>X.T.Alimovning 2022 yil 16 - iyun kuni soat 11:30 da doktorlik (PhD) dissertatsiyasi muhokamasiga bo’lib o’tadi. </p>
+                <p>
+                  X.T.Alimovning 2022 yil 16 - iyun kuni soat 11:30 da doktorlik
+                  (PhD) dissertatsiyasi muhokamasiga bo’lib o’tadi.{" "}
+                </p>
               </Grid>
               <Grid className="academicss_card" item md={3.7}>
                 <img src={tadqiqot} alt="photo" />
 
-                <p>A.Sh.Martazayevning doktorlik (PhD) dissertatsiyasi muhokamasiga taklif etamiz. </p>
+                <p>
+                  A.Sh.Martazayevning doktorlik (PhD) dissertatsiyasi
+                  muhokamasiga taklif etamiz.{" "}
+                </p>
               </Grid>
             </Grid>
           </div>
@@ -528,14 +652,16 @@ const Main = () => {
               <Grid className="qabul_cont" container spacing={1}>
                 <Grid item md={5.7}>
                   <h4>
-                    Yo'lga chiqib Toshkent arxitektura-qurilish instituti ta'lim imkoniyatlarini o'rganing.{" "}
+                    Yo'lga chiqib Toshkent arxitektura-qurilish instituti ta'lim
+                    imkoniyatlarini o'rganing. <br />
                     <br />
-                    <br />
-                    Biz sizga ularni tanishtiramiz va namoyish qilamiz.</h4>
+                    Biz sizga ularni tanishtiramiz va namoyish qilamiz.
+                  </h4>
                 </Grid>
                 <Grid item md={5.7}>
                   <h4>
-                    Qiziqishlaringizni rivojlantirishda Toshkent arxitektura-qurilish instituti sizga yordam beradi.
+                    Qiziqishlaringizni rivojlantirishda Toshkent
+                    arxitektura-qurilish instituti sizga yordam beradi.
                     <br />
                     <br />
                     Yangi o’quv yili uchun qabul boshlandi.
