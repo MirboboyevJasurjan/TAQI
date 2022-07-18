@@ -6,11 +6,11 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import NewsPage from "./NewsPage";
-// import BannerNews from "./newsBanner/BannerNews";
+import Nav from '../templates/navbar/Nav';
+import './NewCards.css'
+
 
 const NewsCards = (...props) => {
-
-      
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -37,7 +37,7 @@ const NewsCards = (...props) => {
   }
 
   return (
-    <>
+    <>   
       <Card className="newsP__card">
         <Card.Img
           variant="top"

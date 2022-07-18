@@ -9,6 +9,10 @@
     /* background-attachment: fixed; */
 }
 
+.col{
+    
+}
+
 
 .haqida_father{
     margin-top: 42px;
@@ -82,10 +86,11 @@ padding: 5px;
     position: relative;
 }
 .newsP__card__img{
-    height: 272px;
+    height: 292px;
     width: 201px;
     right: 300px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    margin: 15px;
 }
 .newsP__card__body{
     position: relative;
