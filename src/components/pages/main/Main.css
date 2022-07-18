@@ -881,6 +881,9 @@ habarlar_row {
   .event_card_txt p{
     font-size: 13px;
   }
+  .header__h1{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1032,7 +1035,7 @@ habarlar_row {
     display: block;
     height: 10%;
     width: 50%;
-    top: 350px;
+    top: 60%;
     left: 25%;
     display: flex;
     align-items: center;
@@ -1077,4 +1080,5 @@ habarlar_row {
   .research_num h2{
     margin: 0;
   }
+  
 }

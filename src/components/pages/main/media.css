@@ -31,6 +31,12 @@
   width: 1435px;
   margin: 0 auto;
  }
+ .header__h1{
+  width: 80%;
+ }
+ /* .header__images {
+  top: 480px;
+ } */
  
 }
 
