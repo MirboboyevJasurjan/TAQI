@@ -63,6 +63,7 @@ import axios from "axios";
 
 const Main = () => {
   const [rows, setRows] = useState([]);
+  const arrays = [...rows].reverse().slice(0, 6)
 
   useEffect(() => {
     const getRows = async () => {
@@ -187,17 +188,20 @@ const Main = () => {
           <div className="tashtechWidth">
             <h3 className="main_tash_h3"> HABARLAR </h3>
 
-            <Container>
+            <Container className="containerNews">
               <Row className="habarlar_row">
-                {rows.map((row, id) => (
-                  <Col xs={1} md={4} className="g-4">
+                {arrays.map((row, id) => (
+                  <Col xs={1} md={4} className="g-4 colHabar">
                     <div className="habarlarCard__child">
+                    <div className="tashcard2_img imghabar">
                       <img className="imghabar" src={row.image} alt="photo" />
-                      <a className="tashcard2_txt">{row.description}</a>
                     </div>
+                     
+                      <Link to ="/news" className="tashcard2_txt">{row.description}</Link>
+                    </div>
+                    
                   </Col>
                 ))}
-
                 {/* <Col className="habarlarCardBig" sm={12} md={6} lg={6} xl={6} xxl={6}  >
                   <div className="habarlarCard__child">
                     <img className="imghabar" src={habarlar1} alt="photo" />
@@ -218,116 +222,9 @@ const Main = () => {
                     <a className="tashcard2_txt">MUROJAAT VA TAKLIF!</a>
                   </div>
                 </Col> */}
+
               </Row>
-              <Row className="habarlar_row">
-                <Col
-                  className="habarlarCardBig"
-                  sm={12}
-                  md={6}
-                  lg={6}
-                  xl={6}
-                  xxl={6}
-                >
-                  <div className="habarlarCard__child">
-                    <img className="imghabar" src={habarlar1} alt="photo" />
-                    <a className="tashcard2_txt">
-                      {" "}
-                      "Korrupsiyadan xoli mamlakat" mavzusida seminar - trening
-                      bo‘lib o‘tdi
-                    </a>
-                  </div>
-                </Col>
-                <Col
-                  className="habarlarCard"
-                  sm={12}
-                  md={3}
-                  lg={3}
-                  xl={3}
-                  xxl={3}
-                >
-                  <div className="habarlarCard__child">
-                    <img
-                      className="tashcard2_img"
-                      src={habarlar2}
-                      alt="photo"
-                    />
-                    <a className="tashcard2_txt">
-                      15 may - Xalqaro oila kuni! Oilalarda milliy qadriyatlarni
-                      mustahkamlash” nomli ijodiy kecha o’tkazildi.
-                    </a>
-                  </div>
-                </Col>
-                <Col
-                  className="habarlarCard"
-                  sm={12}
-                  md={3}
-                  lg={3}
-                  xl={3}
-                  xxl={3}
-                >
-                  <div className="habarlarCard__child">
-                    <div className="tashcard2_img">
-                      <img src={habarlar3} alt="photo" />
-                    </div>
-                    <a className="tashcard2_txt">MUROJAAT VA TAKLIF!</a>
-                  </div>
-                </Col>
-              </Row>
-              <br />
-              <Row className="habarlar_row">
-                <Col
-                  className="habarlarCard"
-                  sm={12}
-                  md={3}
-                  lg={3}
-                  xl={3}
-                  xxl={3}
-                >
-                  <div className="habarlarCard__child">
-                    <div className="tashcard2_img">
-                      <img src={habarlar4} alt="photo" />
-                    </div>
-                    <a className="tashcard2_txt">
-                      TAQI tayanch doktorant Germaniya Federativ Respublikasida
-                      ilmiy stajirovka oʼtamoqda.
-                    </a>
-                  </div>
-                </Col>
-                <Col
-                  className="habarlarCard"
-                  sm={12}
-                  md={3}
-                  lg={3}
-                  xl={3}
-                  xxl={3}
-                >
-                  <div className="habarlarCard__child">
-                    <div className="tashcard2_img">
-                      <img src={habarlar5} alt="photo" />
-                    </div>
-                    <a className="tashcard2_txt">OGOHLIK-DAVR TALABI!</a>
-                  </div>
-                </Col>
-                <Col
-                  className="habarlarCardBig"
-                  sm={12}
-                  md={6}
-                  lg={6}
-                  xl={6}
-                  xxl={6}
-                >
-                  <div className="habarlarCard__child">
-                    <img src={habarlar6} className="imghabar" alt="photo" />
-                    <a className="tashcard2_txt">
-                      TAQIning Arxitektura fakultetida bitiruvchilar ishtirokida
-                      “Xalqchil davlat xizmatiga ochiq yoʼl hamda davlat
-                      xizmatchisi uchun zarur koʼnikmalar” mavzusidagi ilk
-                      o'quv-seminari o'tkazildi
-                    </a>
-                  </div>
-                </Col>
-                <br />
-              </Row>
+             
             </Container>
 
             <div className="divButton">

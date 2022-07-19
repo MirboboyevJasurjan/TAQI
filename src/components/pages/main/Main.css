@@ -97,6 +97,7 @@ a {
   transition: font-size .5s ease;
 }
 
+
 /* #btn-slider {
   position: fixed;
   bottom: 0;
@@ -311,7 +312,7 @@ habarlar_row {
 
 .tashcard2_img {
   width: 100%;
-  height: 236px;
+  /* height: 236px; */
   overflow: hidden;
 }
 .tashcard2_img img {
@@ -977,7 +978,7 @@ habarlar_row {
   }
 
   .research_num h2 {
-    font-size: 20px !Important;
+    font-size: 20px !important;
   }
 
   .research_num p {
@@ -1010,6 +1011,7 @@ habarlar_row {
     margin: 0 auto !important;
   }
 }
+
 
 @media screen and (max-width: 768px) {
  
@@ -1080,5 +1082,142 @@ habarlar_row {
   .research_num h2{
     margin: 0;
   }
+  
+}
+/* habarlar */
+.main_tash_h3{
+  padding-bottom: 0px;
+}
+.colHabar:nth-child(2), .colHabar:nth-child(3), .colHabar:nth-child(4), .colHabar:nth-child(5){
+  width: 23% !important;
+  height: 252px;
+}
+
+.colHabar:nth-child(2) .tashcard2_txt, .colHabar:nth-child(3) .tashcard2_txt, .colHabar:nth-child(4) .tashcard2_txt, .colHabar:nth-child(5) .tashcard2_txt{
+  background-color: #FFFBFB;
+  font-size: 12px !important;
+  font-family: 'Roboto' !important;
+
+}
+.colHabar:nth-child(2) .imghabar, .colHabar:nth-child(3) .imghabar, .colHabar:nth-child(4) .imghabar, .colHabar:nth-child(5) .imghabar{
+  object-fit: cover;
+  width: 100% !important;
+  height: 189px !important;
+  overflow: hidden;
+}
+.colHabar:nth-child(2) .imghabar:hover, .colHabar:nth-child(3) .imghabar:hover, .colHabar:nth-child(4) .imghabar:hover, .colHabar:nth-child(5) .imghabar:hover{
+  transform: scale(1) !important;
+}
+.colHabar:nth-child(2)  a, .colHabar:nth-child(3)  a, .colHabar:nth-child(4)  a, .colHabar:nth-child(5)  a{
+  padding: 5px 12px;
+}
+.colHabar:nth-child(3) .imghabar:hover img, .colHabar:nth-child(5) .imghabar:hover img {
+  transform: scale(1.04) !important;
+  overflow: hidden;
+
+}
+.habarlarCard__child{
+  height: 252px !important;
+  width: 100%;
+  background-color: #FFFBFB;
+}
+.colHabar{
+  padding: 0px !important;
+}
+.colHabar:nth-child(1), .colHabar:nth-child(6){
+  width: 48.8% !important;
+  height: 252px !important;
+    position: relative;
+ 
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.colHabar:nth-child(1) .imghabar, .colHabar:nth-child(6) .imghabar{
+  width: 100%;
+  height: 252px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.habarlar_row{
+  display: flex;
+  justify-content: space-between;
+
+}
+.colHabar:nth-child(1) .tashcard2_txt, .colHabar:nth-child(6) .tashcard2_txt{
+  background: rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(2px);
+width: 100% !important;
+color: #FFFFFF;
+font-family: 'Roboto' !important;
+}
+.colHabar:nth-child(1) .tashcard2_txt, .colHabar:nth-child(6) .tashcard2_txt{
+  position: absolute;
+  bottom: 0;
+  font-size: 12px !important;
+}
+.containerNews {
+  width: 80% !important;
+  margin: 0 auto;
+}
+.colHabar{
+  margin-top: 2.6% !important;
+}
+.containerNews {
+  margin-bottom: 20px;
+}
+@media screen and (max-width:1300px) {
+  .containerNews {
+    width: 100% !important;
+  }
+  .colHabar:nth-child(2) .imghabar, .colHabar:nth-child(3) .imghabar, .colHabar:nth-child(4) .imghabar, .colHabar:nth-child(5) .imghabar{
+    height: 155px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .habarlar_row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .colHabar:nth-child(1), .colHabar:nth-child(6) {
+    width: 100% !important;
+  }
+  .containerNews{
+    width: 80% !important;
+  }
+  .colHabar:nth-child(2), .colHabar:nth-child(3), .colHabar:nth-child(4), .colHabar:nth-child(5){
+    width: 48% !important;
+
+  }
+  
+}
+@media screen and (max-width: 576px) {
+  .colHabar:nth-child(2), .colHabar:nth-child(3), .colHabar:nth-child(4), .colHabar:nth-child(5){
+    width: 100% !important;
+    height: 320px !important;
+    background-color: #fff;
+
+  }
+  .colHabar:nth-child(2) .imghabar, .colHabar:nth-child(3) .imghabar, .colHabar:nth-child(4) .imghabar, .colHabar:nth-child(5) .imghabar{
+    height: 100% !important;
+  }
+  .containerNews{
+    width: 100% !important;
+  }
+  .colHabar{
+    margin-top: 10% !important;
+  }
+  .habarlarCard__child a {
+    padding: 5px 15px;
+  }
+  .habarlar_row{
+    width: 274px !important;
+    margin: 0 auto !important;
+  }
+  
   
 }
