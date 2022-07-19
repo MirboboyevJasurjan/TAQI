@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import Box from '@mui/material/Box';
@@ -10,7 +10,10 @@ import Nav from '../templates/navbar/Nav';
 import './NewCards.css'
 
 
+export const IdContest = React.createContext();
+
 const NewsCards = (...props) => {
+
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -29,15 +32,15 @@ const NewsCards = (...props) => {
     p: 4,
   };
 
-  
+
   function Save() {
-    const indexSaved = props.idx; 
+    const indexSaved = props.idx;
     // console.log(indexSaved);
     // console.log(props);
   }
 
   return (
-    <>   
+    <>
       <Card className="newsP__card">
         <Card.Img
           variant="top"
@@ -47,10 +50,14 @@ const NewsCards = (...props) => {
         <p className="newsText">{props[0].title}</p>
         {/* <span className="newsText">{props[0].description}</span> */}
         <Card.Body className="newsP__card__body">
-          <p><Link to="/newsPage"  className="card__down" onClick={Save}> {props[0].idx} Davomi  </Link></p>
+
+          <IdContest.Provider value={props[0].idx}>
+            <p><Link to="/newsPage" className="card__down" onClick={Save}> {props[0].idx} Davomi  </Link></p>
+          </IdContest.Provider>
+
+
+
           {/* <Button onClick={Save} className="card__down" >Davomi . . . </Button> */}
-          
-            
         </Card.Body>
       </Card>
     </>

@@ -1,31 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import NewsPage from '../NewsPage';
 import NewsSid from '../NewsSid/NewsSid';
 import cardImg from '../imges/newImg1.png'
+import { IdContest } from '../NewsCards'
+import axios from 'axios';
 
 function BannerNews(props) {
-    function createData(title, news, img) {
-        return { title, news, img };
-    }
 
-     let rows = [
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-        createData('Lorem Ipsum Dolor !', ' Ulmasovich', cardImg),
-    ];
+    const [articles, setArticles] = useState([])
 
-    let inde = props.idx
-    // console.log(inde);
+    useEffect(() => {
+        const getArticles = async () => {
+            const response = await axios.get(`https://62373d82f5f6e28a154abef5.mockapi.io/news`)
+
+            setArticles(response.data)
+            console.log(response.data)
+            console.log('response')
+        }
+        getArticles()
+    }, []);
+
+
 
     return (
         <div>
@@ -33,7 +29,43 @@ function BannerNews(props) {
             <div className='NewsPage'>
                 <div className='haqida_father'>
                     <NewsSid />
-                    <div className='haqida_reight'>
+                    <IdContest.Consumer>
+                        {
+                            id => {
+                                console.log(id);
+                                return (
+                                    <>
+                                        <div className='haqida_reight'>
+                                            <div className='imgBanner'>
+                                                <center>
+                                                    <img src='' alt="" />
+                                                </center>
+                                            </div>
+                                            <center>
+                                                <h2>Hola {id}</h2>
+                                            </center>
+                                            <left>
+                                                <p> Paragraph </p>
+                                            </left>
+                                        </div>
+
+                                    </>
+                                )
+                            }
+                        }
+                    </IdContest.Consumer >
+                </div >
+            </div >
+        </div >
+
+
+    );
+}
+
+
+export default BannerNews;
+
+{/* <div className='haqida_reight'>
                         <div className='imgBanner'>
                             <center>
                                 <img src='' alt="" />
@@ -43,14 +75,9 @@ function BannerNews(props) {
                             <h2>Hola {props.idx}</h2>
                         </center>
                         <left>
-                            <p>{rows[2].news} </p>
-                        </left>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-
-export default BannerNews;
+                            <p>{rows[2].news} </p> */}
+        //                             </left>
+        //             </div>
+        //     </div>
+        // </div>
+        // </div >
