@@ -504,13 +504,13 @@ a {
   .nav-topMob ul li:nth-child(6) {
     display: flex;
     position: absolute;
-    top: 75vh !important;
+    /* top: 75vh !important; */
     align-items: center;
     justify-content: space-between;
     z-index: 1000000000;
     margin-left: 150px;
     left: 20%;
-    top: 80vh;
+    top: 90vh;
     background-color: #797d81;
     color: #000;
   }
@@ -576,4 +576,10 @@ a {
     width: 220px;
     margin-right: 15px;
   }
+}
+@media screen and (max-width: 576px) {
+  .nav-topMob ul li a{
+    margin-right: 15px;
+  }
+  
 }

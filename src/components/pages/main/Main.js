@@ -64,6 +64,9 @@ import axios from "axios";
 const Main = () => {
   const [rows, setRows] = useState([]);
   const arrays = [...rows].reverse().slice(0, 6)
+  function ToTop() {
+    window.scrollTo(0, 0)
+  }
 
   useEffect(() => {
     const getRows = async () => {
@@ -192,12 +195,12 @@ const Main = () => {
               <Row className="habarlar_row">
                 {arrays.map((row, id) => (
                   <Col xs={1} md={4} className="g-4 colHabar">
-                    <div className="habarlarCard__child">
+                    <div className="habarlarCard__child" key={arrays.length-1} >
                     <div className="tashcard2_img imghabar">
                       <img className="imghabar" src={row.image} alt="photo" />
                     </div>
                      
-                      <Link to ="/news" className="tashcard2_txt">{row.description}</Link>
+                      <Link to ={`/newsPage/${row.id}`} onClick={ToTop} className="tashcard2_txt">{row.title}</Link>
                     </div>
                     
                   </Col>
