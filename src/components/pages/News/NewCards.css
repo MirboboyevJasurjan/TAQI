@@ -1,5 +1,6 @@
 .NewsMainRow{
-  margin: 50px auto;
+  /* margin: 50px auto; */
+  justify-content: flex-start;
 }
 .NewsMainRow .col{
   margin: 50px 0 ;
@@ -7,8 +8,4 @@
 }
 .newsP__card{
   margin: 50 100px;
-}
-.newsP__card__img img{
-  height: 250px;
-  width: 200px;
 }

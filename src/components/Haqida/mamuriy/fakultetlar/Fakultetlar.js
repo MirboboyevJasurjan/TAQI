@@ -8,6 +8,12 @@ import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import imagf from '../../../assets/images/about/images/unsplash.png'
+import fakultet1 from '../../../assets/images/kafedra/kafedra1.png'
+import fakultet2 from '../../../assets/images/kafedra/kafedra2.png'
+import fakultet3 from '../../../assets/images/fakultet/fakultet3.png'
+import fakultet4 from '../../../assets/images/fakultet/fakultet4.png'
+import fakultet5 from '../../../assets/images/fakultet/fakultet5.png'
+
 
 
 const Fakultetlar = (props) => {
@@ -24,14 +30,13 @@ const Fakultetlar = (props) => {
     }
  
     const rows = [
-        createData(' “Arxitektura”  fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, imagf),
-        createData(' “Bino va inshootlar” fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, imagf),
-        createData(' “Qurilishni boshqarish” fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, imagf),
-        createData(' “Muhandislik va qurilishni boshqarish infrastrukturasi” fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. volutpat congue at.`, imagf),
-        createData(' “Muhandislik va qurilishni boshqarish infrastrukturasi” fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. volutpat congue at.`, imagf),
-        createData(' Magistratura ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, imagf),
-        createData(` Sirtqi bo'lim`, `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, imagf),
-        createData(` Sirtqi bo'lim`, `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, imagf),
+        createData(' “Arxitektura”  fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, fakultet1),
+        createData(' “Bino va inshootlar” fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, fakultet2),
+        createData(' “Qurilishni boshqarish” fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, fakultet3),
+        createData(' “Muhandislik va qurilishni boshqarish infrastrukturasi” fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. volutpat congue at.`, fakultet4),
+        createData(' Magistratura ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, fakultet5),
+        createData(` Sirtqi bo'lim`, `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, fakultet4),
+      
     ];
 
     function createDataAcc(job, name, image) {

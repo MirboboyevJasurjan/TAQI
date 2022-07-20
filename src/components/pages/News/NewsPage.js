@@ -36,11 +36,14 @@ function NewsPage() {
                 <>
                   <Col>
                     <Card className="newsP__card">
-                      <Card.Img
-                        variant="top"
-                        src={row.image}
-                        className="newsP__card__img"
-                      />
+                      <div className="imgBoxNewsPage">
+                        <Card.Img
+                          variant="top"
+                          src={row.image}
+                          className="newsP__card__img"
+                        />
+                      </div>
+
                       <p className="newsText">{row.title}</p>
                       <Card.Body className="newsP__card__body">
                         <p>

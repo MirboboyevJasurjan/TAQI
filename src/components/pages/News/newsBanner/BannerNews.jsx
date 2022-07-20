@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import NewsSid from "../NewsSid/NewsSid";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
 import "./swipper.css";
+import "./BannerNews.css";
 
 // import "swiper/css";
 // import "swiper/css/effect-coverflow";
@@ -29,75 +31,88 @@ function BannerNews(props) {
     getArticles();
   }, []);
 
+  const params = {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    spaceBetween: 30,
+  };
+
   return (
     <div className="bannerNewsConainer">
       <div className="div_img1"></div>
       <div className="NewsPage">
         <div className="haqida_father">
-          <NewsSid />
-          <>
+          <div className="haqida_father_box">
+            <NewsSid />
             <div className="haqida_reight">
               <div className="imgBanner">
-                <center>
-                  <img src={articles.image} alt="" />
-                </center>
+                <div  >
+                  <h2 className="newsBannerTitle" >{articles.title}</h2>
+                </div>
               </div>
-              <center>
-                <h2>{articles.title}</h2>
-              </center>
-              <left>
-                <p>{articles.description}</p>
-              </left>
-
-              {/* Albom gallery  */}
-
-              <>
-                <Swiper
-                  effect={"coverflow"}
-                  grabCursor={true}
-                  centeredSlides={true}
-                  slidesPerView={"auto"}
-                  coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
-                  }}
-                  pagination={true}
-                  modules={[EffectCoverflow, Pagination]}
-                  className="mySwiper"
-                >
-                  <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                  </SwiperSlide>
-                </Swiper>
-              </>
+              <div >
+                <p className="newsBannerDescr" >{articles.description}</p>
+              </div>
+              <div className="newsBannerImg">
+                <img src={articles.image} alt="" />
+              </div>
             </div>
+          </div>
+
+          {/* Width 100% */}
+
+          <div className="fullWid">Tadbirlardan lavhalar</div>
+
+          {/* Albom gallery  */}
+
+          <>
+            <Swiper
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              slidesPerView={"auto"}
+              navigation={true}
+              coverflowEffect={{
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              }}
+              pagination={true}
+              modules={[EffectCoverflow, Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+              </SwiperSlide>
+            </Swiper>
           </>
         </div>
       </div>

@@ -79,7 +79,7 @@ a {
 }
 .header__h1 {
   position: absolute;
-  top: 350px;
+  top: 35%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +89,7 @@ a {
   text-align: center;
   /* font-size: 3.5em; */
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 3px;
   text-shadow: 0 0 30px rgba(0, 0, 0, 1),
     0 0 30px rgba(0, 0, 0, .5);
@@ -275,6 +275,9 @@ habarlar_row {
   line-height: 14px;
   text-align: center;
   color: #ffffff;
+}
+.carousel-control-prev, .carousel-control-next {
+  display: none !important;
 }
 .tashCard_2 {
   background-color: #ffff;
@@ -529,6 +532,10 @@ habarlar_row {
   font-weight: 500;
   margin-top: 10px;
   font-size: 14px;
+}
+.davomEtish{
+  color: #fff;
+  text-decoration: none;
 }
 
 
@@ -869,7 +876,7 @@ habarlar_row {
   }  
   .header__h1{
     font-size: 2em;
-    top: 47%;
+    top: 35%;
   }
   .header__images{
     top: 60%;
@@ -923,6 +930,7 @@ habarlar_row {
   .header__h1 {
     top: 150px;
     font-size: 1.5em;
+    font-weight: 700;
   }
 
   .header__title {
@@ -1028,6 +1036,8 @@ habarlar_row {
   .header__h1 {
     top: 200px;
     text-align: center;
+    font-weight: 700;
+    width: 100%;
   }
   .habarlarCard__child{
     margin-bottom: 3%;

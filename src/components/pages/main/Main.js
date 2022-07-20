@@ -61,6 +61,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import SchoolIcon from "@mui/icons-material/School";
 import axios from "axios";
 
+
 const Main = () => {
   const [rows, setRows] = useState([]);
   const arrays = [...rows].reverse().slice(0, 6)
@@ -231,7 +232,7 @@ const Main = () => {
             </Container>
 
             <div className="divButton">
-              <button className="buttonDavomi">Davom etish ...</button>
+              <button className="buttonDavomi"><Link to="/news" onClick={ToTop} className="davomEtish">Davom etish ...</Link></button>
             </div>
           </div>
         </div>

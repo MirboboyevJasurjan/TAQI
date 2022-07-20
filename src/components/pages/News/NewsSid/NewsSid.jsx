@@ -28,7 +28,6 @@ function NewsSid() {
                         <p> <Link className='sidebar__link' activeClassName="active" onClick={tops} to="/news"> Yangiliklar </Link> </p>
                         <p> <Link className='sidebar__link' activeClassName="active" onClick={tops} to="/elonlar" > E'lonlar </Link> </p>
                         <p> <Link className='sidebar__link' activeClassName="active" onClick={tops} to="/ommaviy"> Ommaviy tadbirlar </Link> </p>
-                        <p> </p>
                     </div>
 
                 </div>
