@@ -1,83 +1,53 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
-import NewsPage from '../NewsPage';
-import NewsSid from '../NewsSid/NewsSid';
-import cardImg from '../imges/newImg1.png'
-import { IdContest } from '../NewsCards'
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import NewsSid from "../NewsSid/NewsSid";
+import axios from "axios";
 
 function BannerNews(props) {
+  const [articles, setArticles] = useState([]);
 
-    const [articles, setArticles] = useState([])
+  const new_id = window.location.pathname.split("/").slice(-1);
 
-    useEffect(() => {
-        const getArticles = async () => {
-            const response = await axios.get(`https://62373d82f5f6e28a154abef5.mockapi.io/news`)
+  console.log(new_id[0]);
 
-            setArticles(response.data)
-            console.log(response.data)
-            console.log('response')
-        }
-        getArticles()
-    }, []);
+  useEffect(() => {
+    const getArticles = async () => {
+      const response = await axios.get(
+        `https://62373d82f5f6e28a154abef5.mockapi.io/news/${new_id}`
+      );
 
+      setArticles(response.data);
+      console.log(response.data);
+    };
+    getArticles();
+  }, []);
 
+  console.log(setArticles);
 
-    return (
-        <div>
-            <div className='div_img1'></div>
-            <div className='NewsPage'>
-                <div className='haqida_father'>
-                    <NewsSid />
-                    <IdContest.Consumer>
-                        {
-                            id => {
-                                console.log(id);
-                                return (
-                                    <>
-                                        <div className='haqida_reight'>
-                                            <div className='imgBanner'>
-                                                <center>
-                                                    <img src='' alt="" />
-                                                </center>
-                                            </div>
-                                            <center>
-                                                <h2>Hola {id}</h2>
-                                            </center>
-                                            <left>
-                                                <p> Paragraph </p>
-                                            </left>
-                                        </div>
-
-                                    </>
-                                )
-                            }
-                        }
-                    </IdContest.Consumer >
-                </div >
-            </div >
-        </div >
-
-
-    );
+  return (
+    <div>
+      <div className="div_img1"></div>
+      <div className="NewsPage">
+        <div className="haqida_father">
+          <NewsSid />
+          <>
+            <div className="haqida_reight">
+              <div className="imgBanner">
+                <center>
+                  <img src={articles.img} alt="" />
+                </center>
+              </div>
+              <center>
+                <h2>{articles.title}</h2>
+              </center>
+              <left>
+                <p>{articles.description}</p>
+              </left>
+            </div>
+          </>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-
 export default BannerNews;
-
-{/* <div className='haqida_reight'>
-                        <div className='imgBanner'>
-                            <center>
-                                <img src='' alt="" />
-                            </center>
-                        </div>
-                        <center>
-                            <h2>Hola {props.idx}</h2>
-                        </center>
-                        <left>
-                            <p>{rows[2].news} </p> */}
-        //                             </left>
-        //             </div>
-        //     </div>
-        // </div>
-        // </div >

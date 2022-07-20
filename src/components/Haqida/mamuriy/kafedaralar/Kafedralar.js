@@ -6,12 +6,7 @@ import FooterNav from '../../../pages/templates/footer/FooterNav';
 import { Row, Col, Card } from 'react-bootstrap'
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import imagf from '../../../assets/images/about/images/unsplash.png'
-import Lsidebar from '../../Umumiy/Sidebar/Lsidebar';
-
+import AccordionSummary from '@mui/material/AccordionSummary'; 
 // import images
 import Maktuba from '../../../assets/images/ustozlar/A.T.Maktuba.png'
 import Timur from '../../../assets/images/ustozlar/X.A.Timur.png'

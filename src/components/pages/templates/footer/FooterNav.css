@@ -262,29 +262,9 @@
 
 @media (max-width: 947px){
   .footer_nav {
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer_ul{
-    margin-top: 0px;
-  }
-  .footer_ul li {
-    margin: 20px 0;
-  }
-  .footer_informatsia p{
-    margin-top: 0;
-  }
-  .logo_sec_taqi{
-    width: 50%;
-  }
-  .footer_informatsia h3{
-    text-align: start;
-  }
-  .footer_informatsia{
-    width: 50%;
   }
   .footer2_informatsia h3{
     position: relative;
@@ -304,64 +284,4 @@
       width: 100%;
       margin: 0 auto 50px 0;
   }
-}
-@media screen and (max-width: 576px) {
-  /* .logo_sec_taqi{
-    width: 80%;
-  }
-  .footer_informatsia{
-    margin-top: 20px;
-  }
-  .footer_informatsia p{
-    margin-top: 30px;
-  }
-  .footer_nav{
-    flex-direction: column;
-  }
-  .footer_informatsia h3{
-    text-align: center;
-  }
-  .footer_btn{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .btn_footer_page{
-    width: 45%;
-  }
-  .footer_ul{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0px;
-  }
-  .footer_ul li{
-    width: 50%;
-    text-align: center;
-  }
-  .footer_informatsia{
-    width: 80%;
-  } */
-  .logo_sec_taqi{
-    width: 100%;
-  }
-  .footer_informatsia{
-    width: 80%;
-  }
-  #footerSahifalar{
-    width: 40%;
-  }
-  #footerMalumot{
-    margin: 20px auto;
-    width: 90%;
-  }
-  .footer_informatsia p {
-    width: 100%;
-  }
-  .logo_sec_taqi h2{
-    width: 90%;
-    margin: 0;
-  }
-  
-  
 }

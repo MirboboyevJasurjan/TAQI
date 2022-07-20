@@ -7,10 +7,7 @@ import { Row, Col, Card } from 'react-bootstrap'
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import imagf from '../../../assets/images/about/images/unsplash.png'
-import Lsidebar from '../../Umumiy/Sidebar/Lsidebar';
 
 
 const Fakultetlar = (props) => {
@@ -25,11 +22,7 @@ const Fakultetlar = (props) => {
     function createData(name, text, image) {
         return { name, text, image };
     }
-
-    function tops() {
-        window.scrollTo(0, 0)
-    }
-
+ 
     const rows = [
         createData(' “Arxitektura”  fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, imagf),
         createData(' “Bino va inshootlar” fakulteti ', `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ultrices vulputate diam volutpat congue at.`, imagf),

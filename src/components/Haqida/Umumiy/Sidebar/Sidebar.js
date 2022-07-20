@@ -43,11 +43,11 @@ function Sidebar() {
           </div>
           <div className="Mamuriy">
             <p className="umumiy__child"><b>TAQIga bir nazar </b></p>
-            <p className="umumiy__child"><a onClick={tops} href="#">Xotira Daraxti</a></p>
-            <p className="umumiy__child"><a onClick={tops} href="#">TAQI bosqichi</a></p>
-            <p className="umumiy__child"><a onClick={tops} href="#">TAQI tasvirlar bilan</a></p>
-            <p className="umumiy__child"><a onClick={tops} href="#">TAQIcam</a></p>
-            <p className="umumiy__child"><a onClick={tops} href="#">TAQI bir qarashda</a></p>
+            <p className="umumiy__child"><Link onClick={tops} to="#">Xotira Daraxti</Link></p>
+            <p className="umumiy__child"><Link onClick={tops} to="#">TAQI bosqichi</Link></p>
+            <p className="umumiy__child"><Link onClick={tops} to="#">TAQI tasvirlar bilan</Link></p>
+            <p className="umumiy__child"><Link onClick={tops} to="#">TAQIcam</Link></p>
+            <p className="umumiy__child"><Link onClick={tops} to="#">TAQI bir qarashda</Link></p>
           </div>
         </div>
       </div>

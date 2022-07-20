@@ -42,15 +42,15 @@ function IlmiySid() {
           </div>
           <div className="Mamuriy">
             <p className="umumiy__child"><b>Talabalar uchun</b></p>
-            <p className="umumiy__child"><a onClick={tops} href="#">Akademik qoidalar</a></p>
-            <p className="umumiy__child"><a onClick={tops} href="#">Talabalar portali</a></p>
-            <p className="umumiy__child"><a onClick={tops} href="#">Xorijiy talabalar</a></p>
-            <p className="umumiy__child"><a onClick={tops} href="#">Xalqaro almashinuv dasturi</a></p>
-            <p className="umumiy__child"><a onClick={tops} href="#">Talabalar vakillari kengashi</a></p>
+            <p className="umumiy__child"><Link onClick={tops} to="#">Akademik qoidalar</Link></p>
+            <p className="umumiy__child"><Link onClick={tops} to="#">Talabalar portali</Link></p>
+            <p className="umumiy__child"><Link onClick={tops} to="#">Xorijiy talabalar</Link></p>
+            <p className="umumiy__child"><Link onClick={tops} to="#">Xalqaro almashinuv dasturi</Link></p>
+            <p className="umumiy__child"><Link onClick={tops} to="#">Talabalar vakillari kengashi</Link></p>
           </div>
           <div className="Mamuriy">
             <p className="umumiy__child"><b>Uzluksiz ta'lim markazi </b></p>
-            <p className="umumiy__child"><a onClick={tops} href="#">Talabalar uchun o’quv kurslari</a></p>
+            <p className="umumiy__child"><Link onClick={tops} to="#">Talabalar uchun o’quv kurslari</Link></p>
           </div>
         </div>
       </div>

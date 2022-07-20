@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import FooterNav from '../../templates/footer/FooterNav';
 import Nav from '../../templates/navbar/Nav';
 import ImgExritec from "./imges/events4.png";
-import images from "./imges/ilmBino.png"
 import "./ilmiyPage.css"
 import IlmiySid from './IlmiySidebar/IlmiySid';
 
