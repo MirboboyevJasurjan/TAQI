@@ -4,7 +4,6 @@ import { Card } from "react-bootstrap";
 import "./NewCards.css";
 
 const NewsCards = (...props) => {
- 
   return (
     <>
       <Card className="newsP__card">
@@ -15,13 +14,13 @@ const NewsCards = (...props) => {
         />
         <p className="newsText">{props[0].title}</p>
         <Card.Body className="newsP__card__body">
-             <p>
-              <Link to={`/newsPage/${props[0].idx}`} className="card__down" >
-                {" "}
-                {props[0].idx} Davomi{" "}
-              </Link>
-            </p>
-         </Card.Body>
+          <p>
+            <Link to={`/newsPage/${props[0].idx}`} className="card__down">
+              {" "}
+              {props[0].idx} Davomi{" "}
+            </Link>
+          </p>
+        </Card.Body>
       </Card>
     </>
   );

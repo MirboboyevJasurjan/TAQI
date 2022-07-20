@@ -64,5 +64,4 @@ function NewsPage() {
     </div>
   );
 }
-
 export default NewsPage;
