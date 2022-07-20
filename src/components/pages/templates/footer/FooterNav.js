@@ -16,6 +16,9 @@ import { Link } from 'react-router-dom'
 
 
 export default function FooterNav() {
+    function ToTop(){
+        window.scrollTo(0,0)
+      }
     return (
         <div>
 
@@ -59,10 +62,10 @@ export default function FooterNav() {
                             <div className="footer_informatsia" id="footerSahifalar">
                                 <h3>SAHIFALAR</h3>
                                 <ul className="footer_ul" >
-                                    <li><Link to="#"> Biz haqimizda</Link></li>
-                                    <li><Link to="#"> Fakultetlar</Link></li>
-                                    <li><Link to="#"> Kafedralar</Link></li>
-                                    <li><Link to="#"> Tadbirlar</Link></li>
+                                    <li><Link to="/about" onClick={ToTop}> Biz haqimizda</Link></li>
+                                    <li><Link to="/fakultetlar" onClick={ToTop}> Fakultetlar</Link></li>
+                                    <li><Link to="/kafedralar" onClick={ToTop}> Kafedralar</Link></li>
+                                    <li><Link to="/tadbir1" onClick={ToTop}> Tadbirlar</Link></li>
                                     {/* <li><Link to="#"> Ilmiy</Link></li>
                                     <li><Link to="#"> Tadqiqot</Link></li>
                                     <li><Link to="#"> Qabul</Link></li>
@@ -75,10 +78,10 @@ export default function FooterNav() {
                                 <button className="btn_footer_page"> <Link to="">Fakultetlar</Link></button>
                                 <button className="btn_footer_page"> <Link to="">Kafedralar</Link></button>
                                 <button className="btn_footer_page"> <Link to="">Tadbirlar</Link></button> */}
-                                <button className="btn_footer_page"> <Link to="">Ilmiy</Link></button>
-                                <button className="btn_footer_page"> <Link to="">Tadqiqot</Link></button>
-                                <button className="btn_footer_page"> <Link to="">Qabul</Link></button>
-                                <button className="btn_footer_page"> <Link to="">Campus Life</Link></button>
+                                <button className="btn_footer_page"> <Link to="/ilmiy1" onClick={ToTop}>Ilmiy</Link></button>
+                                <button className="btn_footer_page"> <Link to="/tadqiqot" onClick={ToTop}>Tadqiqot</Link></button>
+                                <button className="btn_footer_page"> <Link to="/qabul" onClick={ToTop}>Qabul</Link></button>
+                                <button className="btn_footer_page"> <Link to="/campus" onClick={ToTop}>Campus Life</Link></button>
                             </div>
 
                         </div>
