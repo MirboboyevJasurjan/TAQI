@@ -1,0 +1,7 @@
+.bannerNewsConainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column !important;
+}
