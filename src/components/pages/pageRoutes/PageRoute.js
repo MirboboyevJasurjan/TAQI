@@ -1,9 +1,8 @@
 import React from 'react';
-import { Switch, Route, Link, BrowserRouter } from 'react-router-dom';
+import { Switch, Route} from 'react-router-dom';
 import NewsPage from '../News/NewsPage';
 import FooterNav from '../templates/footer/FooterNav';
 import Nav from '../templates/navbar/Nav';
-import EventPage from '../Events/EventPage';
 
 function PageRoute() {
     return (

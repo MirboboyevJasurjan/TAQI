@@ -1,13 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import FooterNav from '../templates/footer/FooterNav';
 import Nav from '../templates/navbar/Nav';
 import eventImg1 from "./imges/events3.png";
-import images from "./imges/imgEvent.png"
 import { Row, Col } from 'react-bootstrap';
 import NewsCards from '../News/NewsCards';
-import BannerNews from '../News/newsBanner/BannerNews';
-import NewsSid from '../News/NewsSid/NewsSid';
 import EventSid from './eventSid/EventSid';
 import './eventPage.css'
 

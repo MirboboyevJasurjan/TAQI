@@ -55,7 +55,7 @@ const Routs = (  ) => {
                     <Route path="/kafedralar" component={Kafedralar} />
                     <Route path="/fakultetlar" component={Fakultetlar} />
                     <Route path="/uslubiy" component={Uslubiy} />
-                    <Route path="/newsPage" component={BannerNews} />
+                    <Route path="/newsPage/:news_id" component={BannerNews} />
                     <Route path="/yangiliklar" component={Yangiliklar} />
                     <Route path="/ommaviy" component={Ommaviy} />
                     <Route path="/elonlar" component={Elonlar} />

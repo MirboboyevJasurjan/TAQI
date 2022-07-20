@@ -1,9 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import FooterNav from '../templates/footer/FooterNav';
 import Nav from '../templates/navbar/Nav';
-import ImgExritec from "../pageRoutes/Scientific/imges/events4.png";
-import images from "../pageRoutes/Scientific/imges/ilmBino.png"
 import "./Acceptance.css"
 import QabulSid from './QabulSid/QabulSid';
 

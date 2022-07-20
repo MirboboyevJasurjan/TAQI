@@ -41,7 +41,7 @@ export default function FooterNav() {
                             </div>
 
 
-                            <div className="footer_informatsia" id="footerMalumot">
+                            <div className="footer_informatsia">
                                 <h3>MA'LUMOT</h3>
                                 <p> Toshkent arxitektura-qurilish instituti 4ta fakulteti mavjud :<span> <br/> Arxitektura fakulteti, <br/> Bino inshootlar qurilishi fakulteti, <br/> Qurilishni boshqarish fakulteti, <br/> Muxandislik qurilish infrastrukturasi fakulteti </span> </p>
                             </div>
@@ -56,7 +56,7 @@ export default function FooterNav() {
                                 <p className='footerINf'>Telegram kanal: @taqi_uz</p>
                             </div> */}
 
-                            <div className="footer_informatsia" id="footerSahifalar">
+                            <div className="footer_informatsia">
                                 <h3>SAHIFALAR</h3>
                                 <ul className="footer_ul" >
                                     <li><Link to="#"> Biz haqimizda</Link></li>
