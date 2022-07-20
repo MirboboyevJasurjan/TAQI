@@ -11,6 +11,7 @@ import Nav from '../templates/navbar/Nav';
 
 
 function NewsPage() {
+  
 
     const [rows, setRows] = useState([])
 

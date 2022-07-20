@@ -1097,6 +1097,15 @@ habarlar_row {
   background-color: #FFFBFB;
   font-size: 12px !important;
   font-family: 'Roboto' !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  box-orient: vertical;
 
 }
 .colHabar:nth-child(2) .imghabar, .colHabar:nth-child(3) .imghabar, .colHabar:nth-child(4) .imghabar, .colHabar:nth-child(5) .imghabar{

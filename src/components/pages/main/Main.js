@@ -62,6 +62,23 @@ import SchoolIcon from "@mui/icons-material/School";
 import axios from "axios";
 
 const Main = () => {
+  function ToTop(){
+    window.scrollTo(0,0)
+  }
+
+  // (function(){
+  //   var cut = document.getElementsByClassName('tashcard2_txt');
+  //   for( var i = 0; i < cut.length; i++ ){
+  //     cut[i].innerText = cut[i].innerText.slice(0,35) + '...';
+  //   }
+  // })();
+  // $(function(){
+  //   var txt = $(".cuttedText").text().trim();
+  //   if(txt.length > 20){
+  //      $(".cuttedText").text( txt.substring(0,20) + '...');
+  //   }
+  // });
+
   const [rows, setRows] = useState([]);
   const arrays = [...rows].reverse().slice(0, 6)
 
@@ -197,31 +214,12 @@ const Main = () => {
                       <img className="imghabar" src={row.image} alt="photo" />
                     </div>
                      
-                      <Link to ="/news" className="tashcard2_txt">{row.description}</Link>
+                      <Link to ="/news" onClick={ToTop} className="tashcard2_txt" >{row.title}</Link>
                     </div>
                     
                   </Col>
                 ))}
-                {/* <Col className="habarlarCardBig" sm={12} md={6} lg={6} xl={6} xxl={6}  >
-                  <div className="habarlarCard__child">
-                    <img className="imghabar" src={habarlar1} alt="photo" />
-                    <a className="tashcard2_txt"> "Korrupsiyadan xoli mamlakat" mavzusida seminar - trening bo‘lib o‘tdi</a>
-                  </div>
-                </Col>
-                <Col className="habarlarCard" sm={12} md={3} lg={3} xl={3} xxl={3}  >
-                  <div className="habarlarCard__child">
-                    <img className="tashcard2_img" src={habarlar2} alt="photo" />
-                    <a className="tashcard2_txt">15 may - Xalqaro oila kuni! Oilalarda milliy qadriyatlarni mustahkamlash” nomli ijodiy kecha o’tkazildi.</a>
-                  </div>
-                </Col>
-                <Col className="habarlarCard" sm={12} md={3} lg={3} xl={3} xxl={3}  >
-                  <div className="habarlarCard__child">
-                    <div className="tashcard2_img">
-                      <img src={habarlar3} alt="photo" />
-                    </div>
-                    <a className="tashcard2_txt">MUROJAAT VA TAKLIF!</a>
-                  </div>
-                </Col> */}
+           
 
               </Row>
              
