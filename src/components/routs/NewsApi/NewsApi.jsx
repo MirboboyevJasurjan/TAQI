@@ -1,10 +1,5 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-// import { NewsItem } from '.'
-// require('dotenv').config({ path: '../../.env' })
-
-import Main from '../../pages/main/Main'
-import PageRoute from '../../pages/pageRoutes/PageRoute';
 import Yangilik from './Yangilik';
 
 

@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Search } from "@mui/icons-material";
 import "./Nav.css";
 import "../../Search/Search"
 import SearchIcon from '@mui/icons-material/Search';
 import logo from '../../../assets/images/about/images/logoTaqi.png';
-import logo1 from '../../../assets/images/main/logo2.png'
 import ClearIcon from '@mui/icons-material/Clear';
-import haqda from '../../About/About.js'
-import { BiSearch } from "react-icons/bi";
 import { NavLink, Link } from 'react-router-dom';
 import { BiMenu } from "react-icons/bi";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
 
 const Nav = () => {
   const {t, i18n} = useTranslation()
@@ -30,8 +25,8 @@ const Nav = () => {
   })
 
   const [state, setState] = useState(false);
-  const [menu, setMenu] = useState(true)
-  const [navActive, setNavActive] = useState('')
+  // const [menu, setMenu] = useState(true)
+  // const [navActive, setNavActive] = useState('')
   function oncheng() {
     setState(p => !p)
   }
@@ -86,19 +81,19 @@ const Nav = () => {
               <div className={isAcctive ? 'nav-top-link': 'nav-topMob'}>
                 <ul>
                   <li>
-                    <a href="#">{t("navbar.talabalar")}</a>
+                    <Link to="#">{t("navbar.talabalar")}</Link>
                   </li>
 
                   <li>
-                    <a href="#">{t("navbar.xodimlar")}</a>
+                    <Link to="#">{t("navbar.xodimlar")}</Link>
                   </li>
 
                   <li>
-                    <a href="#"> {t("navbar.bitiruvchilar")} </a>
+                    <Link to="#"> {t("navbar.bitiruvchilar")} </Link>
                   </li>
 
                   <li>
-                    <a href="#"> {t("navbar.tadqiqotchilar")}</a>
+                    <Link to="#"> {t("navbar.tadqiqotchilar")}</Link>
                   </li>
                    
                   <li>
@@ -183,7 +178,7 @@ const Nav = () => {
             <a target="_blank" href=" 
             https://www.google.com/maps/place/Toshkent+Arxitektura+Qurilish+Instituti/@41.3597783,69.3025876,17z/data=!3m1!4b1!4m5!3m4!1s0x38aef3e6ddff9841:0xb895faaef342b335!8m2!3d41.3597743!4d69.3047763
             "> Xarita </a>
-            <a href=""> Profillari </a>
+            <Link to=""> Profillari </Link>
 
           </div>
         </div>

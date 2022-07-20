@@ -1,6 +1,5 @@
 import React from 'react';
 import './Umumiymalumotlar.css'
-import { Link } from 'react-router-dom';
 import images4 from '../../Rasmlar/unsplash_gMes5dNykus.jpg';
 import Nav from '../../../pages/templates/navbar/Nav';
 import FooterNav from '../../../pages/templates/footer/FooterNav';

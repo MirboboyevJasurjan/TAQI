@@ -17,7 +17,7 @@ export default function Academics() {
                         <p className="academics_p" >Stanford students create and apply knowledge by thinking and doing, preparing for leadership in a rapidly changing world.</p>
                     </div>
                    
-                   <img src={header21} alt="photo" className="ac_header" />
+                   <img src={header21} alt="photos" className="ac_header" />
 
                     <div className="academics_numb">
                         <div className="ac_member">

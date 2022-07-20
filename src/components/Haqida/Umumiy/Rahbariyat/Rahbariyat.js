@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -10,7 +9,6 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import './Rahbariyat.css'
 import Nav from '../../../pages/templates/navbar/Nav';
-import images10 from '../../Rasmlar/rahbariyat1.jpg';
 import FooterNav from '../../../pages/templates/footer/FooterNav';
 import Sidebar from '../Sidebar/Sidebar';
 
@@ -111,11 +109,6 @@ const Rahbariyat = (props) => {
         createData('Qurilish materiallari va kimyo kafedrasi', 'Majidov Samariddin Rashidovich ', 'Samariddin@taqi.edu.uz', `+99890 123-45-67`),
         createData('Matematika va tabiiy fanlar kafedrai', 'Zaitov Adilbek Atakhanovich ', 'Adilbek@taqi.edu.uz', `+99890 123-45-67`),
     ];
-
-    function tops() {
-        window.scrollTo(0, 0)
-    }
-
 
     return (
         <>
