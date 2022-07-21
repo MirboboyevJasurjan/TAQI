@@ -19,8 +19,15 @@ function BannerNews(props) {
 
   const new_id = window.location.pathname.split("/").slice(-1);
 
-  console.log(new_id[0]);
+  let arr = ["https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg"]
 
+
+  console.log(new_id[0]);
+  const response = axios.get(
+    `http://143.110.239.138/news/${new_id}`
+  );
+
+  let arrVid = response.data.images
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
@@ -28,7 +35,7 @@ function BannerNews(props) {
       );
 
       setArticles(response.data);
-      console.log(response.data);
+      let arrVid = response.data.images
     };
     getArticles();
   }, []);
@@ -39,10 +46,10 @@ function BannerNews(props) {
       <div className="bannerNewsConainer">
         <Nav />
         <div className="div_img1"></div>
-        <div className="NewsPage">
-          <div className="haqida_father">
+        <div className="NewsPage" id="newsPageId">
+          <div className="haqida_father" id="bannerHaqida">
             <div className="haqida_father_box">
-              <NewsSid />
+              <NewsSid id="NewSidId"  />
               <div className="haqida_reight" id="bannerNewsContainerBox" >
 
                 <div className="imgBannerTitle">
@@ -51,7 +58,7 @@ function BannerNews(props) {
 
                 <div className="newsBannerContentDoub">
                   <div className="newsBannerDescr">
-                    <p>{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}{articles.description}</p>
+                    <p>{articles.description}</p>
                   </div>
 
                   <div className="newsBannerImg">
@@ -65,63 +72,43 @@ function BannerNews(props) {
 
 
 
-          {/* Width 100% */}
-          <div className="fullWid"><span className="fullWidBlIt" >Tadbirlardan lavhalar</span> </div>
-          {/* Albom gallery  */}
+            <div className="swiperBox">
+              <Swiper
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                slidesPerView={"auto"}
+                navigation={true}
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                }}
+                pagination={true}
+                modules={[EffectCoverflow, Pagination, Navigation]}
+                className="mySwiper"
+              >
 
-          <div className="swiperBox">
-            <Swiper
-              effect={"coverflow"}
-              grabCursor={true}
-              centeredSlides={true}
-              slidesPerView={"auto"}
-              navigation={true}
-              coverflowEffect={{
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-              }}
-              pagination={true}
-              modules={[EffectCoverflow, Pagination, Navigation]}
-              className="mySwiper"
-            >
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="TAQI" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="TAQI" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="TAQI" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="TAQI" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="TAQI" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="TAQI" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="TAQI" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="TAQI" />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="TAQI" />
-              </SwiperSlide>
-            </Swiper>
+                {
+                  arrVid.map(e => {
+                    return (
+                      <SwiperSlide>
+                        <img src={e} alt="TAQI" />
+                      </SwiperSlide>
+                    )
+                  })
+                }
+
+              </Swiper>
+            </div>
           </div>
+          <FooterNav/>
         </div>
-      </div>
-      <FooterNav />
+      {/* </div> */}
+    
     </>
   );
 }
-
 export default BannerNews;
-// after 576 news page justify content center

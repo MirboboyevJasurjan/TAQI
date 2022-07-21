@@ -73,6 +73,7 @@ const Main = () => {
     const getRows = async () => {
       const response = await axios.get(
         `http://143.110.239.138/news`
+    
       );
       
 
