@@ -248,19 +248,22 @@
 }
 
 @media (min-width: 1400px) {
-  .line_black{
+  .line_black, .footer_contner{
     max-width: 1400px;
+  }
+  .footer_nav, .line_bg{
+    margin: 0 auto 50px 0;
   }
   
 }
-@media(min-width:1367px){
+/* @media(min-width:1367px){
   .footer_contner{
       width: 1400px;
       margin: 0 auto;
   }
-}
+} */
 
-@media (max-width: 947px){
+@media (max-width: 1035px){
   .footer_nav {
     /* flex-direction: column; */
     align-items: center;
@@ -322,11 +325,11 @@
     margin: 0px;
   }
   .logo_sec_taqi{
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
   }
   #footerMalumot{
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
   }
   #footerSahifalar{
@@ -355,7 +358,7 @@
 }
 @media (max-width: 1400px){
   .line_bg, .footer_nav {
-      width: 100%;
+      max-width: 1200px;
       margin: 0 auto 50px 0;
   }
 }

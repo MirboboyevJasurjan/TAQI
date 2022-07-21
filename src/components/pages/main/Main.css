@@ -506,6 +506,9 @@ habarlar_row {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  top: 0px !important;
+  left: 0;
+
 
 }
 .date_event h4 {
@@ -604,13 +607,13 @@ habarlar_row {
   align-items: center;
 }
 .academics_navbg {
-  width: 100vw;
+  width: 80%;
   margin: 20px auto;
 }
 .academicss_h3 {
   font-family: "Sansation Light" !important;
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   margin-top: 30px;
   font-weight: 500;
@@ -624,30 +627,32 @@ habarlar_row {
   background-color: #EEBB3C;
 }
 .academicss_ul {
-  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: 'Sansation', sans-serif !important;
+  width: 80%;
+  margin: 30px auto 0px;
 }
 .academicss_ul li {
-  margin: 0 15px;
+  margin: 0 5px;
   text-align: center;
 }
 .academicss_ul li a {
-
-  font-size: 20px;
+  font-weight: 300px;
+  font-size: 16px;
   margin: 0 10px;
   width: 100px;
-  color: #222;
+  color: #000000;
   text-decoration: none;
   margin: 0px;
   position: relative;
   transition: 0.3s;
   font-family: "Sansation Light" !important;
+  line-height: 13px;
 }
 .academicss_ul li a:hover {
-  color: #222;
+  color: #000000;
 }
 .academicss_ul li a:after {
   position: absolute;
@@ -893,6 +898,9 @@ habarlar_row {
   .header__h1{
     width: 80%;
   }
+  .date_event {
+    left: 10%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -929,6 +937,10 @@ habarlar_row {
 @media (min-width: 1400px){
   .academics_navbg {
     max-width: 1400px;
+  }
+  #phdCards, #akademikCards{
+    width: 947px !important;
+    margin: 0 auto;
   }
 }
 
@@ -1164,6 +1176,10 @@ habarlar_row {
 
 
 }
+#phdCards, #akademikCards{
+  width: 947px !important;
+  margin: 0 auto;
+}
 .colHabar:nth-child(1) .imghabar, .colHabar:nth-child(6) .imghabar{
   width: 100%;
   height: 252px;
@@ -1197,6 +1213,9 @@ font-family: 'Roboto' !important;
 .containerNews {
   margin-bottom: 20px;
 }
+.academicss_card{
+  font-size: 14px;
+}
 @media screen and (max-width:1300px) {
   .containerNews {
     width: 100% !important;
@@ -1204,10 +1223,19 @@ font-family: 'Roboto' !important;
   .colHabar:nth-child(2) .imghabar, .colHabar:nth-child(3) .imghabar, .colHabar:nth-child(4) .imghabar, .colHabar:nth-child(5) .imghabar{
     height: 155px !important;
   }
+  .academicss_ul{
+    width: 100%;
+  }
+  #phdCards, #akademikCards{
+    width: 90% !important;
+  }
 }
 @media screen and (max-width: 947px) {
   .colHabar:nth-child(2)  a, .colHabar:nth-child(3)  a, .colHabar:nth-child(4)  a, .colHabar:nth-child(5)  a{
     padding: 15px;
+  }
+  #phdCards, #akademikCards{
+    width: 80% !important;
   }
   
 }
@@ -1254,6 +1282,11 @@ font-family: 'Roboto' !important;
   .colHabar:nth-child(2)  a, .colHabar:nth-child(3)  a, .colHabar:nth-child(4)  a, .colHabar:nth-child(5)  a{
     padding: 5px 12px 0px;
   }
-  
-  
+  .research_p, .academicss_p{
+    width: 90%;
+    margin: 20px auto 0px;
+  }
+  #akademikCards{
+    width: 100% !important;
+  }
 }

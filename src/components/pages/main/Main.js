@@ -350,6 +350,7 @@ const Main = () => {
             <div className="academicss_card_main">
               <Grid
                 className="academicss_container academicss_cards "
+                id="akademikCards"
                 container
                 spacing={1}
               >
@@ -499,6 +500,7 @@ const Main = () => {
           <div className="research_card_main">
             <Grid
               className="academicss_container academicss_cards "
+              id="phdCards"
               container
               spacing={1}
             >

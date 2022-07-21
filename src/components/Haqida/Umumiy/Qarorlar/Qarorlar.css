@@ -68,3 +68,9 @@
     justify-content: center;
     color: #000;
 }
+@media screen and (max-width: 576px) {
+    .qarorlar__card{
+        margin: 0 auto !important;
+    }
+    
+}
