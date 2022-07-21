@@ -37,51 +37,39 @@ export default function FooterNav() {
                     <div className="footer_contner">
 
                         <div className="footer_nav">
-
+                            <Link to="/" onClick={ToTop}>
                             <div className="logo_sec_taqi" >
+                              
                                 <h2>TOSHKENT ARXITEKTURA - QURILISH INSTITUTI</h2>
                                 <img src={logo} alt="photo" className="logo_taqi" />
+                               
                             </div>
-
+                            </Link>
 
                             <div className="footer_informatsia" id="footerMalumot">
                                 <h3>MA'LUMOT</h3>
                                 <p> Toshkent arxitektura-qurilish instituti 4ta fakulteti mavjud :<span> <br/> Arxitektura fakulteti, <br/> Bino inshootlar qurilishi fakulteti, <br/> Qurilishni boshqarish fakulteti, <br/> Muxandislik qurilish infrastrukturasi fakulteti </span> </p>
                             </div>
 
-                            {/* <div className="footer_informatsia">
-                                <h3>MANZIL / ALOQA UCHUN</h3>
-                                <p className='footerINf'>Manzil: Toshkent shahar, Navoiy ko'chasi 13-uy</p>                                
-                                <p className='footerINf'>Email: Devon@taqi.uz </p>
-                                <p className='footerINf'>Telefon: +998 71 234-11-78</p>
-                                <p className='footerINf'>Ish vaqti: Du-Sha: 9.00 - 18.00</p>
-                                <p className='footerINf'>Telegram bot: @taqi_uz_bot</p>
-                                <p className='footerINf'>Telegram kanal: @taqi_uz</p>
-                            </div> */}
+            
 
                             <div className="footer_informatsia" id="footerSahifalar">
                                 <h3>SAHIFALAR</h3>
                                 <ul className="footer_ul" >
-                                    <li><Link to="/about" onClick={ToTop}> Biz haqimizda</Link></li>
-                                    <li><Link to="/fakultetlar" onClick={ToTop}> Fakultetlar</Link></li>
-                                    <li><Link to="/kafedralar" onClick={ToTop}> Kafedralar</Link></li>
-                                    <li><Link to="/tadbir1" onClick={ToTop}> Tadbirlar</Link></li>
-                                    {/* <li><Link to="#"> Ilmiy</Link></li>
-                                    <li><Link to="#"> Tadqiqot</Link></li>
-                                    <li><Link to="#"> Qabul</Link></li>
-                                    <li><Link to="#"> Campus life</Link></li> */}
+                                    <li><Link to="/about" className='footerLinks' onClick={ToTop}> Biz haqimizda</Link></li>
+                                    <li><Link to="/fakultetlar" className='footerLinks' onClick={ToTop}> Fakultetlar</Link></li>
+                                    <li><Link to="/kafedralar" className='footerLinks' onClick={ToTop}> Kafedralar</Link></li>
+                                    <li><Link to="/tadbir1" className='footerLinks' onClick={ToTop}> Tadbirlar</Link></li>
+                        
                                 </ul>
                             </div>
 
                             <div className="footer_btn" >
-                                {/* <button className="btn_footer_page"> <Link to="">Biz haqimizda</Link></button>
-                                <button className="btn_footer_page"> <Link to="">Fakultetlar</Link></button>
-                                <button className="btn_footer_page"> <Link to="">Kafedralar</Link></button>
-                                <button className="btn_footer_page"> <Link to="">Tadbirlar</Link></button> */}
-                                <button className="btn_footer_page"> <Link to="/ilmiy1" onClick={ToTop}>Ilmiy</Link></button>
-                                <button className="btn_footer_page"> <Link to="/tadqiqot" onClick={ToTop}>Tadqiqot</Link></button>
-                                <button className="btn_footer_page"> <Link to="/qabul" onClick={ToTop}>Qabul</Link></button>
-                                <button className="btn_footer_page"> <Link to="/campus" onClick={ToTop}>Campus Life</Link></button>
+                             
+                                <button className="btn_footer_page"> <Link to="/ilmiy1" className='footerLinks' onClick={ToTop}>Ilmiy</Link></button>
+                                <button className="btn_footer_page"> <Link to="/tadqiqot"className='footerLinks' onClick={ToTop}>Tadqiqot</Link></button>
+                                <button className="btn_footer_page"> <Link to="/qabul" className='footerLinks' onClick={ToTop}>Qabul</Link></button>
+                                <button className="btn_footer_page"> <Link to="/campus" className='footerLinks' onClick={ToTop}>Campus Life</Link></button>
                             </div>
 
                         </div>

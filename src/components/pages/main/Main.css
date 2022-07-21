@@ -577,8 +577,9 @@ habarlar_row {
   height: auto;
   background: #f1f1f1;
   margin-top: 50px;
-  padding: 40px;
+  padding: 55px 40px 40px 40px;
 }
+
 
 
 .academicss_cards {
@@ -773,8 +774,7 @@ habarlar_row {
 }
 .research_card_main {
   width: 100%;
-  margin-top: 50px;
-  padding-top: 30px;
+  padding-top: 70px;
 }
 .research_btn_main {
   width: 100%;

@@ -343,8 +343,8 @@ const Main = () => {
         <div className="academicss_page">
           <h1 className="academicss_h1">Akademiklar</h1>
           <p className="academicss_p">
-            Talabalarni jamiyat murakkab dunyoda faol <br /> fuqarolar va
-            rahbarlar sifatida mazmunli hissa qo'shishga tayyorlash
+            Talabalarni murakkab dunyoda faol fuqarolar va liderlar<br />
+            sifatida jamiyatga mazmunli hissa qo'shishga tayyorlash
           </p>
 
           <div className="academicss_card_bg">

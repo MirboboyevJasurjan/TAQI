@@ -59,7 +59,9 @@
   align-items: center;
   justify-content: flex-end;
 }
-
+.footerLinks:hover{
+  color: black !important;
+}
 
 
 .footerbgg{
