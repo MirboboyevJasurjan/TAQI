@@ -40,7 +40,7 @@ function BannerNews(props) {
   return (
     <>
       <div className="bannerNewsConainer">
-        <Nav />
+        {/* <Nav /> */}
         <div className="div_img1"></div>
         <div className="NewsPage">
           <div className="haqida_father">
@@ -104,7 +104,7 @@ function BannerNews(props) {
           </div>
         </div>
       </div>
-      <FooterNav />
+      {/* <FooterNav /> */}
     </>
   );
 }

@@ -2,7 +2,7 @@
   display: flex !important;
   flex-direction: column !important;
   background-color: #fff;
-  width: 100%;
+  width: 90%;
 }
 img {
   object-fit: cover;
@@ -15,7 +15,7 @@ img {
 .haqida_father_box {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
 }
 
@@ -140,7 +140,7 @@ img {
 
 @media screen and (min-width:947px) {
   .newsBannerImg img {
-    width: 50%;
+    width: 90%;
   }
 
   .newsBannerImg {
