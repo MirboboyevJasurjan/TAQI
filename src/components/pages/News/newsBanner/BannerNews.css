@@ -4,7 +4,9 @@
   background-color: #fff;
   width: 100%;
 }
-
+img {
+  object-fit: cover;
+}
 #bannerNewsContainerBox {
   background-color: inherit !important;
   width: 100%;
@@ -59,6 +61,7 @@
   mix-blend-mode: normal;
   margin: -15px auto;
 }
+
 .newsBannerContentDoub {
   display: flex;
   align-items: center;
@@ -96,16 +99,19 @@
   /* width: 30%; */
   top: 30%;
 }
+
 .newsBannerImg img {
   width: 418px;
   height: 287px;
   object-fit: cover;
 }
-.swiperBox{
+
+.swiperBox {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 @media screen and (max-width: 1200px) {
   .bannerNewsConainer .haqida_father {
     justify-content: space-around;
@@ -131,27 +137,75 @@
   }
 
 }
+
 @media screen and (min-width:947px) {
-  .newsBannerImg img{
+  .newsBannerImg img {
     width: 50%;
-  } 
+  }
+
   .newsBannerImg {
     position: absolute;
-    width: 55%;
+    width: 45%;
     right: 0;
-  } 
+  }
 }
+
 @media screen and (max-width:947px) {
   .newsBannerImg {
     position: relative;
-  } 
-  .newsBannerContentDoub{
+  }
+
+  .newsBannerContentDoub {
     display: flex;
     flex-direction: column;
   }
-  .newsBannerDescr p{
+
+  .newsBannerDescr p {
     width: 95%;
     margin: 0 auto;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+
+  .swiper-slide,
+  .swiper-slide-visible,
+  .swiper-slide-active {
+    height: 300px !important;
+    width: 300px !important;
+  }
+
+  .swiper-slide img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .swiper {
+    max-width: 300px;
+  }
+
+  .swiper-button-prev {
+    left: 0 !important;
+  }
+
+  .swiper-button-next {
+    right: 0 !important;
+  }
+
+  .newsBannerImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .newsBannerImg img {
+    width: 75%;
+    margin: 20px auto;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
 }
