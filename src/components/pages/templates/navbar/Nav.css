@@ -499,6 +499,7 @@ a {
     background: rgb(255, 255, 255);
   }
 }
+
 @media screen and (max-width: 768px) {
   .nav-topMob ul li:nth-child(5),
   .nav-topMob ul li:nth-child(6) {
@@ -509,8 +510,8 @@ a {
     justify-content: space-between;
     z-index: 1000000000;
     margin-left: 150px;
-    left: 20%;
-    top: 90vh;
+    left: 35%;
+    top: 87vh;
     background-color: #797d81;
     color: #000;
   }
@@ -578,8 +579,26 @@ a {
   }
 }
 @media screen and (max-width: 576px) {
+  .nav-topMob ul li:nth-child(5),
+  .nav-topMob ul li:nth-child(6){
+    margin-right: 40%;
+    left: 20%;
+  }
+  
   .nav-topMob ul li a{
     margin-right: 15px;
+  }
+  .nav__search{
+    z-index: 20;
+  }
+  .bgtop, .navigation-top, .logo, .nav-topMob{
+    z-index: 22;
+  }
+  
+}
+@media screen and (max-width: 400px) {
+  .nav-topMob ul li a {
+    margin-right: 10px !important;
   }
   
 }

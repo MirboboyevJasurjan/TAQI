@@ -312,8 +312,15 @@
   .fakultet_row:nth-child(even) .fak_card_down{
     top: 135px;
   }
+  #fak_text{
+    width: auto;
+  }
 }
 @media screen and (max-width: 576px) {
+  .fak_card__name{
+    font-size: 14px !important;
+    font-weight: 600;
+  } 
   .acc__pers_card {
     display: flex;
     align-items: center;

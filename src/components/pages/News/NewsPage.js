@@ -34,7 +34,7 @@ function NewsPage() {
             <Row xs={1} md={4} className="g-4 NewsMainRow ">
               {arrays.map((row, id) => (
                 <>
-                  <Col>
+                  <Col id="NewsCardCol">
                     <Card className="newsP__card">
                       <div className="imgBoxNewsPage">
                         <Card.Img
@@ -52,7 +52,7 @@ function NewsPage() {
                             className="card__down"
                           >
                             {" "}
-                            {row.id} Davomi{" "}
+                             Davomi{" "}
                           </Link>
                         </p>
                       </Card.Body>

@@ -38,7 +38,7 @@ export default function EventPage() {
           <div className="haqida_reight">
             <Row xs={1} md={4} className="g-4">
               {rows.map((row, id) => (
-                <Col>
+                <Col id="eventCardCol">
                   <EventCards
                     idx={id}
                     title={row.title}

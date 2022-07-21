@@ -17,7 +17,7 @@ const EventCards = (...props) => {
           <p>
             <Link to={`/newsPage/${props[0].idx}`} className="card__down">
               {" "}
-              {props[0].idx} Davomi{" "}
+            Davomi{" "}
             </Link>
           </p>
         </Card.Body>

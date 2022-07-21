@@ -6,6 +6,13 @@
   margin: 50px 0 ;
 
 }
+.newsP__card__img{
+  object-fit: cover;
+}
+.card__down:hover{
+  color: #fff;
+}
+
 .newsP__card{
   margin: 50 100px;
 }
@@ -13,6 +20,12 @@
 @media screen and (max-width: 576px) {
   .NewsMainRow{
     justify-content: center;
+  }
+  #NewsCardCol{
+    padding: 0px !important;
+  }
+  .newsP__card__img{
+    object-fit: cover;
   }
   
 }
