@@ -9,3 +9,10 @@
 .newsP__card{
   margin: 50 100px;
 }
+
+@media screen and (max-width: 576px) {
+  .NewsMainRow{
+    justify-content: center;
+  }
+  
+}
