@@ -14,10 +14,8 @@ function NewsPage() {
   const arrays = [...rows].reverse().slice(0, 6);
   useEffect(() => {
     const getRows = async () => {
-      const response = await axios.get(
-        `https://62373d82f5f6e28a154abef5.mockapi.io/news`
-      ); // MockAPI
-      //   const response = await axios.get(`http://143.110.239.138/news`); // IP
+     // const response = await axios.get( // `https://62373d82f5f6e28a154abef5.mockapi.io/news` ); // MockAPI
+        const response = await axios.get(`http://143.110.239.138/news`); // IP
       setRows(response.data);
     };
     getRows();

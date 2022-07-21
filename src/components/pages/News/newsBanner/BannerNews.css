@@ -36,7 +36,6 @@
   color: #FFF;
   margin-bottom: 50px;
 }
-
 .imgBannerTitle {
   width: 100%;
   height: max-content;
@@ -131,16 +130,6 @@
   }
 
 }
-@media screen and (min-width:947px) {
-  .newsBannerImg img{
-    width: 50%;
-  } 
-  .newsBannerImg {
-    position: absolute;
-    width: 55%;
-    right: 0;
-  } 
-}
 @media screen and (max-width:947px) {
   .newsBannerImg {
     position: relative;
@@ -153,5 +142,31 @@
     width: 95%;
     margin: 0 auto;
   }
+  .swiper-slide img{
+    height: 300px;
+    width: 300px;
+  }  
+  .swiper-slide, .swiper-slide-visible, .swiper-slide-active{
+    height: 300px !important;
+    width: 300px !important;
+  }
+}
 
+
+@media screen and (min-width:947px) and (max-width:1200px) {
+  .newsBannerImg img{
+    width: 50%;
+  } 
+  .newsBannerImg {
+    position: absolute;
+    width: 55%;
+    right: 0;
+  } 
+}
+
+@media screen and (min-width: 1200px) {
+  #bannerNewsContainerBox {
+    width: 70%;
+  }
+  
 }
