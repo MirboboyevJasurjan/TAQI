@@ -107,7 +107,7 @@ a {
 }
 
 .bgtop {
-  width: 100vw;
+  width: 100%;
   background-color: #333;
 }
 
@@ -270,7 +270,7 @@ a {
 /* ///////======  Navigation bottom =====/////// */
 
 .bgbtoon {
-  width: 100vw;
+  width: 100%;
   background: rgba(153, 153, 153, 0.8);
   transition: 0.2s all ease-in;
 }

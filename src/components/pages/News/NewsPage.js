@@ -14,7 +14,7 @@ function NewsPage() {
   const arrays = [...rows].reverse().slice(0, 6);
   useEffect(() => {
     const getRows = async () => {
-        const response = await axios.get(`http://143.110.239.138/news`); // IP
+        const response = await axios.get(`http://143.110.239.138/news`);
       setRows(response.data);
     };
     getRows();

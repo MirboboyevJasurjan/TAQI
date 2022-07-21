@@ -37,14 +37,14 @@ export default function FooterNav() {
                     <div className="footer_contner">
 
                         <div className="footer_nav">
-                            <Link to="/" onClick={ToTop}>
+               
                             <div className="logo_sec_taqi" >
                               
                                 <h2>TOSHKENT ARXITEKTURA - QURILISH INSTITUTI</h2>
                                 <img src={logo} alt="photo" className="logo_taqi" />
                                
                             </div>
-                            </Link>
+
 
                             <div className="footer_informatsia" id="footerMalumot">
                                 <h3>MA'LUMOT</h3>
