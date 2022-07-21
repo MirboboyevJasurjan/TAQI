@@ -5,7 +5,9 @@
   font-size: 36px;
   line-height: 42px;
 }
-
+.card__name__fak, .card__job__fak{
+  display: none;
+}
 
 .div_imgFak {
   width: 100%;

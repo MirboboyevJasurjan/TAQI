@@ -18,11 +18,13 @@ function UmumiyMalumot(props) {
             <div className='Sarlavha'>
                 <div className='haqida_father'>
                     <Sidebar />
-                    <div className='haqida_reight'>
+                    <div className='haqida_reight' id="textUmumiy">
+                        <div className='UmumiyText'>
                         <h5>
-                            lorem300
-                                                        <hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/>
+                          
+                                                        {/* <hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/><hr/> */}
                         </h5>
+                        </div>
                     </div>
                 </div>
             </div>

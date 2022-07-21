@@ -72,8 +72,9 @@ const Main = () => {
   useEffect(() => {
     const getRows = async () => {
       const response = await axios.get(
-        `https://62373d82f5f6e28a154abef5.mockapi.io/news`
+        `http://143.110.239.138/news`
       );
+      
 
       setRows(response.data);
       console.log(response.data);

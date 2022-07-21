@@ -13,7 +13,7 @@ import fakultet2 from '../../../assets/images/kafedra/kafedra2.png'
 import fakultet3 from '../../../assets/images/fakultet/fakultet3.png'
 import fakultet4 from '../../../assets/images/fakultet/fakultet4.png'
 import fakultet5 from '../../../assets/images/fakultet/fakultet5.png'
-
+import anonym from '../../../assets/images/ustozlar/anonym.png'
 
 
 const Fakultetlar = (props) => {
@@ -44,18 +44,18 @@ const Fakultetlar = (props) => {
     }
 
     const rowsAcc = [
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
-        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', imagf),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
+        createDataAcc('Dotsent', 'Sultanov Alisher Sabirjanovich', anonym),
     ];
 
 
