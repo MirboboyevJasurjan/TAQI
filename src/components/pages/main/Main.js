@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import i18next from "i18next";
+// import i18next from "i18next";
 import { useTranslation, initReactI18Next } from "react-i18next";
-import cookie from "js-cookie";
-import BiMenu from "react-icons/bi";
+// import cookie from "js-cookie";
+// import BiMenu from "react-icons/bi";
 import { Container, Col, Row } from "react-bootstrap";
 
 import "./Main.css";
 import "./media.css";
 import Nav from "../templates/navbar/Nav";
-import Button from "@mui/material/Button";
-import { AiFillCaretDown } from "react-icons/ai";
+// import Button from "@mui/material/Button";
+// import { AiFillCaretDown } from "react-icons/ai";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
-import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+// import LocalLibraryIcon from "@mui/icons-material/LocalLibrary";
+// import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import StudentCap from "../../assets/icons/studentCap.svg";
 import OnlineLearning from "../../assets/icons/onlineLearning.svg";
 import Jigsaw from "../../assets/icons/jigsaw.svg";
@@ -28,23 +28,23 @@ import header1 from "../../assets/images/main/header1.jpeg";
 import header2 from "../../assets/images/main/header2.jpeg";
 import header3 from "../../assets/images/main/header3.jpeg";
 
-import habarlar1 from "../../assets/images/main/habarlar1.jpeg";
-import habarlar2 from "../../assets/images/main/habarlar2.jpeg";
-import habarlar3 from "../../assets/images/main/habarlar3.jpeg";
+// import habarlar1 from "../../assets/images/main/habarlar1.jpeg";
+// import habarlar2 from "../../assets/images/main/habarlar2.jpeg";
+// import habarlar3 from "../../assets/images/main/habarlar3.jpeg";
 
-import habarlar4 from "../../assets/images/main/habarlar4.png";
-import habarlar5 from "../../assets/images/main/habarlar5.jpeg";
-import habarlar6 from "../../assets/images/main/habarlar6.jpeg";
+// import habarlar4 from "../../assets/images/main/habarlar4.png";
+// import habarlar5 from "../../assets/images/main/habarlar5.jpeg";
+// import habarlar6 from "../../assets/images/main/habarlar6.jpeg";
 
 import events1 from "../../assets/images/main/events1.jpeg";
 import events2 from "../../assets/images/main/events2.jpeg";
 import events3 from "../../assets/images/main/events3.jpeg";
 import events4 from "../../assets/images/main/events4.jpeg";
 
-import Card1 from "../../assets/images/events/card1.jpg";
-import Card2 from "../../assets/images/events/card2.jpg";
-import Card3 from "../../assets/images/events/card3.jpg";
-import Card4 from "../../assets/images/events/card4.jpg";
+// import Card1 from "../../assets/images/events/card1.jpg";
+// import Card2 from "../../assets/images/events/card2.jpg";
+// import Card3 from "../../assets/images/events/card3.jpg";
+// import Card4 from "../../assets/images/events/card4.jpg";
 
 import academics1 from "../../assets/images/main/academics1.jpeg";
 import academics2 from "../../assets/images/main/academics2.jpeg";
@@ -52,13 +52,13 @@ import academics3 from "../../assets/images/main/academics3.jpeg";
 
 import tadqiqot from "../../assets/images/main/tadqiqot.jpeg";
 
-import research_bg from "../../assets/images/main/research_bg.png";
+// import research_bg from "../../assets/images/main/research_bg.png";
 import FooterNav from "../templates/footer/FooterNav";
 import events11 from "../../assets/images/main/bg/A1.png";
 import events21 from "../../assets/images/main/bg/A2.jpg";
 import events31 from "../../assets/images/main/bg/A5.jpg";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import SchoolIcon from "@mui/icons-material/School";
+// import SchoolIcon from "@mui/icons-material/School";
 import axios from "axios";
 
 
