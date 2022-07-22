@@ -162,11 +162,11 @@ const Nav = () => {
             <h3> Qidiruv  </h3>
             <span>
               <input type="radio" name="search" />
-              web
+              Web
             </span>
             <span>
               <input type="radio" name="search" />
-              peopele
+              People
             </span>
           </div>
           <div className="searchButtons">

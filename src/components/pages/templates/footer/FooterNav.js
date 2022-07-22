@@ -1,13 +1,13 @@
 import React from 'react'
 import './FooterNav.css'
-import microsoft from '../../../assets/images/main/Microsoft_icon.png'
-import location from '../../../assets/images/main/locat.png'
-import magento from '../../../assets/images/main/Magento.png'
+// import microsoft from '../../../assets/images/main/Microsoft_icon.png'
+// import location from '../../../assets/images/main/locat.png'
+// import magento from '../../../assets/images/main/Magento.png'
 import logo from '../../../assets/images/main/logoo.png'
-import { ImTelegram } from "react-icons/im";
-import { ImTwitter } from "react-icons/im";
-import { ImYoutube } from "react-icons/im";
-import { AiFillInstagram } from "react-icons/ai";
+// import { ImTelegram } from "react-icons/im";
+// import { ImTwitter } from "react-icons/im";
+// import { ImYoutube } from "react-icons/im";
+// import { AiFillInstagram } from "react-icons/ai";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import { Link } from 'react-router-dom'
 
@@ -40,8 +40,8 @@ export default function FooterNav() {
                
                             <div className="logo_sec_taqi" >
                               
-                                <h2>TOSHKENT ARXITEKTURA - QURILISH INSTITUTI</h2>
-                                <img src={logo} alt="photo" className="logo_taqi" />
+                                <Link to="/" onClick={ToTop}><h2>TOSHKENT ARXITEKTURA - QURILISH INSTITUTI</h2></Link>
+                                <Link to="/" onClick={ToTop}><img src={logo} alt="photo" className="logo_taqi" /></Link>
                                
                             </div>
 

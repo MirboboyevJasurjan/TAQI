@@ -21,7 +21,8 @@
     "qabul":"QABUL",
     "campus":"CAMPUS LIFE",
     "titulTaqi":"TOSHKENT ARXITEKTURA QURILISH INSTITIUTI",
-    "tanishing":"INSTITUT BILAN TANISHING"
+    "tanishing":"INSTITUT BILAN TANISHING",
+    "sahifagaOtish":"Sahifaga o'tish"
   },
 
   "Yopish":{
@@ -52,12 +53,15 @@
     "qabul":"18 NOYABR - O‘ZBEKISTON DAVLAT BAYROG‘I QABUL QILINGAN KUN!",
     "marifat":"JAMIYATDA MAFKURAVIY IMMUNITETNI MUSTAHKAMLASH VA JAHOLATGA QARSHI MA'RIFAT",
     "qiyofasi":"MAMLAKATIMIZNING YANGI ARXITEKTURAVIY QIYOFASINI YARATING",
-    "davomEtish":"Davom etish..."
+    "davomEtish":"Davom etish...",
+    "tayorlash1":"Talabalarni jamiyat murakkab dunyoda faol",
+    "tayorlash2": "fuqarolar va rahbarlar sifatida mazmunli hissa qo'shishga tayyorlash"
   },
 
   "akademiklar":{
     "akademiklar":"AKADEMIKLAR",
-    "tayorlash":"Talabalarni jamiyat murakkab dunyoda faol fuqarolar va rahbar sifatida mazmunli hissa qo'shishga tayyorlash",
+    "tayorlash1":"Talabalarni murakkab dunyoda faol fuqarolar va liderlar",
+    "tayorlash2": "sifatida jamiyatga mazmunli hissa qo'shishga tayyorlash",
     "zulfiya":"“Zulfiya – bahor va muhabbat kuychisi” deb nomlangan ma`naviy tadbir bo’lib o’tdi.",
     "tadbir":"Mir Alisher Navoiy hazratlarining 580 yilligi munosabati bilan “Alisher Navoiy – so‘z mulkining sultoni” mavzusida ma’naviy-ma’rifiy tadbir o‘tkazildi.",
     "zulfiyaxonim":"“Zulfiyaxonim - 105 yoshda” mavzusida adabiy-badiiy kecha o‘tkazildi",

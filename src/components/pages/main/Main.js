@@ -118,7 +118,7 @@ const Main = () => {
                   src={header1}
                   alt="TAQI"
                 />
-                <button className="header__card__btn">Sahifaga o'tish</button>
+                <button className="header__card__btn">{t("navbar.sahifagaOtish")}</button>
               </div>
               <div className="header__images__child">
                 <img
@@ -178,7 +178,7 @@ const Main = () => {
           <div className="btnzindex">
             <ArrowDropDownIcon className="arrow" />
             <a href="#habarlar" className="blank1">
-              INSTITUT BILAN TANISHING{" "}
+            {t("navbar.tanishing")}{" "}
             </a>
             <ArrowDropDownIcon className="arrow" />
           </div>
@@ -192,7 +192,7 @@ const Main = () => {
           style={scrollY > 10 ? { marginTop: "112px" } : {}}
         >
           <div className="tashtechWidth">
-            <h3 className="main_tash_h3"> HABARLAR </h3>
+            <h3 className="main_tash_h3"> {t("habarlar.habarlar")} </h3>
 
             <Container className="containerNews">
               <Row className="habarlar_row">
@@ -208,33 +208,14 @@ const Main = () => {
                     
                   </Col>
                 ))}
-                {/* <Col className="habarlarCardBig" sm={12} md={6} lg={6} xl={6} xxl={6}  >
-                  <div className="habarlarCard__child">
-                    <img className="imghabar" src={habarlar1} alt="photo" />
-                    <a className="tashcard2_txt"> "Korrupsiyadan xoli mamlakat" mavzusida seminar - trening bo‘lib o‘tdi</a>
-                  </div>
-                </Col>
-                <Col className="habarlarCard" sm={12} md={3} lg={3} xl={3} xxl={3}  >
-                  <div className="habarlarCard__child">
-                    <img className="tashcard2_img" src={habarlar2} alt="photo" />
-                    <a className="tashcard2_txt">15 may - Xalqaro oila kuni! Oilalarda milliy qadriyatlarni mustahkamlash” nomli ijodiy kecha o’tkazildi.</a>
-                  </div>
-                </Col>
-                <Col className="habarlarCard" sm={12} md={3} lg={3} xl={3} xxl={3}  >
-                  <div className="habarlarCard__child">
-                    <div className="tashcard2_img">
-                      <img src={habarlar3} alt="photo" />
-                    </div>
-                    <a className="tashcard2_txt">MUROJAAT VA TAKLIF!</a>
-                  </div>
-                </Col> */}
+       
 
               </Row>
              
             </Container>
 
             <div className="divButton">
-              <button className="buttonDavomi"><Link to="/news" onClick={ToTop} className="davomEtish">Davom etish ...</Link></button>
+              <button className="buttonDavomi"><Link to="/news" onClick={ToTop} className="davomEtish">{t("habarlar.davomEtish")}</Link></button>
             </div>
           </div>
         </div>
@@ -243,10 +224,11 @@ const Main = () => {
 
         <div className="events_page">
           <div className="eventsota">
-            <h1 className="event_h1">Tadbirlar</h1>
+            <h1 className="event_h1">{t("tadbirlar.tadbirlar")}</h1>
             <p className="event_p">
-              Talabalarni jamiyat murakkab dunyoda faol <br /> fuqarolar va
-              rahbarlar sifatida mazmunli hissa qo'shishga tayyorlash
+              {t("tadbirlar.tayorlash1")}<br/>{t("tadbirlar.tayorlash2")}
+              {/* Talabalarni jamiyat murakkab dunyoda faol <br /> fuqarolar va
+              rahbarlar sifatida mazmunli hissa qo'shishga tayyorlash */}
             </p>
 
             <Grid className="event_cards" container spacing={1}>
@@ -334,7 +316,7 @@ const Main = () => {
             </Grid>
 
             <div className="divButton">
-              <button className="buttonDavomi">Davom etish ...</button>
+              <button className="buttonDavomi"><Link to="/tadbir1"  onClick={ToTop} className="davomEtish">Davom etish ...</Link></button>
             </div>
           </div>
         </div>
@@ -394,44 +376,44 @@ const Main = () => {
             </h5>
             <ul className="academicss_ul">
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">
+                <Link className="academicss_ul_li" to="/fakultetlar" onClick={ToTop}>
                   Arxitektura
                 </Link>
               </li>
               |
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">
+                <Link className="academicss_ul_li" to="/fakultetlar" onClick={ToTop}>
                   Bino va inshoatlar
                 </Link>
               </li>
               |
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">
+                <Link className="academicss_ul_li" to="/fakultetlar" onClick={ToTop}>
                   Qurilishni boshqarish
                 </Link>
               </li>
               |
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">
+                <Link className="academicss_ul_li" to="/fakultetlar" onClick={ToTop}>
                   Muhandislik qurilish infrastrukturasi
                 </Link>
               </li>
               |
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">
+                <Link className="academicss_ul_li" to="/fakultetlar" onClick={ToTop}>
                   Magistratura
                 </Link>
               </li>
               |
               <li>
-                <Link className="academicss_ul_li" to="/fakultetlar">
+                <Link className="academicss_ul_li" to="/fakultetlar" onClick={ToTop}>
                   Sirtqi bo’lim
                 </Link>
               </li>
             </ul>
 
             <div className="divButton">
-              <button className="buttonDavomi">Davom etish ...</button>
+              <button className="buttonDavomi"><Link to="/fakultetlar" onClick={ToTop} className="davomEtish">Davom etish ...</Link></button>
             </div>
           </div>
         </div>
@@ -534,7 +516,7 @@ const Main = () => {
           </div>
 
           <div className="divButton">
-            <button className="buttonDavomi">Davom etish ...</button>
+            <button className="buttonDavomi"><Link to="/tadqiqot" onClick={ToTop} className="davomEtish">Davom etish ...</Link></button>
           </div>
         </div>
 
