@@ -7,7 +7,6 @@ import { Row, Col, Card } from 'react-bootstrap'
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
-import imagf from '../../../assets/images/about/images/unsplash.png'
 import fakultet1 from '../../../assets/images/kafedra/kafedra1.png'
 import fakultet2 from '../../../assets/images/kafedra/kafedra2.png'
 import fakultet3 from '../../../assets/images/fakultet/fakultet3.png'

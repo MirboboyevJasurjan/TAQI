@@ -116,7 +116,7 @@ const Nav = () => {
                   </li>
 
                   <li>
-                    <select className="uz" aria-label="Default select example" onChange={changeLanguage}>
+                    <select className="uz" aria-label="Default select example" onChange={changeLanguage} defaultValue="uz" >
                       <option className="uz lang" value="uz" selected="true">Uz</option>
                       <option className="uz lang" value="ru">RU</option>
                       <option className="uz lang" value="en">En</option>

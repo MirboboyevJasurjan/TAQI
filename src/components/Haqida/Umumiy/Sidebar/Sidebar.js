@@ -22,11 +22,11 @@ function Sidebar() {
 
           <div className="umumiy">
             <p className="umumiy__child">{" "}<b>Umumiy</b></p>
-            <p className="umumiy__child">{" "}<Link className="sidebar__link" activeClassName="active" onClick={tops} to="/about" >Institut tarixi</Link>{" "}</p>
-            <p className="umumiy__child"><Link className="sidebar__link" activeClassName="active" onClick={tops} to="/rahbariyat" >Institut rahbariyati{" "}</Link></p>
-            <p className="umumiy__child"><Link className="sidebar__link" activeClassName="active" onClick={tops} to="/tashkilot" >Tashkilot jadvali{" "}</Link></p>
-            <p className="umumiy__child"><Link className="sidebar__link" activeClassName="active" onClick={tops} to="/kengash" >Kengash qarorlari{" "}</Link></p>
-            <p className="umumiy__child"><Link className="sidebar__link" activeClassName="active" onClick={tops} to="/umumiy" >Umumiy ma'lumotlar{" "}</Link></p>
+            <p className="umumiy__child">{" "}<Link className="sidebar__link"  onClick={tops} to="/about" >Institut tarixi</Link>{" "}</p>
+            <p className="umumiy__child"><Link className="sidebar__link"  onClick={tops} to="/rahbariyat" >Institut rahbariyati{" "}</Link></p>   {/* acactiveClassName='active'  */}
+            <p className="umumiy__child"><Link className="sidebar__link"  onClick={tops} to="/tashkilot" >Tashkilot jadvali{" "}</Link></p>
+            <p className="umumiy__child"><Link className="sidebar__link"  onClick={tops} to="/kengash" >Kengash qarorlari{" "}</Link></p>   
+            <p className="umumiy__child"><Link className="sidebar__link"  onClick={tops} to="/umumiy" >Umumiy ma'lumotlar{" "}</Link></p>
             <p className="umumiy__child"> </p>
           </div>
 

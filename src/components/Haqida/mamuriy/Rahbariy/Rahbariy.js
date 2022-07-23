@@ -59,7 +59,7 @@ function Rahbariy() {
 
                             <Row xs={1} md={4} className="g-4 row_rahbariy">
                                 {rows.map((row, id) => (
-                                    <Col>
+                                    <Col key={id}>
                                         <Card className='rahbariy__card ' >
                                             <Card.Img variant="top" src={row.image} className='rahbariy__card__img' />
                                             <h6 className='card__name'>{row.name}</h6><br />
