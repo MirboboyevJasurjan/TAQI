@@ -18,25 +18,25 @@ function BannerNews(props) {
   const [articles, setArticles] = useState([]);
 
   const new_id = window.location.pathname.split("/").slice(-1);
-
-  let arr = ["https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg"]
-
-
   console.log(new_id[0]);
-  const response = axios.get(
-    `http://143.110.239.138/news/${new_id}`
-  );
 
-  let arrVid = response.data.images
+// // Carousel Images
+  // let arr = ["https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg", "https://swiperjs.com/demos/images/nature-1.jpg"]
+  
+  // const response = axios.get(`https://62373d82f5f6e28a154abef5.mockapi.io/news/`);
+
+  // Images
+  
+
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        `http://143.110.239.138/news/${new_id}`
-      );
+        `https://62373d82f5f6e28a154abef5.mockapi.io/news/${new_id}`
+        );
+      
 
       setArticles(response.data);
-      let arrVid = response.data.images
-    };
+     };
     getArticles();
   }, []);
 
@@ -104,8 +104,8 @@ function BannerNews(props) {
               </Swiper>
             </div>
           </div>
-          <FooterNav/>
         </div>
+        <FooterNav/>
       {/* </div> */}
     
     </>

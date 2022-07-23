@@ -241,3 +241,10 @@ img {
     width: 100%;
   }
 }
+@media screen and (min-width: 1400px) {
+  #newsPageId{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+}

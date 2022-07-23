@@ -14,8 +14,8 @@ function NewsPage() {
   const arrays = [...rows].reverse().slice(0, 6);
   useEffect(() => {
     const getRows = async () => {
-        // const response = await axios.get(`https://62373d82f5f6e28a154abef5.mockapi.io/news`);
-        const response = await axios.get(`https://90d5-213-230-72-34.eu.ngrok.io/news`);
+        const response = await axios.get(`https://62373d82f5f6e28a154abef5.mockapi.io/news`);
+        // const response = await axios.get(`https://90d5-213-230-72-34.eu.ngrok.io/news`);/
       setRows(response.data);
     };
     getRows();
