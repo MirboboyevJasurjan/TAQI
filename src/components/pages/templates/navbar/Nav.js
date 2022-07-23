@@ -73,7 +73,7 @@ const Nav = () => {
           <div className={"bgtop"}  >
             <nav className="navigation-top">
               <h2 className="logo">
-                <Link className="link-logo" to="/#" >
+                <Link className="link-logo" to="/#"  onClick={tops}>
                   <span className="link-logo-child">{t("navbar.Taqi")}</span>
                   <img className="navbarLogo" src={logo} alt="TAQI Logo" />
                 </Link>
@@ -81,19 +81,19 @@ const Nav = () => {
               <div className={isAcctive ? 'nav-top-link': 'nav-topMob'}>
                 <ul>
                   <li>
-                    <Link to="#">{t("navbar.talabalar")}</Link>
+                    <Link to="#" onClick={tops}>{t("navbar.talabalar")}</Link>
                   </li>
 
                   <li>
-                    <Link to="#">{t("navbar.xodimlar")}</Link>
+                    <Link to="#" onClick={tops}>{t("navbar.xodimlar")}</Link>
                   </li>
 
                   <li>
-                    <Link to="#"> {t("navbar.bitiruvchilar")} </Link>
+                    <Link to="#" onClick={tops}> {t("navbar.bitiruvchilar")} </Link>
                   </li>
 
                   <li>
-                    <Link to="#"> {t("navbar.tadqiqotchilar")}</Link>
+                    <Link to="#" onClick={tops}> {t("navbar.tadqiqotchilar")}</Link>
                   </li>
                    
                   <li>
@@ -178,7 +178,7 @@ const Nav = () => {
             <a target="_blank" href=" 
             https://www.google.com/maps/place/Toshkent+Arxitektura+Qurilish+Instituti/@41.3597783,69.3025876,17z/data=!3m1!4b1!4m5!3m4!1s0x38aef3e6ddff9841:0xb895faaef342b335!8m2!3d41.3597743!4d69.3047763
             "> Xarita </a>
-            <Link to=""> Profillari </Link>
+            <Link to="" onClick={tops}> Profillari </Link>
 
           </div>
         </div>
