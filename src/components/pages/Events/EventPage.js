@@ -7,6 +7,8 @@ import { Row, Col } from "react-bootstrap";
 import EventSid from "./eventSid/EventSid";
 import EventCards from "./EventCards";
 import "./eventPage.css";
+import '../../Haqida/Umumiy/Sidebar/Sidebar.css'
+// import '../../Haqida/Umumiy/Sidebar/LSidebar.css'
 
 export default function EventPage() {
   function createData(title, news, img) {
