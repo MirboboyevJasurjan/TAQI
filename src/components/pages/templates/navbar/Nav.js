@@ -127,9 +127,16 @@ const Nav = () => {
                     className={isAcctive ? 'buttonMenu navMenu': 'buttonMenu navMenu btn-Nav-Link'}
                     onClick={onMenu} 
                   >
+                    {
+                      isAcctive ? 
                     <span> 
                       <BiMenu className="clear1 biMenu" />
                     </span>
+                     : 
+                     <span> 
+                      <ClearIcon className="clear1 biMenu" />
+                    </span> 
+                    }
                   </button>
                 </ul>
               </div>
