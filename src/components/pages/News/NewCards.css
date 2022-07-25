@@ -2,10 +2,7 @@
   /* margin: 50px auto; */
   justify-content: flex-start;
 }
-.NewsMainRow .col{
-  margin: 50px 0 ;
 
-}
 .newsP__card__img{
   object-fit: cover;
 }
