@@ -102,7 +102,7 @@ const Nav = () => {
                         {
                           state ?
                             <span  >
-                              <ClearIcon className="clear1" />
+                              <ClearIcon className="clear1" id="CloseX" />
                               Yopish
                             </span>
                             :
@@ -134,7 +134,7 @@ const Nav = () => {
                     </span>
                      : 
                      <span> 
-                      <ClearIcon className="clear1 biMenu" />
+                      <ClearIcon className="clear1 biMenu" id="CloseX" />
                     </span> 
                     }
                   </button>

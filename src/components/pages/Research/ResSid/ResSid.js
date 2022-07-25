@@ -20,7 +20,7 @@ function ResSid() {
       <div className={isAcctive ? 'haqida_left' : 'haqida_leftMob'}>
         <div className="innerhaqidaMob">
 
-          <div className="umumiy">
+          <div className="umumiy" id="umumiySideBar">
             <p className="umumiy__child"><b>Ilmiy-tadqiqot markazlari va laboratoriyalari</b></p>
             <p className="umumiy__child"><Link className="sidebar__link" activeClassName="active" onClick={tops} to="#" >Ilmiy-tadqiqot markazlari ro'yxati</Link></p>
             <p className="umumiy__child"><Link className="sidebar__link" activeClassName="active" onClick={tops} to="#" >Laboratoriyalar ro'yxati </Link></p>

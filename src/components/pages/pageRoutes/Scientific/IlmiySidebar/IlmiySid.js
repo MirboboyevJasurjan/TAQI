@@ -20,7 +20,7 @@ function IlmiySid() {
       <div className={isAcctive ? 'haqida_left' : 'haqida_leftMob'}>
         <div className="innerhaqidaMob">
 
-          <div className="umumiy">
+          <div className="umumiy" id="umumiySideBar">
             <p className="umumiy__child"><b>Ilmiy faoliyat</b></p>
             <p className="umumiy__child"><Link className="sidebar__link" activeClassName="active" onClick={tops} to="#" >Fakultetlar (institutlar va maktablar) </Link></p>
             <p className="umumiy__child"><Link className="sidebar__link" activeClassName="active" onClick={tops} to="#" >Litsenziya dasturlari </Link></p>

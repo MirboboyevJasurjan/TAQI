@@ -27,5 +27,23 @@
   .newsP__card__img{
     object-fit: cover;
   }
+  .newsP__card{
+    left: 0px !important;
+    width: 270px !important;
+    height: 410px !important;
+  }
+  .imgBoxNewsPage{
+    width: 100%;
+  }
+  .newsText{
+    height: 33% !important;
+  }
+  .haqida_reight p {
+  padding: 10px !important;
+  font-size: 14px !important;
+  }
+  .newsBannerDescr {
+    min-width: 100% !important;
+  }
   
 }

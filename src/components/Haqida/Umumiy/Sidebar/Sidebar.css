@@ -101,12 +101,14 @@
     .menuGridTemp{
         top: 350px !important;
     }
+    #umumiySideBar{
+        width: 60% !important;
+    }
 }
 @media screen and (min-width: 768px) {
     .menuGridTemp{
         display: none;
-    }
-    
+    }   
 }
 @media screen and (max-width: 576px) {
     .innerhaqidaMob{
@@ -115,5 +117,8 @@
     .haqida_leftMob{
         width: auto;
         padding: 5px 5px 5px 0px
+    }
+    #umumiySideBar{
+        width: 75% !important;
     }
 }

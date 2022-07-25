@@ -42,7 +42,7 @@ function NewsPage() {
                         />
                       </div>
 
-                      <p className="newsText">{row.title}</p>
+                      <p className="newsText" id="newsTitle">{row.title}</p>
                       <Card.Body className="newsP__card__body">
                         <p>
                           <Link

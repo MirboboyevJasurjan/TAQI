@@ -1140,7 +1140,7 @@ habarlar_row {
 }
 
 .colHabar:nth-child(2) .tashcard2_txt, .colHabar:nth-child(3) .tashcard2_txt, .colHabar:nth-child(4) .tashcard2_txt, .colHabar:nth-child(5) .tashcard2_txt{
-  background-color: #FFFBFB;
+  background-color: #fff !important;
   font-size: 12px !important;
   font-family: 'Roboto' !important;
   overflow: hidden;
@@ -1175,7 +1175,11 @@ habarlar_row {
 .habarlarCard__child{
   height: 252px !important;
   width: 100%;
-  background-color: #FFFBFB;
+  background-color: #fff !important;
+}
+#CloseX{
+  font-size: 30px !important;
+  fill: #a02d2d;
 }
 .colHabar{
   padding: 0px !important;
@@ -1308,5 +1312,14 @@ font-family: 'Roboto' !important;
   }
   #akademikCards{
     width: 100% !important;
+  }
+  .colHabar:nth-child(1) .tashcard2_txt, .colHabar:nth-child(2) .tashcard2_txt, .colHabar:nth-child(3) .tashcard2_txt, .colHabar:nth-child(4) .tashcard2_txt, .colHabar:nth-child(5) .tashcard2_txt, .colHabar:nth-child(6) .tashcard2_txt{
+    font-size: 13.5px !important;
+  }
+    .colHabar:nth-child(1) .imghabar, .colHabar:nth-child(6) .imghabar, .colHabar:nth-child(1) .habarlarCard__child, .colHabar:nth-child(6) .habarlarCard__child{
+      height: 100% !important;
+  }
+  .colHabar:nth-child(1), .colHabar:nth-child(6){
+    height: 320px !important;
   }
 }
