@@ -6,6 +6,471 @@
   
   "navbar":{
     "Taqi":"Ташкентский Институт Архитектуры и строительства",
-    "habarlar":"Новости"
+    "talabalar":"СТУДЕНТЫ",
+    "xodimlar":"СОТРУДНИКИ",
+    "bitiruvchilar":"BITURICHILAR",
+    "tadqiqotchilar":"ВЫПУСКНИКИ",
+    "qidiruv":"Поиск",
+    "yopish":"Закрыть",
+    "haqida":"О НАС",
+    "habarlar":"Новости",
+    "tadbirlar":"СОБЫТИЯ",
+    "ilmiy":"НАУЧНЫЙ",
+    "tadqiqot":"ИССЛЕДОВАТЕЛЬСКАЯ РАБОТА",
+    "qabul":"ПРИНЯТИЕ",
+    "campus":"CAMPUS LIFE",
+    "titulTaqi":"ТАШКЕНТСКИЙ АРХИТЕКТУРНО-СТРОИТЕЛЬНЫЙ ИНСТИТУТ",
+    "tanishing":"ОЗНАКОМЬТЕСЬ С ИНСТИТУТОМ",
+    "sahifagaOtish":"Перейти на страницу"
+  },
+
+  
+  "Yopish":{
+    "qidiruv":"Поиск",
+    "web":"web",
+    "people":"СТУДЕНТЫ",
+    "qidiruvSayt":"Поиск TAQI веб сайт",
+    "qidiruvUsullari":"Другие методы поиска:",
+    "xarita":"Карта",
+    "profil":"Профили"
+  },
+
+  "habarlar":{
+    "habarlar":"НОВОСТИ",
+    "korrupsiya":"Проведен семинар-тренинг на тему «Страна, свободная от коррупции».",
+    "oilaKuni":"15 мая - Международный день семьи! Состоялся творческий вечер под названием «Укрепление национальных ценностей в семье».",
+    "murojat":"ЗАЯВКА И ПРЕДЛОЖЕНИЕ!",
+    "stajirovka":"Аспирант TAQI проходит исследовательскую стажировку в Федеративной Республике Германии.",
+    "ogohlik":"ТРЕБОВАНИЕ СРОКА ПРЕДУПРЕЖДЕНИЯ!",
+    "oquvSeminari":"На архитектурном факультете TAQI с участием выпускников прошел первый тренинг-семинар на тему «Открытый путь к государственной службе и необходимые навыки для государственного служащего».",
+    "davomEtish":"Продолжать..."
+  },
+
+  "tadbirlar":{
+    "tadbirlar":"СОБЫТИЯ",
+    "tayorlash":"Подготовить учащихся к значимому вкладу в качестве активных граждан и лидеров в сложном мире.",
+    "liboslar":"ВЫСТАВКА НАЦИОНАЛЬНЫХ ПЛАТЬЕВ.",
+    "qabul":"18 НОЯБРЯ - ДЕНЬ ПРИНЯТИЯ ГОСУДАРСТВЕННОГО ФЛАГА УЗБЕКИСТАНА!",
+    "marifat":"УКРЕПЛЕНИЕ ИДЕОЛОГИЧЕСКОГО ИММУНИТЕТА В ОБЩЕСТВЕ И ПРОСВЕЩЕНИЕ ПРОТИВ НЕВЕЖЕСТВА.",
+    "qiyofasi":"СОЗДАЕМ НОВЫЙ АРХИТЕКТУРНЫЙ ОБРАЗ НАШЕЙ СТРАНЫ",
+    "davomEtish":"Продолжать...",
+    "tayorlash1":"Студенты активны в сложном мире общества",
+    "tayorlash2": "подготовка к внесению значимого вклада в качестве граждан и лидеров"
+  },
+  "akademiklar":{
+    "akademiklar":"АКАДЕМИКИ",
+    "tayorlash1":"Студенты – активные граждане и лидеры в сложном мире",
+    "tayorlash2": "как подготовка к внесению значимого вклада в общество",
+    "zulfiya":"“Состоялось духовное мероприятие под названием «Зульфия – певица весны и любви».",
+    "tadbir":"По случаю 580-летия Его Святейшества Мир Алишера Навои состоялось духовно-просветительское мероприятие на тему «Алишер Навои – Султан Слова».",
+    "zulfiyaxonim":"Состоялся литературно-художественный вечер на тему «Зульфии ханым – 105 лет».",
+
+    "oltilik":"Шесть, которая помогает формировать ваши желания и способности",
+    "arxitektura":"Архитектура |",
+    "bino":"Здание и сооружения",
+    "boshqarish":"Управление строительством",
+    "muhandislik":"Инженерно-строительная инфраструктура",
+    "magistratura":"Магистратура",
+    "sirtqi":"Заочный отдел",
+    "davomEtish":"Продолжать..."
+  },
+
+  "tadqiqot":{
+    "tadqiqot":"ИССЛЕДОВАТЕЛЬСКАЯ РАБОТА",
+    "tayorlash":"Подготовка учащихся к значимому вкладу в общество в качестве активных граждан и лидеров в сложном мире.",
+    "oqituvchilar":"Учителя",
+    "talablar":"Студенты",
+    "nashrlar":"Научные публикации",
+    "kurslar":"Учебные курсы",
+    "Fazillayevning":"Обсуждение докторской диссертации З.Б.Фазиллаева состоится 16 июня 2022 года в 10:00",
+    "Alimovning":"16 июня 2022 года в 11:30 состоится обсуждение докторской диссертации Х.Т.Алимова.",
+    "Martazayevning":"Приглашаем вас к обсуждению докторской диссертации А. Ш. Мартазаева.",
+    "davomEtish":"Продолжать..."    
+  },
+
+  "qabul":{
+    "qabul":"ПРИНЯТИЕ",
+    "kash":"Прежде чем что-то открыть, узнай себя...",
+    "organing":"Выходите и изучайте образовательные возможности Ташкентского архитектурно-строительного института.",
+    "tanishtiramiz":"Мы познакомим и продемонстрируем их вам.",
+    "yordamBeradi":"Ташкентский архитектурно-строительный институт поможет вам в развитии ваших интересов.",
+    "qabulBoshlandi":"Начался набор на новый учебный год."
+  },
+
+  "footer":{
+    "aloqa":"ДЛЯ ОБЩЕНИЯ",
+    "murojat":"ДЛЯ ПРИМЕНЕНИЯ",
+    "TAQI":"ТАШКЕНТСКИЙ АРХИТЕКТУРНЫЙ ИНСТИТУТ - СТРОИТЕЛЬСТВО",
+    "malumot":"Информация",
+    "sahifalar":"Страницы",
+    "fakultetlarYonalishi":"Ташкентский архитектурно-строительный институт имеет 4 факультета: Управление строительством, Инженерия строительной инфраструктуры, Архитектура, Здания и сооружения.",
+
+    "haqimizda":"О нас",
+    "fakultetlar":"Факултеты",
+    "kafedralar":"Кафедры",
+    "hizmatlar":"Интерактивные услуги",
+    "murojatUchun":"ДЛЯ ПРИМЕНЕНИЯ",
+
+    "Applying":"Применение",
+    "Visiting":"Посещение",
+    "Giving":"Предоставление",
+    "Careers":"Карьера",
+    "Contact":"Контакт",
+    "adressMurojat":"Адрес / ДЛЯ ПРИМЕНЕНИЯ",
+    "adress":"Адрес:Г.Ташкент, ул.Навои13",
+    "pochta":"Э-почта:devon@taqi.uz",
+    "telefon":"Телефон: +99871234-11-78",
+    "ishVaqti":"Рабочая время: Пон-Суб: 9.00 - 18.00"
+  },
+
+  "umumiy":{
+    "umumiy":"Общий",
+    "institutTarixi":"Институт истории",
+    "institutRahbaritati":"Руководство института",
+    "tashkilot":"Организационная схема",
+    "kengash":"Решения Совета",
+    "umumiyMalumot":"Главная Информация"
+  },
+
+  "insitutTarixi":{
+    "titul":"История Ташкентского архитектурно-строительного института",
+
+    "matn1":"За свою славную и почетную историю независимая Республика Узбекистан прошла несколько этапов развития, которые могут служить примером для всего мира. Среди них он добился больших успехов в ряде областей, таких как экономика, политика, наука, образование, спорт, промышленность, сельское хозяйство. Тем более сейчас строительная отрасль развивается уверенными темпами в каждом регионе нашей страны. По личной инициативе первого президента Республики Узбекистан И. А. Каримова были построены огромные производственные предприятия, красивые и современные жилые дома, культурно-бытовые объекты, внушительные мосты и дороги. Для эффективного осуществления этой деятельности потребность в архитекторах, строителях и инженерах, обладающих глубокими знаниями в области архитектуры и строительства, значительно высока, поэтому возникла необходимость создания Ташкентского архитектурно-строительного института. В настоящее время Ташкентский архитектурно-строительный институт, активно участвующий в этом процессе, создан на базе факультетов «Архитектура», «Промышленное и гражданское строительство» и «Инженерно-строительный» Ташкентского политехнического института согласно указу первого Президента Республики Узбекистан И. А. Каримова 6 мая 1991 года. Следует отметить, что Ташкентский архитектурно-строительный институт считается головным высшим учебным заведением в области архитектуры и строительства и отвечает за разработку государственных образовательных стандартов, типовых учебных планов и научных программ по направлениям и специальностям образования, а также национальные высшие учебные заведения всегда берут на себя инициативу по внедрению его в учебных заведениях.",
+
+    "matn2":"На сегодняшний день в институте функционируют факультеты «Архитектура», «Строительство зданий и сооружений», «Инженерная строительная инфраструктура» и «Управление строительством», в состав которых входят «Дизайн», «Архитектура», «Экспертиза недвижимости и управление ею», Об 3958 бакалавры по 22 специальностям, таким как «Инженерная стоимость», «Геодезия, картография и кадастр», «Строительство и строительство», «Строительство и монтаж инженерных коммуникаций», «Гидротехническое строительство» и «Дизайн», «Геодезия и картография». », «Архитектура зданий и сооружений», «Теория и история архитектуры, реставрация памятников архитектуры», «Ландшафтная архитектура», «Строительство зданий и сооружений», «Технология организации строительства», «Экономика строительства», около 349 ведется подготовка магистров по 23 специальностям, таким как «Гидротехнические сооружения», «Оценка и управление недвижимостью».",
+
+    "matn3":"Первый Президент Республики Узбекистан И.А.Каримов, комментируя национальную программу подготовки кадров, сказал: «Нам не нужны рядовые выпускники, нам нужны новые современные технологии, отвечающие требованиям времени, тяга к науке, самостоятельно мыслящий персонал». Все профессора и преподаватели Ташкентского архитектурно-строительного института, считающие данное поручение Президента своей программой, направляют все свои усилия и знания на подготовку квалифицированных специалистов. В настоящее время молодые специалисты, окончившие институт, эффективно работают на стройках, в проектных институтах и ​​других организациях, проходя профессиональные стажировки.",
+
+    "matn4":"На сегодняшний день в институте подготовлено более 35 000 специалистов различных направлений, и они способствуют кадровому обеспечению архитектуры, строительства и других сфер нашей страны.",
+
+    "matn5":"Чтобы эти кадры были достаточно знающими и квалифицированными специалистами, они зависят от профессоров и преподавателей, прекрасно знающих свое дело и любящих свою профессию. Руководство института уделяет серьезное внимание повышению научного потенциала профессорско-преподавательского состава. Подготовка квалифицированных педагогов из молодых кадров с учеными степенями и учеными званиями находится в центре внимания кафедр и деканатов. В Ташкентском архитектурно-строительном институте работают 343 профессора и преподавателя, из них 23 доктора наук и профессора, около 102 кандидата наук и доцента. 36% профессоров и преподавателей института имеют ученые степени и звания.",
+
+    "matn6":"С использованием передовых технологий в ТАКИ на 2019/2020 учебный год с учетом современных требований подготовлено 52 учебника, 106 методических пособий и 372 учебно-методических комплекта.",
+
+    "matn7":"В системах Web of Science, Scopus и Google Scholar имеется более 650 ссылок на работы, опубликованные профессорами и преподавателями института. В 2019 году количество профессорско-преподавательского состава с индексом Хирша (h) составляло 3, а в 2020 году – 16. В национальном рейтинге высших учебных заведений республики институт занимал 42-е место в 2017 году и 42-е место в 2018 году. занял 20-е место в 2019 г., 15-е место в 2019 г., а в 2020 г. присвоено 13-е место среди высших учебных заведений республики по количеству публикаций профессорами статей в системах Web of Science, Scopus.",
+
+    "matn8":"С момента создания института было проведено более 20 международных конференций по актуальным проблемам подготовки специалистов в области архитектуры и строительства."
+  },
+
+  "institutRahbariyati":{
+    "rahbariyat":"Руководство ",
+    "rektor":"Ректор",
+    "oquvIshlari":"Проректор по учебной работе",
+    "yoshlar":"Проректор по работе с молодежью",
+    "ilmiy":"Проректор по научной работе и инновациям",
+    "moliya":"Финансы - проректор по экономической части",
+    "kengashi":"Секретарь Совета Института",
+    "muhandis":"Главный инженер",
+    "yordamchi":"Помощник ректора",
+    "OTM":"пресс-секретарь ВУЗ",
+    "yurist":"Юридический консультант",
+    "psixolog":"Психолог института",
+    "kotib":"Секретарь"
+  },
+
+  "bolimBoshliqlari":{
+    "bolim":"НАЧАЛЬНИКИ ОТДЕЛОВ",
+    "uslubiy":"Учебно-методический отдел",
+    "ilmiy":"Отдел научных исследований, инноваций и подготовки научно-педагогических кадров",
+    "yoshlar":"Отдел по работе с молодежью, духовности и просвещения",
+    "sifati":"Контроль качества образования",
+    "aloqalar":"Департамент международных отношений",
+    "xodimlar":"Отдел кадров",
+    "reja":"План финансового отдела",
+    "marketing":"Департамент маркетинга и студенческой практики",
+    "buxgalteriya":"Бухгалтерия",
+    "devonxona":"Депозитарий и архив",
+    "tadqiqot":"Отдел организации научно-исследовательской деятельности талантливых студентов",
+    "resurs":"Информационно-ресурсный центр",
+    "monitoring":"Отдел мониторинга и внутреннего контроля",
+    "raqamli":"Центр цифровых образовательных технологий",
+    "malaka":"Тренировочный центр",
+    "qaytaTayyorlash":"Центр переподготовки менеджеров в сфере строительства и повышения квалификации",
+    "nashriyot":"Редакционно-издательский отдел",
+    "tashkil":"Отдел организации научно-исследовательской деятельности талантливых студентов"
+  },
+
+  "Fdekanlari":{
+    "dekanlari":"ДЕКАНЫ ФАКУЛЬТЕТОВ",
+    "arxitektura":"Архитектура",
+    "muhandislik":"Инженерно-строительная инфраструктура",
+    "bino":"Здания и сооружения",
+    "qurilish":"Управление строительством"
+  },
+
+  "kafedralarRahabriyat":{
+    "arxitektura":"Архитектурный дизайн",
+    "shaharsozlik":"Градостроительство и ландшафтная архитектура",
+    "arxitekturaNazariyasi":"История и теория архитектуры",
+    "interyer":"Дизайн интерьера и ландшафта",
+    "tasviriy":"Департамент изящных искусств",
+    "muhandislik":"Инженерная графика и компьютерный дизайн",
+    "bino":"Кафедра проектирования строительных конструкций",
+    "konstruksiyalar":"Департамент строительных конструкций",
+    "gidrotehnik":"Кафедра гидротехнических сооружений, грунтов и оснований",
+    "texnologiyalar":"Технология строительства и его организация",
+    "mehanikasi":"Кафедра строительной механики и сейсмостойкости сооружений",
+    "ozbekTili":"O’zbek tili va adabiyoti",
+    "iqtisodiyot":"Iqtisodiyot va ko’chmas mulkni boshqarish kafedrasi",
+    "menejment":"Qurilishda menejment kafedrasi",
+    "axborot":"Axborot texnologiyalari kafedrasi",
+    "shaharQ":"Shahar qurilishi va ho’jaligi kafedrasi",
+    "falsafa":"Falsafa va ijtimoiy siyosiy fanlar kafedrasi",
+    "xorijiy":"Xorijiy tillar kafedrasi",
+    "materiallari":"Qurilish materiallari, buyumlari va konstruksiyalari texnologiyasi",
+    "geodeziya":"Geodeziya va kadastr kafedrasi",
+    "injenerlik":"Injenerlik kommunikatsiyalarini loyihalash kafedrasi",
+    "kimyo":"Qurilish materiallari va kimyo kafedrasi",
+    "matematika":"Matematika va tabiiy fanlar kafedrai"
+  },
+
+  "kengashQarori":{
+    "kengash":"Kengash qarorlari",
+    "institut":"Institut qarorlari",
+    "yuklab":"Yuklab Olish",
+    "ortga":"Ortga"
+  },
+
+  "mamuriy":{
+    "mamuriy":"Ma'muriy birliklar",
+    "OTM":"OTM nizomi",
+    "rahbariyat":"Rahbariyat",
+    "markaz":"Markaz va bo'limlar",
+    "fakultetlar":"Fakultetlar",
+    "kafedralar":"Kafedralar",
+    "jamoat":"Jamoat tashkilotlari",
+    "talim":"Ta’lim sifati"
+  },
+
+  "OTM":{
+    "yuklab":"Yuklab Olish"
+  },
+  
+  "rahbariyat":{
+    "Ercan":"Ercan Kahya",
+    "rektor":"Rektor",
+    "prorektor":"Mirisayev Abdullo Ulmasovich",
+    "oquv":"O’quv ishlari bo’yicha prorektor",
+    "cv":"CV"
+  },
+
+  "markazBolimlar":{
+    "markaz":"MARKAZ VA BO'LIMLAR",
+    "oquv":"O’quv-uslubiy bo’lim",
+    "ilmiy":"Ilmiy bo’lim",
+    "yoshlarIshlash":"Yoshlar bilan ishlash, manaviyat va ma’rifat bo’limi",
+    "talim":"Ta’lim sifati",
+    "aloqalar":"Xalqaro aloqalar bo’limi",
+    "xodimlar":"Xodimlar bo’limi",
+    "reja":"Reja - moliya bo’limi",
+    "buyurtma":"Buyurtma portfelini shakillantirish bitiruvchilarni ishga taqsimlash va monitoring bo’limi",
+    "buxgalteriya":"Buxgalteriya bo’limi",
+    "devonxona":"Devonxona va arxiv",
+    "iqtidorli":"Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi",
+    "axborotResurs":"Axborot resurs markazi",
+    "monitoring":"Monitoring va ichki nazorat bo’limi",
+    "axborotTexno":"Axborot texnologiyalari markazi",
+    "malaka":"Malaka oshirish markazi",
+    "qurulish":"Центр переподготовки менеджеров в сфере строительства и повышения квалификацииi",
+    "taxririy":"Taxririy-nashriyot bo’limi"
+  },
+
+  "fakultet":{
+    "fakultetlar":"Fakultetlar",
+    "arxitektura":"“Arxitektura” fakulteti",
+    "text":"text",
+    "bino":"“Здания и сооружения” fakulteti",
+    "qurilish":"“Управление строительством” fakulteti",
+    "muhandislik":"“Muhandislik va qurilishni boshqarish infrastrukturasi” fakulteti",
+    "magistratura":"Magistratura",
+    "sirtqi":"Sirtqi bo'lim",
+    "general":"General settings",
+    "accordion":"accordion",
+    "davomEtish":"Davom etish...",
+    
+    "ism":"Sultanov Alisher Sabirjanovich",
+    "dotsent":"Dotsent",
+    "cv":"CV"
+  },
+
+  "kafedralar":{
+    "markaz":"MARKAZ VA BO'LIMLAR",
+    "oquv":"O’quv-uslubiy bo’lim",
+    "ilmiy":"Ilmiy bo’lim",
+    "yoshlarIshlash":"Yoshlar bilan ishlash, manaviyat va ma’rifat bo’limi",
+    "talim":"Ta’lim sifati",
+    "aloqalar":"Xalqaro aloqalar bo’limi",
+    "xodimlar":"Xodimlar bo’limi",
+    "reja":"Reja - moliya bo’limi",
+    "buyurtma":"Buyurtma portfelini shakillantirish bitiruvchilarni ishga taqsimlash va monitoring bo’limi",
+    "buxgalteriya":"Buxgalteriya bo’limi",
+    "devonxona":"Devonxona va arxiv",
+    "iqtidorli":"Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi",
+    "axborotResurs":"Axborot resurs markazi",
+    "monitoring":"Monitoring va ichki nazorat bo’limi",
+    "axborotTexno":"Axborot texnologiyalari markazi",
+    "malaka":"Malaka oshirish markazi",
+    "qurulish":"Центр переподготовки менеджеров в сфере строительства и повышения квалификацииi",
+    "taxririy":"Taxririy-nashriyot bo’limi"
+  },
+  "jamoatTashikolti":{
+    "markaz":"MARKAZ VA BO'LIMLAR",
+    "oquv":"O’quv-uslubiy bo’lim",
+    "ilmiy":"Ilmiy bo’lim",
+    "yoshlarIshlash":"Yoshlar bilan ishlash, manaviyat va ma’rifat bo’limi",
+    "talim":"Ta’lim sifati",
+    "aloqalar":"Xalqaro aloqalar bo’limi",
+    "xodimlar":"Xodimlar bo’limi",
+    "reja":"Reja - moliya bo’limi",
+    "buyurtma":"Buyurtma portfelini shakillantirish bitiruvchilarni ishga taqsimlash va monitoring bo’limi",
+    "buxgalteriya":"Buxgalteriya bo’limi",
+    "devonxona":"Devonxona va arxiv",
+    "iqtidorli":"Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi",
+    "axborotResurs":"Axborot resurs markazi",
+    "monitoring":"Monitoring va ichki nazorat bo’limi",
+    "axborotTexno":"Axborot texnologiyalari markazi",
+    "malaka":"Malaka oshirish markazi",
+    "qurulish":"Центр переподготовки менеджеров в сфере строительства и повышения квалификацииi",
+    "taxririy":"Taxririy-nashriyot bo’limi"
+  },
+  "talimSifati":{
+    "markaz":"MARKAZ VA BO'LIMLAR",
+    "oquv":"O’quv-uslubiy bo’lim",
+    "ilmiy":"Ilmiy bo’lim",
+    "yoshlarIshlash":"Yoshlar bilan ishlash, manaviyat va ma’rifat bo’limi",
+    "talim":"Ta’lim sifati",
+    "aloqalar":"Xalqaro aloqalar bo’limi",
+    "xodimlar":"Xodimlar bo’limi",
+    "reja":"Reja - moliya bo’limi",
+    "buyurtma":"Buyurtma portfelini shakillantirish bitiruvchilarni ishga taqsimlash va monitoring bo’limi",
+    "buxgalteriya":"Buxgalteriya bo’limi",
+    "devonxona":"Devonxona va arxiv",
+    "iqtidorli":"Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi",
+    "axborotResurs":"Axborot resurs markazi",
+    "monitoring":"Monitoring va ichki nazorat bo’limi",
+    "axborotTexno":"Axborot texnologiyalari markazi",
+    "malaka":"Malaka oshirish markazi",
+    "qurulish":"Центр переподготовки менеджеров в сфере строительства и повышения квалификацииi",
+    "taxririy":"Taxririy-nashriyot bo’limi"
+  },
+  "tAQIgaNazar":{
+    "taqi":"TAQIga bir nazar",
+    "xotira":"Xotira Daraxti",
+    "bosqich":"TAQI bosqichi",
+    "tasvirlar":"TAQI tasvirlar bilan",
+    "cam":"TAQIcam",
+    "qarashda":"TAQI bir qarashda(image)"
+  },
+  "TAQI_+xotira":{
+    "markaz":"MARKAZ VA BO'LIMLAR",
+    "oquv":"O’quv-uslubiy bo’lim",
+    "ilmiy":"Ilmiy bo’lim",
+    "yoshlarIshlash":"Yoshlar bilan ishlash, manaviyat va ma’rifat bo’limi",
+    "talim":"Ta’lim sifati",
+    "aloqalar":"Xalqaro aloqalar bo’limi",
+    "xodimlar":"Xodimlar bo’limi",
+    "reja":"Reja - moliya bo’limi",
+    "buyurtma":"Buyurtma portfelini shakillantirish bitiruvchilarni ishga taqsimlash va monitoring bo’limi",
+    "buxgalteriya":"Buxgalteriya bo’limi",
+    "devonxona":"Devonxona va arxiv",
+    "iqtidorli":"Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi",
+    "axborotResurs":"Axborot resurs markazi",
+    "monitoring":"Monitoring va ichki nazorat bo’limi",
+    "axborotTexno":"Axborot texnologiyalari markazi",
+    "malaka":"Malaka oshirish markazi",
+    "qurulish":"Центр переподготовки менеджеров в сфере строительства и повышения квалификацииi",
+    "taxririy":"Taxririy-nashriyot bo’limi"
+  },
+  "TAQI_bosqichi":{
+    "markaz":"MARKAZ VA BO'LIMLAR",
+    "oquv":"O’quv-uslubiy bo’lim",
+    "ilmiy":"Ilmiy bo’lim",
+    "yoshlarIshlash":"Yoshlar bilan ishlash, manaviyat va ma’rifat bo’limi",
+    "talim":"Ta’lim sifati",
+    "aloqalar":"Xalqaro aloqalar bo’limi",
+    "xodimlar":"Xodimlar bo’limi",
+    "reja":"Reja - moliya bo’limi",
+    "buyurtma":"Buyurtma portfelini shakillantirish bitiruvchilarni ishga taqsimlash va monitoring bo’limi",
+    "buxgalteriya":"Buxgalteriya bo’limi",
+    "devonxona":"Devonxona va arxiv",
+    "iqtidorli":"Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi",
+    "axborotResurs":"Axborot resurs markazi",
+    "monitoring":"Monitoring va ichki nazorat bo’limi",
+    "axborotTexno":"Axborot texnologiyalari markazi",
+    "malaka":"Malaka oshirish markazi",
+    "qurulish":"Центр переподготовки менеджеров в сфере строительства и повышения квалификацииi",
+    "taxririy":"Taxririy-nashriyot bo’limi"
+  },
+  "TAQI_tasvirlar":{
+    "markaz":"MARKAZ VA BO'LIMLAR",
+    "oquv":"O’quv-uslubiy bo’lim",
+    "ilmiy":"Ilmiy bo’lim",
+    "yoshlarIshlash":"Yoshlar bilan ishlash, manaviyat va ma’rifat bo’limi",
+    "talim":"Ta’lim sifati",
+    "aloqalar":"Xalqaro aloqalar bo’limi",
+    "xodimlar":"Xodimlar bo’limi",
+    "reja":"Reja - moliya bo’limi",
+    "buyurtma":"Buyurtma portfelini shakillantirish bitiruvchilarni ishga taqsimlash va monitoring bo’limi",
+    "buxgalteriya":"Buxgalteriya bo’limi",
+    "devonxona":"Devonxona va arxiv",
+    "iqtidorli":"Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi",
+    "axborotResurs":"Axborot resurs markazi",
+    "monitoring":"Monitoring va ichki nazorat bo’limi",
+    "axborotTexno":"Axborot texnologiyalari markazi",
+    "malaka":"Malaka oshirish markazi",
+    "qurulish":"Центр переподготовки менеджеров в сфере строительства и повышения квалификацииi",
+    "taxririy":"Taxririy-nashriyot bo’limi"
+  },
+  "TAQI_cam":{
+    "markaz":"MARKAZ VA BO'LIMLAR",
+    "oquv":"O’quv-uslubiy bo’lim",
+    "ilmiy":"Ilmiy bo’lim",
+    "yoshlarIshlash":"Yoshlar bilan ishlash, manaviyat va ma’rifat bo’limi",
+    "talim":"Ta’lim sifati",
+    "aloqalar":"Xalqaro aloqalar bo’limi",
+    "xodimlar":"Xodimlar bo’limi",
+    "reja":"Reja - moliya bo’limi",
+    "buyurtma":"Buyurtma portfelini shakillantirish bitiruvchilarni ishga taqsimlash va monitoring bo’limi",
+    "buxgalteriya":"Buxgalteriya bo’limi",
+    "devonxona":"Devonxona va arxiv",
+    "iqtidorli":"Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi",
+    "axborotResurs":"Axborot resurs markazi",
+    "monitoring":"Monitoring va ichki nazorat bo’limi",
+    "axborotTexno":"Axborot texnologiyalari markazi",
+    "malaka":"Malaka oshirish markazi",
+    "qurulish":"Центр переподготовки менеджеров в сфере строительства и повышения квалификацииi",
+    "taxririy":"Taxririy-nashriyot bo’limi"
+  },
+  "TAQI_qarashda":{
+    "markaz":"MARKAZ VA BO'LIMLAR",
+    "oquv":"O’quv-uslubiy bo’lim",
+    "ilmiy":"Ilmiy bo’lim",
+    "yoshlarIshlash":"Yoshlar bilan ishlash, manaviyat va ma’rifat bo’limi",
+    "talim":"Ta’lim sifati",
+    "aloqalar":"Xalqaro aloqalar bo’limi",
+    "xodimlar":"Xodimlar bo’limi",
+    "reja":"Reja - moliya bo’limi",
+    "buyurtma":"Buyurtma portfelini shakillantirish bitiruvchilarni ishga taqsimlash va monitoring bo’limi",
+    "buxgalteriya":"Buxgalteriya bo’limi",
+    "devonxona":"Devonxona va arxiv",
+    "iqtidorli":"Iqtidorli talabalarning ilmiy-tadqiqot faoliyatini tashkil etish bo’limi",
+    "axborotResurs":"Axborot resurs markazi",
+    "monitoring":"Monitoring va ichki nazorat bo’limi",
+    "axborotTexno":"Axborot texnologiyalari markazi",
+    "malaka":"Malaka oshirish markazi",
+    "qurulish":"Центр переподготовки менеджеров в сфере строительства и повышения квалификацииi",
+    "taxririy":"Taxririy-nashriyot bo’limi"
+  },
+  "habarlarBolimi":{
+    "habarlar":"Habarlar",
+    "yangiliklar":"Yangiliklar",
+    "elonlar":"E'lonlar",
+    "tadbirlar":"Ommaviy tadbirlar",
+    "davomi":"DAVOMI..."
+  },
+  "yangiliklarBolimi":{
+    "yangiliklar":"Institut Yangiliklari",
+    "tadbirlar":"Rejalashtirilgan tadbirlar",
+    "davomi":""
   }
 }

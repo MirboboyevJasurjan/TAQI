@@ -73,9 +73,9 @@ const Main = () => {
     const getRows = async () => {
       const response = await axios.get(
         `https://62373d82f5f6e28a154abef5.mockapi.io/news/`
-    
+
       );
-      
+
       setRows(response.data);
 
     };
@@ -176,7 +176,7 @@ const Main = () => {
           <div className="btnzindex">
             <ArrowDropDownIcon className="arrow" />
             <a href="#habarlar" className="blank1">
-            {t("navbar.tanishing")}{" "}
+              {t("navbar.tanishing")}{" "}
             </a>
             <ArrowDropDownIcon className="arrow" />
           </div>
@@ -196,20 +196,20 @@ const Main = () => {
               <Row className="habarlar_row">
                 {arrays.map((row, id) => (
                   <Col xs={1} md={4} className="g-4 colHabar">
-                    <div className="habarlarCard__child" key={arrays.length-1} >
-                    <div className="tashcard2_img imghabar">
-                      <img className="imghabar" src={row.image} alt="photo" />
+                    <div className="habarlarCard__child" key={arrays.length - 1} >
+                      <div className="tashcard2_img imghabar">
+                        <img className="imghabar" src={row.image} alt="photo" />
+                      </div>
+
+                      <Link to={`/newsPage/${row.id}`} onClick={ToTop} className="tashcard2_txt">{row.title}</Link>
                     </div>
-                     
-                      <Link to ={`/newsPage/${row.id}`} onClick={ToTop} className="tashcard2_txt">{row.title}</Link>
-                    </div>
-                    
+
                   </Col>
                 ))}
-       
+
 
               </Row>
-             
+
             </Container>
 
             <div className="divButton">
@@ -224,7 +224,7 @@ const Main = () => {
           <div className="eventsota">
             <h1 className="event_h1">{t("tadbirlar.tadbirlar")}</h1>
             <p className="event_p">
-              {t("tadbirlar.tayorlash1")}<br/>{t("tadbirlar.tayorlash2")}
+              {t("tadbirlar.tayorlash1")}<br />{t("tadbirlar.tayorlash2")}
               {/* Talabalarni jamiyat murakkab dunyoda faol <br /> fuqarolar va
               rahbarlar sifatida mazmunli hissa qo'shishga tayyorlash */}
             </p>
@@ -243,7 +243,7 @@ const Main = () => {
                     <div className="date_event">
                       <h4>16/04</h4>
                     </div>
-                    <p className="h4Text">MILLIY LIBOSLAR NAMOYISHI</p>
+                    <p className="h4Text">{t("tadbirlar.liboslar")}</p>
                   </div>
                 </div>
               </Grid>
@@ -262,8 +262,7 @@ const Main = () => {
                       <h4>16/04</h4>
                     </div>
                     <p className="h4Text">
-                      18 NOYABR - O‘ZBEKISTON DAVLAT BAYROG‘I QABUL QILINGAN
-                      KUN!
+                      {t("tadbirlar.qabul")}
                     </p>
                   </div>
                 </div>
@@ -284,8 +283,7 @@ const Main = () => {
                     </div>
                     <p className="h4Text">
                       {" "}
-                      JAMIYATDA MAFKURAVIY IMMUNITETNI MUSTAHKAMLASH VA
-                      JAHOLATGA QARSHI MA'RIFAT
+                      {t("tadbirlar.marifat")}
                     </p>
                   </div>
                 </div>
@@ -306,7 +304,7 @@ const Main = () => {
                     </div>
                     <p className="h4Text">
                       {" "}
-                      MAMLAKATIMIZNING YANGI ARXITEKTURAVIY QIYOFASINI YARATING{" "}
+                      {t("tadbirlar.qiyofasi")}{" "}
                     </p>
                   </div>
                 </div>
@@ -314,7 +312,7 @@ const Main = () => {
             </Grid>
 
             <div className="divButton">
-              <button className="buttonDavomi"><Link to="/tadbir1"  onClick={ToTop} className="davomEtish">Davom etish ...</Link></button>
+              <button className="buttonDavomi"><Link to="/tadbir1" onClick={ToTop} className="davomEtish">{t("habarlar.davomEtish")}</Link></button>
             </div>
           </div>
         </div>
@@ -322,12 +320,12 @@ const Main = () => {
         {/* Academics page */}
 
         <div className="academicss_page">
-          <h1 className="academicss_h1">Akademiklar</h1>
+          <h1 className="academicss_h1">{t("akademiklar.akademiklar")}</h1>
           <p className="academicss_p">
-            Talabalarni murakkab dunyoda faol fuqarolar va liderlar<br />
-            sifatida jamiyatga mazmunli hissa qo'shishga tayyorlash
+            {t("akademiklar.tayorlash1")}
+            <br />
+            {t("akademiklar.tayorlash2")}
           </p>
-
           <div className="academicss_card_bg">
             <div className="academicss_card_main">
               <Grid
@@ -338,20 +336,15 @@ const Main = () => {
               >
                 <Grid className="academicss_card" item md={3.7}>
                   <img src={academics1} alt="photo" />
-
                   <p>
-                    “Zulfiya – bahor va muhabbat kuychisi” deb nomlangan
-                    ma`naviy tadbir bo’lib o’tdi.
+                    {t("akademiklar.zulfiya")}
                   </p>
                 </Grid>
 
                 <Grid className="academicss_card" item md={3.7}>
                   <img src={academics2} alt="photo" />
-
                   <p>
-                    Mir Alisher Navoiy hazratlarining 580 yilligi munosabati
-                    bilan “Alisher Navoiy – so‘z mulkining sultoni” mavzusida
-                    ma’naviy-ma’rifiy tadbir o‘tkazildi.
+                    {t("akademiklar.tadbir")}
                   </p>
                 </Grid>
 
@@ -359,8 +352,7 @@ const Main = () => {
                   <img src={academics3} alt="photo" />
 
                   <p>
-                    “Zulfiyaxonim - 105 yoshda” mavzusida adabiy-badiiy kecha
-                    o‘tkazildi
+                   {t("akademiklar.zulfiyaxonim")}
                   </p>
                 </Grid>
               </Grid>
@@ -369,13 +361,12 @@ const Main = () => {
 
           <div className="academics_navbg">
             <h5 className="academicss_h3">
-              Sizning istaklaringiz va qobilyatlaringizni shakillantirishga
-              yordam beradigan oltilik
+              {t("akademiklar.oltilik")}
             </h5>
             <ul className="academicss_ul">
               <li>
                 <Link className="academicss_ul_li" to="/fakultetlar" onClick={ToTop}>
-                  Arxitektura
+                {t("akademiklar.")}
                 </Link>
               </li>
               |
