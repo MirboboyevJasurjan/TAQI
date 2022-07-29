@@ -30,15 +30,12 @@ import Yangiliklar from '../pages/News/yangiliklar/Yangiliklar';
 import BannerNews from '../pages/News/newsBanner/BannerNews';
 import Kafedralar from '../Haqida/mamuriy/kafedaralar/Kafedralar';
 
-const Routs = (  ) => {
+const Routs = () => {
     return (
         <div>
-
             <BrowserRouter>
-
                 <Switch>
                     {/* /* <Route path="/about" component={About} />  */}
-
                     <Route path="/academics" component={Academics} />
                     <Route path="/admission" component={Admission} />
                     <Route path="/tadbir1" component={EventPage} />
@@ -46,7 +43,7 @@ const Routs = (  ) => {
                     <Route path="/news" component={News} />
                     <Route path="/about" component={Ins_tarixi} />
                     <Route path="/rahbariyat" component={Rahbariyat} />
-                    
+
                     <Route path="/tashkilot" component={Tashkilot} />
                     <Route path="/qarorlar" component={Qarorlar} />
                     <Route path="/umumiy" component={UmumiyMalumot} />
@@ -66,14 +63,10 @@ const Routs = (  ) => {
                     <Route path="/tadqiqot" component={Research} />
                     <Route path="/qabul" component={Acceptance} />
                     <Route path="/" component={Main} />
-
                 </Switch>
-
             </BrowserRouter>
-
         </div>
     );
 }
 
 export default Routs;
-
